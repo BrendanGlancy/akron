@@ -51,3 +51,21 @@ Desoms Calculator is usful for homework:
 https://www.desmos.com/calculator/wvjxw6kbtv
 
 Graphing in standard (x,y) notation
+
+-- Day 2 notes start --
+
+if an equation has more than 1 different output, it is not a function
+
+In this class we do real numbers
+
+Domain - All possible inputs that create real number outputs
+
+Range - All possible outputs for a given domain
+
+The domain and range of the function y = -2x + 4 
+(-oo,oo)
+
+In the shell.py program, you get an error when you write something that is 
+not a function
+
+This program needs to fix this, FIND A FIX LATER

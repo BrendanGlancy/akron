@@ -1,1 +1,81 @@
--- You cannot see this lesson yet --
+-- Homework pages 96-97  --
+
+Complete Algorithm Workbench 1,2,3
+
+Draw.io file can include both, and should be pdf
+
+Debugging Ex. 1 
+
+Draw a flowchart and write pseudocode (in python) to represent the logic of
+a program that allows the user to enter a value. The program multiples a 
+value by 10 and outputs the result.
+
+Draw a flowchart and write the pseudocode (in python) to represent the logic
+of a program that allows the user to enter a value for one edge of a cube.
+The program calculates the surface area of one side of the cube, the surface
+area of the whole cube, and its volume. The program outputs all the results
+
+-- In class notes 2.1 --
+
+The first step in programming is designing - flowcharts and pseudocode help
+with this process.
+
+Next, the code is written.
+
+All code must be cleared of all syntax errors.
+
+After the executable is created, it can be checked for logic errors
+
+If logic errors exist, the program must be debugged.
+
+The purpose of Programming Logic and Design is to focus on flowcharts and 
+pseudocode
+
+The design is the foundation of a good program
+
+Output - data that is generated and displayed 
+
+Input - data that a program receives 
+
+Variables - Storage locations in memory for data 
+
+Computer programs typically follow 3 steps
+1. Input is received
+2. Some process is performed on the input
+3. Output is produced
+
+Programmers can define variable names following certain rules
+    - Must be one word, no spaces 
+    - Generally, punctuation characters are avoided 
+    - Generally, the first character cannot be a number
+    - Name a variable something that indicates what may be stored in it
+camelCase is a popular naming convention
+
+Variable assignment does not always have to come from user input, it can 
+also be set through an assignment statement
+
+A variable declaration includes a variable's name and a variable data type
+Data Type - defines the type of data you intend to store in a variable
+    - Integer - stores only whole numbers 
+    - Real - stores whole or decimal numbers 
+    - String - any series of characters
+Declare Real grossPay
+
+A named constant is a name that represents a value that cannot be changed
+    - Makes programs more self explanatory 
+    - If a change to the value occurs, it only has to be modified in one
+    place
+
+Constant Real INTEST_RATE = 0.069
+
+Hand Tracing is a simple debuggin g process for location hard to find errors
+in a program 
+
+External documatation describes aspects of the program for the user, 
+sometimes written by a technical writer
+
+Internal documation explains how parts of the program works for the 
+programmer, also known as comments
+
+When you are using input() you have to declear a type
+int(input()) example

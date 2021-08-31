@@ -1,0 +1,66 @@
+-- Section 1.3 --
+
+The notes for this lesson are 3 youtube videos
+The same with 1.4
+
+For this lesson it would be wise to do the extra practice
+
+Rational Functions - a function that can be expressed in the form 
+
+f(x) = N(x)/D(x)
+
+Non-rational - y=2x+3/x+2(sqrt(x))
+Can't have a sqrt in the denominator or fraction
+
+Where the numerator N(x) and the denominator D(x) are polynomials and D(x)
+is not the zero polynomial, is called a rational function. The domain of f
+consists of all real numbers for which D(x) != 0
+
+Limit notation: limx->af(x)=b "the limit of f(x) as x approaches a is b"
+
+f(x) = 1/x**2
+As x -> 0 from the left f(x) -> oo
+As x -> 0 from the right f(x) -> oo
+
+This kind of behavior is called an asymtotal behavior
+
+for this function as x becomes large, x->oo and as x becomes small
+    x->-oo
+
+This is a horizontal asymtote, the vertical asymtote of this function is
+also 0
+
+Vertical Asymtote (VA)
+The graph will have a vertical asymtote at x=a if the denominator is 0
+at x=a and the numerator isn't zero at x=a
+
+Horizontal Asymtote 
+if n<m , then the x axis is the horizontal asymtote
+
+if n=m , y=a/b , then the line is the horizontal asymtote
+    Take the coefficents and divide them to find the line
+    for example x**2-6x+8/x**2-x-12
+        The coefficents would be 1 and 1
+
+if n>m , there will be no horizontal asymtotes
+
+If n is larger than 1 then m (n=m+1), then the graph has an OBLIQUE Asymtote
+A graph may have a horizontal asymtote or oblique asymtote, but not both at
+the same time
+
+To find the Oblique Asymtote do long division or synthetic (if possible), 
+disregard remainder
+
+    oblique asymtote is the line y = quotient
+
+Not sure what synthetic division is
+
+If you find a horizontal asymtote then there is no oblique asymtote
+
+If you plug in one of the numbers you reject to the numerator and it = 0
+then that number is not your vertical symtote
+
+Going to the table, on graphing calculator if there is an error, there will
+be a hole or open dot
+
+

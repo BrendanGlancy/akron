@@ -2,13 +2,13 @@
 # Decimal to Binary
 
 def decimalToBinary(n):
+    # init an array for our bin #
+    s = []
     if (n==0):
         # if our number is 0 in dec then it is in bin
         k=[0]
         return k
     else:
-        # init array to store our binary
-        s = []
         while(n):
         # put the remainder in an array
             s.append(n%2)

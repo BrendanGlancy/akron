@@ -1,6 +1,8 @@
 import math
 import matplotlib.pyplot as plt
 import numpy as np
+from sympy import *
+
 
 """ 
 - abs is abosolute value
@@ -12,7 +14,11 @@ import numpy as np
 x = np.linspace(-5,5,100)
 
 # the function, which is y = x^2 here
-y = (2*x+4)/np.sqrt(2*x-3)
+f = (x**2)-9/(x**3)-4*x
+
+# Domain and range stuff
+
+
 
 # setting the axes at the centre
 fig = plt.figure()
@@ -25,7 +31,7 @@ ax.xaxis.set_ticks_position('bottom')
 ax.yaxis.set_ticks_position('left')
 
 # plot the function
-plt.plot(x,y, 'r')
+plt.plot(x,f, 'r')
 
 # show the plot
 plt.show()

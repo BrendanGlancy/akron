@@ -10,28 +10,9 @@ from sympy import *
 """
 
 
-# 100 linearly spaced numbers
-x = np.linspace(-5,5,100)
-
-# the function, which is y = x^2 here
-f = (x**2)-9/(x**3)-4*x
-
-# Domain and range stuff
-
-
-
-# setting the axes at the centre
-fig = plt.figure()
-ax = fig.add_subplot(1, 1, 1)
-ax.spines['left'].set_position('center')
-ax.spines['bottom'].set_position('zero')
-ax.spines['right'].set_color('none')
-ax.spines['top'].set_color('none')
-ax.xaxis.set_ticks_position('bottom')
-ax.yaxis.set_ticks_position('left')
-
-# plot the function
-plt.plot(x,f, 'r')
+x = np.arange(0., 5., 0.2)
+import matplotlib.pyplot as plt
+plt.plot(x, np.piecewise(x, [x  == 2, x != 2], [0, 1]))
 
 # show the plot
 plt.show()

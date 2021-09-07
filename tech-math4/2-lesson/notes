@@ -34,7 +34,7 @@ Vertical Asymtote (VA)
 The graph will have a vertical asymtote at x=a if the denominator is 0
 at x=a and the numerator isn't zero at x=a
 
-Horizontal Asymtote 
+Horizontal Asymtote Rules
 if n<m , then the x axis is the horizontal asymtote
 
 if n=m , y=a/b , then the line is the horizontal asymtote
@@ -63,4 +63,56 @@ then that number is not your vertical symtote
 Going to the table, on graphing calculator if there is an error, there will
 be a hole or open dot
 
+-- 1.4 notes --
+
+Picking up where we left off
+
+Vertical Asymtotes come when x is not in the domain, so the functions isn't
+continuious. AKA whole in the graph
+
+She wants us to do example D for extra practice
+to find the domain of a function set the denominator = 0
+
+Plug in the number that makes the denominator to the numerator, and if it
+!= 0 then there is a Vertical asymtote which is x=equation not in function
+
+If n > m, there will be no horizontal asymtote. If n+1 = m then there is an
+oblique asymtote
+
+To find this oblique asymtote you divide the numerator by denominator
+y = quotient
+
+Synthetic divison - Divison of a polynomial by (x - a)
+Take the coefficents, then take the first coefficent times the HA 
+then take the result of that and add it to the next coefficent, then
+times the first result (which is the first coefficent * horizontal asymtote)
+and multiply the two together
+
+Example in written notes 1.4 ^^
+
+in synthetic division you must include all of the degrees so if x**4
+then you must include x**3 x**2 x**1 and a constant
+
+Solutions for HA VA or OA must be in the real number system or we reject
+
+If you don't have a perfect sqaure then you can just leave the equation as 
+is, unless it specifically says you can approximate
+
+Piecewise functions - A function defined with different formualas in 
+different parts of the domain 
+
+When you have a piecewise function, it is wise to graph to get a visual of 
+the functions
+
+You can kind of matplot lib a piecewise function, its not very hard but IDK
+how accurate is it
+
+Piecewise functions Evaluations are not very hard you just plug in what it
+tells you to plug in
+Make sure when you graph your piecewise function passes the vertical line 
+test
+
+If you don't see a circle the funciton is continuious
+
+-- Lecture 2 --
 

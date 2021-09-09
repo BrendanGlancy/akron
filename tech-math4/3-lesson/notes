@@ -49,3 +49,26 @@ If you have find the relative min and max 4x^{5}-3x^{3}-2x of this function
 You have to approximate
 
 You can use the trace point to approximate
+
+-- Thursday 1.6 lesson --
+
+We look at symmetry in this lesson
+
+Even - a function is even if and only if its graph is symmetric with respect
+to the y-axis.
+f(-x) = f(x)
+
+Odd - a function is odd if and only if its graph is symmetric with respect 
+to the origin 
+f(-x) = -f(x)
+
+A function is never even and odd at the same time, but we can have a 
+function that is neither
+
+First test over unit one is in week 6 
+
+Functions cannot have x axis symmetry
+They don't pass the verticle line test if they are reflected over the 
+x axis
+
+

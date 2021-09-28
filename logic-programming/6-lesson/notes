@@ -1,0 +1,23 @@
+-- lesson 5 loops --
+
+While loop
+
+do-while loop
+
+do-until loop
+
+dont create an infinate loop
+
+A sentinel is a special value that marks the end of a list of values, 
+used as stop values for loops
+
+Nested loops
+
+All loops can be nested, that is a loop inside of a loop
+
+A running total is a sum of numbers that accumulates with each iteration of
+a loop
+
+Count controlled loops iterate a specific number of times
+
+

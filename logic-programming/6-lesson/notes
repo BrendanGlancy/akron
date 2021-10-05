@@ -18,6 +18,7 @@ All loops can be nested, that is a loop inside of a loop
 A running total is a sum of numbers that accumulates with each iteration of
 a loop
 
+Condition controlled, are loop controlled by a condition
 Count controlled loops iterate a specific number of times
 
 

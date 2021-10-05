@@ -52,23 +52,28 @@ def bugCollector():
 def caloriesCounted():
     calsPerMin = 3.9
     for i in range(10, 31, 5):
-        print(i * calsPerMin)
+        print(i * calsPerMin, 'Calories')
 
 def budget():
     monthBudget = float(input('Enter budget for the month: '))
 
+    # exit loop + init totExpense
     keep_loop = 'y'
+    totExpense = 0
     
     while keep_loop == 'y':
         # prompt to enter an expense
         expense = float(input('Enter an expense: '))
 
+
         # calc remaining
         monthBudget -= expense
+        totExpense += expense
 
-        # remaining display
+        # remaining display + expense running total
         # %.2f mean the number will be displayed with 2 after the 
         # Floating point
+        print('Expenses total $%.2f' % totExpense)
         print('Remaining cash $%.2f' % monthBudget)
 
         keep_loop = input('Enter y to add another expense (y/n): ')

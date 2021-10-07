@@ -15,6 +15,7 @@ Design a program that gives simple math quizzes. The program should display two 
 + 129
 The program should allow the student to enter the answer. If the answer is correct, a message of congratulations should be displayed. If the answer is incorrect, a message showing the correct answer should be displayed.
 """
+from random import randint
 
 def main():
     rectangleArea()
@@ -22,13 +23,26 @@ def main():
     math_quiz()
 
 def rectangleArea():
-    pass
+    width = float(input('Enter the width: '))
+    length = float(input('Enter the length: '))
+    area = (width * length)
+    print('The area of rectangle:', area)
 
 def feetToInch():
-    pass
+    feet = int(input('Enter how many feet: '))
+    inches = (feet * 12)
+    print('Inches in that many feet:', inches)
 
 def math_quiz():
-    pass
+    val1 = randint(100, 1000)
+    val2 = randint(100, 1000)
+    print(' ', val1, '\n+', val2)
+    ans = val1 + val2
+    usr_ans = int(input('Enter the correct answer: '))
+    if ans == usr_ans:
+        print("congratulations, correct")
+    else:
+        print('incorrect the answer is:', ans)
 
 if __name__ == "__main__":
     main()

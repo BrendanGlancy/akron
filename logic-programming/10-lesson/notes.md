@@ -36,4 +36,6 @@ in python. The same thing can be performed with a for loop like this:
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
 	print(x)
-```` 
+``` 
+
+

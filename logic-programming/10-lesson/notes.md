@@ -29,4 +29,11 @@ for i in range(0, size):
     print('Numbers in array', numbers[i])
 ```
 
+The lecture talks about for each loops, but there are no for each loops
+in python. The same thing can be performed with a for loop like this:
 
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+	print(x)
+```` 

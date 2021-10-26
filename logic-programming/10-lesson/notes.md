@@ -26,7 +26,7 @@ size = len(numbers)
 # will show length and all numbers in array
 for i in range(0, size):
     print(i)
-    print('Numbers in array', numbers)
+    print('Numbers in array', numbers[i])
 ```
 
 

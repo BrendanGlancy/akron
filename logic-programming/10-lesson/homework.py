@@ -66,10 +66,15 @@ def rainfall_stats():
         # will use lambda to split at |
         year.append(i+"|"+str(input('Please enter '+i+' rainfall: ')))
 
+    print(year)
+
     # lambda parameter_list: expression
     # min and max function returns the smallest or largest item in an
     # iterable
     key_func = lambda s:s.split("|")[1]
+
+    # here we are spliting month from rainfall
+    # year literally looks like month|1 
     split_func = lambda s,index:s.split("|")[index]
 
     # get the min rainfall

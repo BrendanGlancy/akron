@@ -1,9 +1,10 @@
 from statistics import mean 
 
 def main():
-    #reverse_arr()
-    #twenty()
+    reverse_arr()
+    twenty()
     third_prob()
+    asend()
 
 def reverse_arr():
     arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -37,6 +38,16 @@ def third_prob():
         arr[j] -= avg
 
     print(arr)
+
+def asend():
+    arr = 0
+    arrs = []
+    for i in range(10):
+        print('Enter a number ',i+1)
+        arr = int(input(" "))
+        arrs.append(arr)
+    arrs.sort()
+    print(arrs)
 
 
 if __name__ == "__main__":

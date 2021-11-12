@@ -1,9 +1,22 @@
-# Group 5
-# This is where I will store the group project src for this clas
+# Group 5 
+## Texas Holdem Poker
 
-I Plan to go above and beyond on this project possibly making a gui
-and gh-pages, but I currently don't have the instructions...
+We are going to iterate many times over all possible hands in Poker: that is 2,598,960 hands.
 
-So we will have to see if that will be possible
+This takes a long time...
 
-# How to run
+This program prompts you to type all your cards
+in a flop, then gives useful information about your hand
+
+## The Turn 
+Enter the card you are dealt for the river
+
+## River
+Enter the card you are dealt for the river
+
+
+ ## To play
+
+ ```python
+ python poker.py
+ ```

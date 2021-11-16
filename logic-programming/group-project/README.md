@@ -11,6 +11,11 @@ This takes a long time...
 This program prompts you to type all your cards
 in a flop, then gives useful information about your hand
 
+## Prerequests
+```console
+pip3 install -r requirements.txt
+```
+
 ## The Turn 
 Enter the card you are dealt for the river
 

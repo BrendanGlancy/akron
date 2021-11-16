@@ -15,11 +15,24 @@ in a flop, then gives useful information about your hand
 ```console
 pip3 install -r requirements.txt
 ```
+## Pre-Flop 
+You have the option to pick a random card
+or
+Enter the card you are dealt for the river
+
+## Flop 
+You have the option to pick a random card
+or
+Enter the card you are dealt for the river
 
 ## The Turn 
+You have the option to pick a random card
+or
 Enter the card you are dealt for the river
 
 ## River
+You have the option to pick a random card
+or
 Enter the card you are dealt for the river
 
 

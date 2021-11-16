@@ -1,6 +1,7 @@
 # Group 5 
 ## Texas Holdem Poker
-![Screen Shot 2021-11-12 at 1 21 48 AM](https://user-images.githubusercontent.com/61941978/141421205-e08c341a-f11e-460c-ba12-edfb4d78d70f.png)
+
+![Screen Shot 2021-11-15 at 10 53 11 PM](https://user-images.githubusercontent.com/61941978/141894183-cefd2f01-249d-4f85-a515-5ae55cf0b8a3.png)
 
 
 We are going to iterate many times over all possible hands in Poker: that is 2,598,960 hands.

@@ -32,4 +32,4 @@ class HonestPlayer(BasePokerPlayer):
         pass
 
     def receive_round_result_message(self, winners, hand_info, round_state):
-        passe
+        pass

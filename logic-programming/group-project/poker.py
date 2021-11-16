@@ -14,6 +14,42 @@ import random
 import pyfiglet
 
 
+# TODO, add pre-flop 2 card hand
+# TODO, make more game like 
+
+
+
+def start_game():
+    result = pyfiglet.figlet_format("PyPoker")
+    print(result)
+
+
+def pre_flop(): # Pre-Flop prompt
+    pass
+
+
+def flop_prompt(): # Flop prompt
+    pass
+
+
+def multi_choice():
+    while True:
+        questions = [inquirer.Checkbox(
+            'Choose',
+            message="Choose how you would like to play",
+            choices=['Random Hand','Choose Your Own'],
+        )]
+        answers = inquirer.prompt(questions)['Choose']
+        break
+    return answers
+
+def show_hand():
+# show the hand
+    print("_________________________________")
+    print("         Your Hand")
+    print(flop)
+    print("_________________________________")
+
 
 @jit(nopython=True)
 def common(a,b):
@@ -78,27 +114,22 @@ def should_call(players,percentile,pot,price):
     print('The expected value betting %s is %s $' % (price,ev-price))
     return pwin*100
 
+start_game()
 
-# this cannot be in a method or it breaks the whole thing due to scope
-flop = []
 
-result = pyfiglet.figlet_format("PyPoker")
-print(result)
+"""
+ Pre-Flop
+"""
+
+preflop = []
+
 
 # Multiple choice prompt
-while True:
-    questions = [inquirer.Checkbox(
-        'Choose',
-        message="Choose how you would like to play",
-        choices=['Random Hand','Choose Your Own'],
-    )]
-    answers = inquirer.prompt(questions)['Choose']
-
-    if answers != 'Choose Your Own':
-        for i in range(5):
-            j = random.randint(0,53)
-            flop.append(deck[j])
-    break
+answers_pre = multi_choice()
+if answers_pre != 'Choose Your Own':
+    for i in range(2):
+        j = random.randint(0,53)
+        flop.append(deck[j])
 
 
 # if the user chooses to pick their own cards
@@ -106,14 +137,11 @@ if len(flop) == 0:
     # Prompt the user what they're about to enter
     print('Enter you card in the format suit value, this is for your flop so it will be 5 cards')
     print('For Example S9 would be the 9 of spades')
-    for i in range(0,5):
+    for i in range(0,2):
         flop.append(str(input('enter card: ')))
 
-# show the hand
-print("_________________________________")
-print("         Your Hand")
-print(flop)
-print("_________________________________")
+print("** Hole Cards **")
+show_hand()
 
 
 c4 = combinations(flop,4)
@@ -129,34 +157,67 @@ if current > future:
     should_call(players,current,pot,price)
 else:
     should_call(players,future,pot,price)
-    
+
+
+"""
+ Flop
+"""
+# this cannot be in a method or it breaks the whole thing due to scope
+flop = []
+
+
+# Multiple choice prompt
+answers = multi_choice()
+if answers != 'Choose Your Own':
+    for i in range(5):
+        j = random.randint(0,53)
+        flop.append(deck[j])
+
+
+# if the user chooses to pick their own cards
+if len(flop) == 0:
+    # Prompt the user what they're about to enter
+    print('Enter you card in the format suit value, this is for your flop so it will be 5 cards')
+    print('For Example S9 would be the 9 of spades')
+    for i in range(0,5):
+        flop.append(str(input('enter card: ')))
+
+show_hand()
+
+
+c4 = combinations(flop,4)
+c3 = combinations(flop,3)
+flopscore = expected_value(flop,combi)
+current = df.loc[df['value'] >= flopscore[0]].index[0]/2598960*100
+future  = df.loc[df['value'] >= flopscore[1]].index[1]/2598960*100
+print('My current value is  %s and the average expected value is %s' % (current,future))
+players = float(input('enter number of players: '))
+pot = float(input('enter pot value: '))
+price = float(input('enter value of your bet: '))
+if current > future:
+    should_call(players,current,pot,price)
+else:
+    should_call(players,future,pot,price)
+
+"""
+ Turn
+"""
 
 turn = []
 
 # Multiple choice prompt
-while True:
-    questions = [inquirer.Checkbox(
-        'Choose',
-        message="The Turn",
-        choices=['Random Hand','Choose Your Own'],
-    )]
-    answers = inquirer.prompt(questions)['Choose']
+answers_turn = multi_choice
+if answers_turn != 'Choose Your Own':
+    for i in range(1):
+        j = random.randint(0,53)
+        turn.append(deck[j])
 
-    if answers != 'Choose Your Own':
-        for i in range(1):
-            j = random.randint(0,53)
-            turn.append(deck[j])
-    break
 
 if len(turn) < 1:
     turn.append(str(input('enter card: '))) 
 flop.append(turn[0]) 
 # show the hand
-print("_________________________________")
-print("         Your Hand")
-print(flop)
-print("_________________________________")
-
+show_hand()
 
 c4 = np.array([sorted(i) for i in combinations(flop,4)])
 combiturn = expected_value(flop,combi)
@@ -171,7 +232,11 @@ if  current > future:
     should_call(players,current,pot,price)
 else: 
     should_call(players,future,pot,price)
-    
+
+"""
+ River
+"""
+
 river = []
 river.append(str(input('enter card: ')))
 flop.append(river[0])
@@ -182,3 +247,4 @@ players = float(input('enter number of players: '))
 pot = float(input('enter pot value: '))
 price = float(input('enter value of your bet: '))
 should_call(players,current, pot,price)
+

@@ -25,6 +25,6 @@ Enter the card you are dealt for the river
 
  ## To play
 
- ```python
+ ```console
  python poker.py
  ```

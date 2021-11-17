@@ -19,4 +19,4 @@ Insertion Sort
 One of the sorting algorithms discussed works like this: The smallest value in the array is located and moved to element 0. Then the next smallest value is located and moved to element 1. This process continues until all of the elements have been placed in their proper order. Which algorithm i this?
 
 **Answer:**
-Selection Sorts
+Selection Sort

@@ -22,15 +22,23 @@ import pyfiglet
 def start_game():
     result = pyfiglet.figlet_format("PyPoker")
     print(result)
+    print('Welcome to PyPoker a TexasHoldem style poker similuation')
+    print('You can choose to play a random hand, or choose your own cards')
 
 
-def pre_flop(): # Pre-Flop prompt
-    pass
+
+def flop_message():
+    result = "** Flop **"
+    print(result)
 
 
-def flop_prompt(): # Flop prompt
-    pass
+def turn_message():
+    result = "** Turn **"
+    print(result)
 
+def river_message():
+    result = "** River **"
+    print(result)
 
 def multi_choice():
     while True:
@@ -43,12 +51,6 @@ def multi_choice():
         break
     return answers
 
-def show_hand():
-# show the hand
-    print("_________________________________")
-    print("         Your Hand")
-    print(flop)
-    print("_________________________________")
 
 
 @jit(nopython=True)
@@ -114,6 +116,10 @@ def should_call(players,percentile,pot,price):
     print('The expected value betting %s is %s $' % (price,ev-price))
     return pwin*100
 
+# this cannot be in a method or it breaks the whole thing due to scope
+flop = []
+
+
 start_game()
 
 
@@ -121,15 +127,14 @@ start_game()
  Pre-Flop
 """
 
-preflop = []
 
 
 # Multiple choice prompt
 answers_pre = multi_choice()
 if answers_pre != 'Choose Your Own':
     for i in range(2):
-        j = random.randint(0,53)
-        flop.append(deck[j])
+        rand_card = random.randint(0,53)
+        flop.append(deck[rand_card])
 
 
 # if the user chooses to pick their own cards
@@ -140,36 +145,43 @@ if len(flop) == 0:
     for i in range(0,2):
         flop.append(str(input('enter card: ')))
 
+def show_hand():
+# show the hand
+    if len(flop) <= 5:
+        print("_________________________________")
+        print("         Your Hand")
+        print(flop)
+        print("_________________________________")
+    elif len(flop) <= 6:
+        print("_________________________________")
+        print("         Your Hand")
+        print("Turn Card", turn)
+        print(flop)
+        print("_________________________________")
+    else:
+        print("_________________________________")
+        print("         Your Hand")
+        print("River Card", river)
+        print(flop)
+        print("_________________________________")
+
+
 print("** Hole Cards **")
 show_hand()
 
 
-c4 = combinations(flop,4)
-c3 = combinations(flop,3)
-flopscore = expected_value(flop,combi)
-current = df.loc[df['value'] >= flopscore[0]].index[0]/2598960*100
-future  = df.loc[df['value'] >= flopscore[1]].index[1]/2598960*100
-print('My current value is  %s and the average expected value is %s' % (current,future))
-players = float(input('enter number of players: '))
-pot = float(input('enter pot value: '))
-price = float(input('enter value of your bet: '))
-if current > future:
-    should_call(players,current,pot,price)
-else:
-    should_call(players,future,pot,price)
 
 
 """
  Flop
 """
-# this cannot be in a method or it breaks the whole thing due to scope
-flop = []
 
+flop_message()
 
 # Multiple choice prompt
 answers = multi_choice()
 if answers != 'Choose Your Own':
-    for i in range(5):
+    for i in range(3):
         j = random.randint(0,53)
         flop.append(deck[j])
 
@@ -203,10 +215,12 @@ else:
  Turn
 """
 
+turn_message()
+
 turn = []
 
 # Multiple choice prompt
-answers_turn = multi_choice
+answers_turn = multi_choice()
 if answers_turn != 'Choose Your Own':
     for i in range(1):
         j = random.randint(0,53)
@@ -237,8 +251,21 @@ else:
  River
 """
 
+river_message()
+
 river = []
-river.append(str(input('enter card: ')))
+answers_turn = multi_choice()
+if answers_turn != 'Choose Your Own':
+    for i in range(1):
+        j = random.randint(0,53)
+        river.append(deck[j])
+
+
+if len(turn) < 1:
+    river.append(str(input('enter card: '))) 
+# show the hand
+show_hand()
+
 flop.append(river[0])
 combiriver = expected_value(flop,combi)
 current = df.loc[df['value'] >= combiriver[0]].index[0]/2598960*100
@@ -247,4 +274,6 @@ players = float(input('enter number of players: '))
 pot = float(input('enter pot value: '))
 price = float(input('enter value of your bet: '))
 should_call(players,current, pot,price)
+
+
 

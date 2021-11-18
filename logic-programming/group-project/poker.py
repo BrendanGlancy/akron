@@ -14,8 +14,10 @@ import random
 import pyfiglet
 
 
-# TODO, add pre-flop 2 card hand
+# TODO, add pre-flop 2 card hand, show stats for pre-flop
 # TODO, make more game like 
+# TODO, declear winner
+
 
 
 

@@ -225,8 +225,8 @@ turn = []
 answers_turn = multi_choice()
 if answers_turn != 'Choose Your Own':
     for i in range(1):
-        j = random.randint(0,53)
-        turn.append(deck[j])
+        rand_card = random.randint(0,53)
+        turn.append(deck[rand_card])
 
 
 if len(turn) < 1:
@@ -240,7 +240,6 @@ combiturn = expected_value(flop,combi)
 current = df.loc[df['value'] >= combiturn[0]].index[0]/2598960*100
 future  = df.loc[df['value'] >= combiturn[1]].index[0]/2598960*100
 print('My current value is %s and the average future value is %s' % (current,future))
-
 players = float(input('enter number of players: ')) 
 pot = float(input('enter pot value: ')) 
 price = float(input('enter value of your bet: ')) 

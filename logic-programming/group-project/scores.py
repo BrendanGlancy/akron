@@ -36,7 +36,7 @@ def check_full_house(hand,letters,numbers,rnum,rlet):
     score = 90 + full + p/100  
     return score
 
-def check_three_of_a_kind(hand,letters,numbers,rnum,rlet):
+def check_three_of_a_kind(hand,letters,numbers,rnu,rlet):
     cards = []
     for i in numbers:
         if numbers.count(i) == 3:
@@ -163,4 +163,4 @@ x = [i.get("hand","") for i in hand_values] # making a list of hands
 y = [i.get("value","") for i in hand_values] #making a list of values
 
 data = {'hands':x, 'value':y} # making a dictionary of hands and values
-df = pd.DataFrame(data) # making a pandas dataframe with hands and values
+df = pd.DataFrame(data) # making a pandas dataframe with hands and valuesm

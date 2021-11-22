@@ -55,6 +55,8 @@ def multi_choice():
 
 
 
+# Numba has two compilation modes: nopython and object
+# Produces much faster code, to prevent Numba from falling back, and instead raise an error pass nopython=true
 @jit(nopython=True)
 def common(a,b):
     common=[]

@@ -45,11 +45,11 @@ Closing a file disconnects the program from the file.
 
 A predefined character or set of characters that marks the end of piece of data. In many languages, a delimiter is written after each item that is stored in a file.
 
--10.12 In many systems, what is written at the end of a file?
+- 10.12 In many systems, what is written at the end of a file?
 
 EOF
 
--10.13 What is a file’s read position? Initially, where is the read position when an input file is opened?
+- 10.13 What is a file’s read position? Initially, where is the read position when an input file is opened?
 
 marks the location of the next item that will be read from the file.
 

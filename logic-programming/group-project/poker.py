@@ -53,7 +53,36 @@ def multi_choice():
         break
     return answers
 
+# refactor, this is called multiple times 
+def calc_flop(c4, c3, flop):
+    flopscore = expected_value(flop,combi)
+    current = df.loc[df['value'] >= flopscore[0]].index[0]/2598960*100
+    future  = df.loc[df['value'] >= flopscore[1]].index[1]/2598960*100
+    print('My current value is  %s and the average expected value is %s' % (current,future))
+    players = float(input('enter number of players: '))
+    pot = float(input('enter pot value: '))
+    price = float(input('enter value of your bet: '))
+    if current > future:
+        should_call(players,current,pot,price)
+    else:
+        should_call(players,future,pot,price)
 
+def calc_winner(current, pre_flop):
+    pre_flop = []
+    for i in range(7):
+        rand_card = random.randint(0,53)
+        pre_flop.append(deck[rand_card])
+
+    flopscore = expected_value(pre_flop,combi)
+    bot_score = df.loc[df['value'] >= flopscore[0]].index[0]/2598960*100
+
+    if current < bot_score:
+        print("you lose, bot had a better hand")
+    else:
+        print("you win, you beat the bot")
+
+    print("Your score:", current)
+    print("Bot score:", bot_score)
 
 # Numba has two compilation modes: nopython and object
 # Produces much faster code, to prevent Numba from falling back, and instead raise an error pass nopython=true
@@ -122,6 +151,7 @@ def should_call(players,percentile,pot,price):
 
 # this cannot be in a method or it breaks the whole thing due to scope
 flop = []
+pre_flop = []
 
 
 start_game()
@@ -139,7 +169,7 @@ if answers_pre != 'Choose Your Own':
     for i in range(2):
         rand_card = random.randint(0,53)
         flop.append(deck[rand_card])
-
+        pre_flop.append(deck[rand_card])
 
 # if the user chooses to pick their own cards
 if len(flop) == 0:
@@ -186,8 +216,12 @@ flop_message()
 answers = multi_choice()
 if answers != 'Choose Your Own':
     for i in range(3):
-        j = random.randint(0,53)
-        flop.append(deck[j])
+        card_rand = random.randint(0,53)
+        try:
+            flop.append(deck[card_rand])
+        except:
+            flop = []
+            flop.append(deck[card_rand])
 
 
 # if the user chooses to pick their own cards
@@ -203,17 +237,9 @@ show_hand()
 
 c4 = combinations(flop,4)
 c3 = combinations(flop,3)
-flopscore = expected_value(flop,combi)
-current = df.loc[df['value'] >= flopscore[0]].index[0]/2598960*100
-future  = df.loc[df['value'] >= flopscore[1]].index[1]/2598960*100
-print('My current value is  %s and the average expected value is %s' % (current,future))
-players = float(input('enter number of players: '))
-pot = float(input('enter pot value: '))
-price = float(input('enter value of your bet: '))
-if current > future:
-    should_call(players,current,pot,price)
-else:
-    should_call(players,future,pot,price)
+
+calc_flop(c4, c3, flop)
+
 
 """
  Turn
@@ -234,22 +260,10 @@ if answers_turn != 'Choose Your Own':
 if len(turn) < 1:
     turn.append(str(input('enter card: '))) 
 flop.append(turn[0]) 
+
 # show the hand
 show_hand()
-
-c4 = np.array([sorted(i) for i in combinations(flop,4)])
-combiturn = expected_value(flop,combi)
-current = df.loc[df['value'] >= combiturn[0]].index[0]/2598960*100
-future  = df.loc[df['value'] >= combiturn[1]].index[0]/2598960*100
-print('My current value is %s and the average future value is %s' % (current,future))
-players = float(input('enter number of players: ')) 
-pot = float(input('enter pot value: ')) 
-price = float(input('enter value of your bet: ')) 
-if  current > future:
-    should_call(players,current,pot,price)
-else: 
-    should_call(players,future,pot,price)
-
+calc_flop(c4, c3, flop)
 """
  River
 """
@@ -278,5 +292,5 @@ pot = float(input('enter pot value: '))
 price = float(input('enter value of your bet: '))
 should_call(players,current, pot,price)
 
-
+calc_winner(current, pre_flop)
 

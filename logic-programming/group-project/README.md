@@ -3,8 +3,7 @@
 <h2 align="center"> Texas Holdem Poker </h2>
 
 
- <img src="https://user-images.githubusercontent.com/61941978/142133163-d8e644c7-5229-4af7-a670-86364f540eb9.png" alt="Example Play" width="auto" margin-left="auto" margin-right="auto">
-
+ <img src="https://user-images.githubusercontent.com/61941978/143796055-b9f35c67-ed45-45a3-95d2-fe72a2a4f2b7.png" alt="Example Play" width="auto" margin-left="auto" margin-right="auto">
 
 
 We are going to iterate many times over all possible hands in Poker: that is 2,598,960 hands.

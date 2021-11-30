@@ -234,7 +234,11 @@ answers_turn = multi_choice()
 if answers_turn != 'Choose Your Own':
     for i in range(1):
         rand_card = random.randint(0,53)
-        turn.append(deck[rand_card])
+        try:
+            turn.append(deck[rand_card])
+        except:
+            turn = []
+            turn.append(deck[rand_card])
 
 if len(turn) < 1:
     turn.append(str(input('enter card: '))) 
@@ -258,10 +262,12 @@ if answers_turn != 'Choose Your Own':
 
 if len(turn) < 1:
     river.append(str(input('enter card: '))) 
+flop.append(river[0]) 
 # show the hand
 show_hand()
 
 flop.append(river[0])
+print(len(flop))
 combiriver = expected_value(flop,combi)
 current = df.loc[df['value'] >= combiriver[0]].index[0]/2598960*100
 print('My final value is %s' % current)

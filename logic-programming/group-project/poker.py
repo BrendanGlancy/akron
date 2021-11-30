@@ -63,7 +63,7 @@ def calc_flop(c4, c3, flop):
 
 def calc_winner(current, pre_flop):
     pre_flop = []
-    for i in range(7):
+    for i in range(8):
         rand_card = random.randint(0,53)
         pre_flop.append(deck[rand_card])
 
@@ -127,7 +127,7 @@ def expected_value(hand,combi):
     elif len(hand) == 6:
         maxi = max([score_hand(i) for i in combinations(hand,5)])
         mean = np.mean(opti_4())
-    elif len(hand) == 7:
+    elif len(hand) >= 7:
         maxi = max([score_hand(i) for i in combinations(hand,5)])
         mean= maxi    
     values = [maxi,mean]
@@ -157,8 +157,13 @@ answers_pre = multi_choice()
 if answers_pre != 'Choose Your Own':
     for i in range(2):
         rand_card = random.randint(0,53)
-        flop.append(deck[rand_card])
-        pre_flop.append(deck[rand_card])
+        try:
+            flop.append(deck[rand_card])
+            pre_flop.append(deck[rand_card])
+        except IndexError:
+            flop = []
+            flop.append(deck[card_rand])
+            pre_flop.append(deck[rand_card])
 
 # if the user chooses to pick their own cards
 if len(flop) == 0:
@@ -204,7 +209,7 @@ if answers != 'Choose Your Own':
         card_rand = random.randint(0,53)
         try:
             flop.append(deck[card_rand])
-        except:
+        except IndexError:
             flop = []
             flop.append(deck[card_rand])
 
@@ -236,7 +241,7 @@ if answers_turn != 'Choose Your Own':
         rand_card = random.randint(0,53)
         try:
             turn.append(deck[rand_card])
-        except:
+        except IndexError:
             turn = []
             turn.append(deck[rand_card])
 
@@ -267,7 +272,6 @@ flop.append(river[0])
 show_hand()
 
 flop.append(river[0])
-print(len(flop))
 combiriver = expected_value(flop,combi)
 current = df.loc[df['value'] >= combiriver[0]].index[0]/2598960*100
 print('My final value is %s' % current)

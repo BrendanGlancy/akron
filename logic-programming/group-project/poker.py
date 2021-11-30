@@ -18,21 +18,15 @@ import pyfiglet
 # TODO, make more game like 
 # TODO, declear winner
 
-
-
-
 def start_game():
     result = pyfiglet.figlet_format("PyPoker")
     print(result)
     print('Welcome to PyPoker a TexasHoldem style poker similuation')
     print('You can choose to play a random hand, or choose your own cards')
 
-
-
 def flop_message():
     result = "** Flop **"
     print(result)
-
 
 def turn_message():
     result = "** Turn **"
@@ -152,16 +146,11 @@ def should_call(players,percentile,pot,price):
 # this cannot be in a method or it breaks the whole thing due to scope
 flop = []
 pre_flop = []
-
-
 start_game()
-
 
 """
  Pre-Flop
 """
-
-
 
 # Multiple choice prompt
 answers_pre = multi_choice()
@@ -199,12 +188,8 @@ def show_hand():
         print(flop)
         print("_________________________________")
 
-
 print("** Hole Cards **")
 show_hand()
-
-
-
 
 """
  Flop
@@ -223,7 +208,6 @@ if answers != 'Choose Your Own':
             flop = []
             flop.append(deck[card_rand])
 
-
 # if the user chooses to pick their own cards
 if len(flop) == 0:
     # Prompt the user what they're about to enter
@@ -234,12 +218,9 @@ if len(flop) == 0:
 
 show_hand()
 
-
 c4 = combinations(flop,4)
 c3 = combinations(flop,3)
-
 calc_flop(c4, c3, flop)
-
 
 """
  Turn
@@ -248,14 +229,12 @@ calc_flop(c4, c3, flop)
 turn_message()
 
 turn = []
-
 # Multiple choice prompt
 answers_turn = multi_choice()
 if answers_turn != 'Choose Your Own':
     for i in range(1):
         rand_card = random.randint(0,53)
         turn.append(deck[rand_card])
-
 
 if len(turn) < 1:
     turn.append(str(input('enter card: '))) 
@@ -277,7 +256,6 @@ if answers_turn != 'Choose Your Own':
         j = random.randint(0,53)
         river.append(deck[j])
 
-
 if len(turn) < 1:
     river.append(str(input('enter card: '))) 
 # show the hand
@@ -291,6 +269,4 @@ players = float(input('enter number of players: '))
 pot = float(input('enter pot value: '))
 price = float(input('enter value of your bet: '))
 should_call(players,current, pot,price)
-
 calc_winner(current, pre_flop)
-

@@ -29,6 +29,7 @@ class Result {
         }
 }
 
+// Needs to be a new file but works in hackerrank
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

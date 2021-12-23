@@ -33,7 +33,7 @@ def check_full_house(hand,letters,numbers,rnum,rlet):
             full = i
         elif numbers.count(i) == 2:
             p = i
-    score = 90 + full + p/100  
+    score = 90 + full + p/100
     return score
 
 def check_three_of_a_kind(hand,letters,numbers,rnu,rlet):
@@ -41,7 +41,7 @@ def check_three_of_a_kind(hand,letters,numbers,rnu,rlet):
     for i in numbers:
         if numbers.count(i) == 3:
             three = i
-        else: 
+        else:
             cards.append(i)
     return 45 + three + (max(cards) + min(cards)) / 1000
 
@@ -57,13 +57,13 @@ def check_two_pair(hand,letters,numbers,rnum,rlet):
     score = 30 + max(pairs) + min(pairs)/100 + cards[0]/1000
     return score
 
-def check_pair(hand,letters,numbers,rnum,rlet):    
+def check_pair(hand,letters,numbers,rnum,rlet):
     pair = []
     cards  = []
     for i in numbers:
         if numbers.count(i) == 2:
             pair.append(i)
-        elif numbers.count(i) == 1:    
+        elif numbers.count(i) == 1:
             cards.append(i)
             cards = sorted(cards,reverse=True)
     score = 15 + pair[0] + cards[0]/100 + cards[1]/1000 + cards[2]/10000
@@ -83,70 +83,70 @@ def score_hand(hand):
         if numbers ==[14,13,12,11,10]:
             handtype = 'royal_flush'
             score = 135
-          # print('this hand is a %s:, with score: %s' % (handtype,score))  I comment the prints so the script runs faster 
+          # print('this hand is a %s:, with score: %s' % (handtype,score))  I comment the prints so the script runs faster
         elif dif == 4 and max(rnum) == 1:
             handtype = 'straight_flush'
             score = 120 + max(numbers)
             hand2 = ['H7', 'H7', 'H7', 'H7', 'H7']
-          # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+          # print('this hand is a %s:, with score: %s' % (handtype,score))
         elif 4 in rnum:
             handtype == 'four of a kind'
             score = check_four_of_a_kind(hand,letters,numbers,rnum,rlet)
-          # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+          # print('this hand is a %s:, with score: %s' % (handtype,score))
         elif sorted(rnum) == [2,2,3,3,3]:
             handtype == 'full house'
             score = check_full_house(hand,letters,numbers,rnum,rlet)
-          # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+          # print('this hand is a %s:, with score: %s' % (handtype,score))
         elif 3 in rnum:
             handtype = 'three of a kind'
             score = check_three_of_a_kind(hand,letters,numbers,rnum,rlet)
-          # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+          # print('this hand is a %s:, with score: %s' % (handtype,score))
         elif rnum.count(2) == 4:
             handtype = 'two pair'
             score = check_two_pair(hand,letters,numbers,rnum,rlet)
-          # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+          # print('this hand is a %s:, with score: %s' % (handtype,score))
         elif rnum.count(2) == 2:
             handtype = 'pair'
             score = check_pair(hand,letters,numbers,rnum,rlet)
-          # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+          # print('this hand is a %s:, with score: %s' % (handtype,score))
         else:
             handtype = 'flush'
             score = 75 + max(numbers)/100
-          # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+          # print('this hand is a %s:, with score: %s' % (handtype,score))
     elif 4 in rnum:
         handtype = 'four of a kind'
         score = check_four_of_a_kind(hand,letters,numbers,rnum,rlet)
-      # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+      # print('this hand is a %s:, with score: %s' % (handtype,score))
     elif sorted(rnum) == [2,2,3,3,3]:
        handtype = 'full house'
        score = check_full_house(hand,letters,numbers,rnum,rlet)
-     # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+     # print('this hand is a %s:, with score: %s' % (handtype,score))
     elif sorted(numbers) == [2, 3, 4, 5, 14]:
         handtype = 'straight'
         return 60
     elif 3 in rnum:
-        handtype = 'three of a kind' 
+        handtype = 'three of a kind'
         score = check_three_of_a_kind(hand,letters,numbers,rnum,rlet)
-      # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+      # print('this hand is a %s:, with score: %s' % (handtype,score))
     elif rnum.count(2) == 4:
         handtype = 'two pair'
         score = check_two_pair(hand,letters,numbers,rnum,rlet)
-      # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+      # print('this hand is a %s:, with score: %s' % (handtype,score))
     elif rnum.count(2) == 2:
         handtype = 'pair'
         score = check_pair(hand,letters,numbers,rnum,rlet)
-      # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+      # print('this hand is a %s:, with score: %s' % (handtype,score))
     elif dif == 4:
         handtype = 'straight'
         score = 55 + max(numbers)
-      # print('this hand is a %s:, with score: %s' % (handtype,score)) 
+      # print('this hand is a %s:, with score: %s' % (handtype,score))
 
     else:
         handtype= 'high card'
         n = sorted(numbers,reverse=True)
         score = n[0] + n[1]/100 + n[2]/1000 + n[3]/10000 + n[4]/100000
-      # print('this hand is a %s:, with score: %s' % (handtype,score)) 
-        
+      # print('this hand is a %s:, with score: %s' % (handtype,score))
+
     return score
 
 
@@ -155,7 +155,7 @@ def handvalues(combinations):
     scores = sorted(scores, key = lambda k: k['value']) # We sort hands by score
     return scores
 
-    
+
 deck = build_deck() # We create our deck
 combi = combinations(deck,5) # We create an array containing all possible 5 cards combinations
 hand_values = handvalues(combi)

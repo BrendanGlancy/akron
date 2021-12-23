@@ -11,6 +11,8 @@ public class FizzWriter {
         // Define a printwriter
         PrintWriter outFile = null;
 
+        // if the file exists, tell the user it will be overwritten
+        // if not tell the user it will be created
         if (diskFile.exists()) {
             System.out.println(diskFile + " Already exists, will be overwritten");
             outFile = new PrintWriter(diskFile);
@@ -19,6 +21,7 @@ public class FizzWriter {
             System.out.println("new file fizzbuzz.txt has be created in:\n" + diskFile.getAbsolutePath());
         }
 
+        // Think this is probably one of the best ways to do fizzbuzz with java
         for (int i = 1; i <= 300; i++) {
             if (i % 3 == 0) {
                 if (i % 5 == 0) {
@@ -32,13 +35,10 @@ public class FizzWriter {
                 outFile.println(i + "");
             }
 
-
-
-
         }
 
-			System.out.println("FizzBuzz.txt has been created.");
-			outFile.close();
+        System.out.println("FizzBuzz.txt has been created.");
+        outFile.close();
 
     }
 }

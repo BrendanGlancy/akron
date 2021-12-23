@@ -2,7 +2,7 @@ from scores import *
 import inquirer
 from functools import lru_cache as cache
 import pandas as pd
-from IPython import get_ipython;   
+from IPython import get_ipython
 import itertools
 from statistics import mean
 from numba import jit, vectorize
@@ -15,7 +15,7 @@ import pyfiglet
 
 
 # TODO, add pre-flop 2 card hand, show stats for pre-flop
-# TODO, make more game like 
+# TODO, make more game like
 # TODO, declear winner
 
 def start_game():
@@ -47,7 +47,7 @@ def multi_choice():
         break
     return answers
 
-# refactor, this is called multiple times 
+# refactor, this is called multiple times
 def calc_flop(c4, c3, flop):
     flopscore = expected_value(flop,combi)
     current = df.loc[df['value'] >= flopscore[0]].index[0]/2598960*100
@@ -129,10 +129,10 @@ def expected_value(hand,combi):
         mean = np.mean(opti_4())
     elif len(hand) >= 7:
         maxi = max([score_hand(i) for i in combinations(hand,5)])
-        mean= maxi    
-    values = [maxi,mean]
+        mean= maxi
+    values = [maxi, mean]
     return values
-  
+
 def should_call(players,percentile,pot,price):
     pwin = (percentile/100)**players
     ev = pwin*pot
@@ -162,7 +162,7 @@ if answers_pre != 'Choose Your Own':
             pre_flop.append(deck[rand_card])
         except IndexError:
             flop = []
-            flop.append(deck[card_rand])
+            flop.append(deck[rand_card])
             pre_flop.append(deck[rand_card])
 
 # if the user chooses to pick their own cards
@@ -246,8 +246,8 @@ if answers_turn != 'Choose Your Own':
             turn.append(deck[rand_card])
 
 if len(turn) < 1:
-    turn.append(str(input('enter card: '))) 
-flop.append(turn[0]) 
+    turn.append(str(input('enter card: ')))
+flop.append(turn[0])
 
 # show the hand
 show_hand()
@@ -266,8 +266,8 @@ if answers_turn != 'Choose Your Own':
         river.append(deck[j])
 
 if len(turn) < 1:
-    river.append(str(input('enter card: '))) 
-flop.append(river[0]) 
+    river.append(str(input('enter card: ')))
+flop.append(river[0])
 # show the hand
 show_hand()
 

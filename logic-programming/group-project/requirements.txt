@@ -4,4 +4,3 @@ numba==0.50.1
 numpy==1.19.5
 pandas==1.0.5
 pyfiglet==0.8.post1
-PyPokerEngine==1.0.1

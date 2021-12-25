@@ -12,7 +12,7 @@ This course introduces computer programming and problem-solving in a structured 
 
 
 <h2 align="center">Java Programming</h2>
-<img width="962" alt="Screen Shot 2021-11-09 at 7 05 56 PM" src="https://user-images.githubusercontent.com/61941978/144934655-07c29fcf-7943-4cde-b383-f6e34ba6d5d6.png">
+<img width="962" alt="Screen Shot 2021-11-09 at 7 05 56 PM" src="https://user-images.githubusercontent.com/61941978/147379746-6aea68d9-a0c0-4728-89a9-fbe3db598bf2.png">
 
 ## Summary
 Course introduces the JAVA programming language. Programming techniques are demonstrated through the coding, testing and debugging of JAVA applications and applets.

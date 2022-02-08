@@ -41,7 +41,7 @@ class Ch3Ex13Glancy {
         // If the input is an int, but not a valid package type, display an error message
         System.out.print("Enter number of minutes used: ");
         int minutesUsed = input.nextInt();
-        // make minutesUsed upper case
+        // make packageType upper case
         packageType = packageType.toUpperCase();
 
         if (minutesUsed < 0) {

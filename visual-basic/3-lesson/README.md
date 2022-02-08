@@ -22,3 +22,37 @@
 22. panel
 23. Load Event
 24. break point
+
+## Conditionals
+
+```VisualBasic
+' Multiline syntax
+If condition [ Then ]
+    [ Statement ]
+[ ElseIf elseifcondition [ Then ]
+    [ elseifstatement ]
+[ Else
+    [ else statement ] ]
+End if
+```
+
+## Try Catch
+
+```VisualBasic
+Try
+    If condition [ Then ]
+        [ Statement ]
+    [ ElseIf elseifcondition [ Then ]
+        [ elseifstatement ]
+    [ Else
+        [ else statement ] ]
+    End if
+Catch
+    catchError.Text = "Catch Error Message"
+```
+
+## Clear
+
+```VisualBasic
+element.Clear()
+```

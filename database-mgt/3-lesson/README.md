@@ -36,8 +36,26 @@ psql -U postgres -d db_management -f "$BASEDIR/SQL10e_Module3_KIMTAY_SCRIPT_ORAC
 Example of putting data into a blank database
 
 ```sql
+-- This is an example of a comment in SQL
 INSERT INTO CUSTOMER VALUES('125','Joey'    ,'Smith',     '17 Fourth St',      'Cody',     'WY','82414','jsmith17@example.com',    80.68 ,500.00   ,'05');
 INSERT INTO CUSTOMER VALUES('182','Billy'   ,'Rufton',    '21 Simple Cir',     'Garland',  'WY','82435','billyruff@example.com',   43.13 ,750.00   ,'10');
 INSERT INTO CUSTOMER VALUES('227','Sandra'  ,'Pincher',   '53 Verde Ln',       'Powell',   'WY','82440','spinch2@example.com',     156.38,500.00   ,'15');
-INSERT INTO CUSTOMER VALUES('294','Samantha','Smith',     '14 Rock Ln',        'Ralston',  'WY','82440','ssmith5@example.com',     58.60 ,500.00   ,'10');
+-- Commands aren't case sensitive
+INSERT INTO Customer VALUES('294','Samantha','Smith',     '14 Rock Ln',        'Ralston',  'WY','82440','ssmith5@example.com',     58.60 ,500.00   ,'10');
 ```
+
+## DB objects
+- Database
+- table
+- index
+- view
+- procedure
+- trigger
+
+## Commands used for database objects
+- CREATE
+- USE
+- DROP
+- ALTER
+
+

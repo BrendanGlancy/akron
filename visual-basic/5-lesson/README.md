@@ -1,3 +1,6 @@
+# Homework Review questions 1-17, Prgm Ex: #1
+---
+
 # List and Loops
 
 Loops in VB
@@ -97,4 +100,61 @@ Public Class Form1
       Label2.Text = ListBox1.SelectedItem.ToString()
    End Sub
 End Class
+```
+
+# Remark
+
+Use the \<remarks> tag to add information about a type, supplementing the information specified with \<summary>.
+
+This information appears in the Object Browser. For information about the Object Browser, see Viewing the Structure of Code.
+
+Compile with -doc to process documentation comments to a file.
+
+**Example**
+
+```vb
+''' <param name="id">The ID of the record to update.</param>
+''' <remarks>Updates the record <paramref name="id"/>.
+''' <para>Use <see cref="DoesRecordExist"/> to verify that
+''' the record exists before calling this method.</para>
+''' </remarks>
+Public Sub UpdateRecord(ByVal id As Integer)
+    ' Code goes here.
+End Sub
+''' <param name="id">The ID of the record to check.</param>
+''' <returns><c>True</c> if <paramref name="id"/> exists,
+''' <c>False</c> otherwise.</returns>
+''' <remarks><seealso cref="UpdateRecord"/></remarks>
+Public Function DoesRecordExist(ByVal id As Integer) As Boolean
+    ' Code goes here.
+End Function
+```
+
+The equivalent of this in java is using @ in one of your comments
+
+**Example**
+
+```java
+/**
+* Returns an Image object that can then be painted on the screen.
+* The url argument must specify an absolute <a href="#{@link}">{@link URL}</a>. The name
+* argument is a specifier that is relative to the url argument.
+* <p>
+* This method always returns immediately, whether or not the
+* image exists. When this applet attempts to draw the image on
+* the screen, the data will be loaded. The graphics primitives
+* that draw the image will incrementally paint on the screen.
+*
+* @param  url  an absolute URL giving the base location of the image
+* @param  name the location of the image, relative to the url argument
+* @return      the image at the specified URL
+* @see         Image
+*/
+public Image getImage(URL url, String name) {
+    try {
+        return getImage(new URL(url, name));
+    } catch (MalformedURLException e) {
+        return null;
+    }
+}
 ```

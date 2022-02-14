@@ -72,6 +72,8 @@ Each time the procedure is called, its statements are executed, starting with th
 
 **Code for ListBox**
 
+![vb net_listbox3](https://user-images.githubusercontent.com/61941978/153904165-e60af8a5-a424-4236-95a4-a283ff4a6227.jpg)
+
 ```vb
 Public Class Form1
    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

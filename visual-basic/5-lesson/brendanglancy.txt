@@ -1,0 +1,5 @@
+## You display input boxes with this function
+- InputBox
+
+## An input box returns the value entered by the user as this.
+- String

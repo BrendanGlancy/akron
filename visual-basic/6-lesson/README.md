@@ -64,4 +64,6 @@ eral conference registration fee is $895 per person. There is also an optional o
 night dinner with a keynote address for $30 per person. Additionally, the optional
 preconference workshops listed in Table 7-3 are available.
 
+![vb-table](https://user-images.githubusercontent.com/61941978/155413027-6c87af67-2d32-47ea-83c5-62d70cfe9ad8.png)
+
 

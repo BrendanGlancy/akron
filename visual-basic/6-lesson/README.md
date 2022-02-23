@@ -40,5 +40,21 @@ Sub Message()
  MsgBox "Time to take a break!"
 End Sub
 ```
+**Shortcuts**
+
+- F5 - runs the program
+- F7 - shows the code
+
+## Remove and replace characters VB
+
+```vb
+Imports System.Text.RegularExpressions
+
+' Say result is input from a textbox
+Dim input As String
+Dim result As String
+' Will remove all chars that aren't digits
+result = Regex.Replace(input, "[^\d.]", "")
+```
 
 

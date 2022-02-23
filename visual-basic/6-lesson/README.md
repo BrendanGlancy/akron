@@ -57,4 +57,11 @@ Dim result As String
 result = Regex.Replace(input, "[^\d.]", "")
 ```
 
+## Programming Challenge 1 Prompt
+
+Create an application that calculates the registration fees for a conference. The gen-
+eral conference registration fee is $895 per person. There is also an optional opening
+night dinner with a keynote address for $30 per person. Additionally, the optional
+preconference workshops listed in Table 7-3 are available.
+
 

@@ -59,11 +59,13 @@ result = Regex.Replace(input, "[^\d.]", "")
 
 ## Programming Challenge 1 Prompt
 
-Create an application that calculates the registration fees for a conference. The gen-
-eral conference registration fee is $895 per person. There is also an optional opening
-night dinner with a keynote address for $30 per person. Additionally, the optional
-preconference workshops listed in Table 7-3 are available.
+Write an application that accepts from the user the wholesale cost of an item and its
+markup percentage. (For example, if an item’s wholesale cost is $5 and its retail
+price is $10, then the markup is 100%.)
+The program should contain a function named CalculateRetail that receives the
+wholesale cost and markup percentage as arguments, and returns the retail price
+of the item. The application’s form should look something like the one shown in
+Figure 6-22.
 
-![vb-table](https://user-images.githubusercontent.com/61941978/155413027-6c87af67-2d32-47ea-83c5-62d70cfe9ad8.png)
 
 

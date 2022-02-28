@@ -220,6 +220,8 @@ JavaScript was never designed to be a complied language, but modern JavaScript e
 
 Means that we don't use any explicit type definitions in JavaScript code
 
+**Dart** explicit types example
+
 ```dart
 // type declaration
 String foo = 'Hello World'
@@ -230,6 +232,8 @@ int fun() {
   return bar + baz
 }
 ```
+
+**JS**
 
 ```JavaScript
 // Notice, no type declaration

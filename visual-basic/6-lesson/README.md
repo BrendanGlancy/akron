@@ -67,5 +67,7 @@ wholesale cost and markup percentage as arguments, and returns the retail price
 of the item. The application’s form should look something like the one shown in
 Figure 6-22.
 
+![6-22](https://user-images.githubusercontent.com/61941978/155856678-9fdf06a2-9518-4a97-9310-4395a2010010.png)
+
 
 

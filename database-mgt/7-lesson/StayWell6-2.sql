@@ -20,10 +20,10 @@ Create table LARGE_PROPERTY (
 -- Insert into LARGE_PROPERTY table the office number, address, bdrms, floors, monthly and owner number from the PROPERTY table to get the property
 -- Insert only those values where SQR_FT is greater than 1500
 Insert into LARGE_PROPERTY (OFFICE_NUM, ADDRESS, BDRMS, FLOORS, MONTHLY_RENT, OWNER_NUM)
-Select PROPERTY.OFFICE_NUM, PROPERTY.ADDRESS, PROPERTY.BDRMS, PROPERTY.FLOORS, PROPERTY.MONTHLY_RENT, PROPERTY.OWNER_NUM FROM PROPERTY WHERE SQR_FT > 1500
+Select PROPERTY.OFFICE_NUM, PROPERTY.ADDRESS, PROPERTY.BDRMS, PROPERTY.FLOORS, PROPERTY.MONTHLY_RENT, PROPERTY.OWNER_NUM FROM PROPERTY WHERE SQR_FT > 1500;
 
 -- increase the monthly rent for each large property by $150
-Update LARGE_PROPERTY SET MONTHLY_RENT = MONTHLY_RENT + 150
+Update LARGE_PROPERTY SET MONTHLY_RENT = MONTHLY_RENT + 150;
 
 -- decrease the monthly rent for each large prpoerty whose monthly rent is more than 1750 by 1%
 -- only update those values where the monthly rent is greater than 1750
@@ -32,16 +32,25 @@ Update LARGE_PROPERTY SET MONTHLY_RENT = MONTHLY_RENT - (MONTHLY_RENT * 0.01) WH
 -- Insert a row into the LARGE_PROPERTY table for a new property
 -- the office number is 1, the address is 2643 Lugsi Dr., the bdrms is 3, the floors is 2, the monthly rent is 775, and the owner number is 'MA111'
 Insert into LARGE_PROPERTY (OFFICE_NUM, ADDRESS, BDRMS, FLOORS, MONTHLY_RENT, OWNER_NUM)
-Values (1, '2643 Lugsi Dr.', 3, 2, 775, 'MA111')
+Values (1, '2643 Lugsi Dr.', 3, 2, 775, 'MA111');
 
 -- Delete all the properties in the LARGE_PROPERTY table for which the owner number is BU106
-Delete from LARGE_PROPERTY WHERE OWNER_NUM = 'BU106'
+Delete from LARGE_PROPERTY WHERE OWNER_NUM = 'BU106';
 
 -- The property managed by the Columbia City with the address "105 North Illinois Rd." is in the process of being remodeled and the number of bedrooms is unknown. Change the bedrooms values in the LARGE_PROPERTY table to null
-Update LARGE_PROPERTY SET BDRMS = null WHERE ADDRESS = '105 North Illinois Rd.'
+Update LARGE_PROPERTY SET BDRMS = null WHERE ADDRESS = '105 North Illinois Rd.';
 
 -- Add to the LARGE_PROPERTY table a new character column named OCCUPIED that is one character in length.
 -- (This column indicates whether the property is currently occupied) Set the value for the OCCUPIED column to all rows to Y
 Alter TABLE LARGE_PROPERTY ADD OCCUPIED char(1)
+UPDATE LARGE_PROPERTY SET OCCUPIED = 'Y';
 
+-- Change the OCCUPIED column in the LARGE_PROPERTY table to N for OWNER_NUM KO104
+Update LARGE_PROPERTY SET OCCUPIED = 'N' WHERE OWNER_NUM = 'KO104'
+
+-- Change the MONTHLY_RENT column in the LARGE_PROPERTY table to reject null values
+ALTER TABLE LARGE_PROPERTY MODIFY MONTHLY_RENT decimal(6, 2) NOT NULL;
+
+-- Delete the LARGE_PROPERTY table
+Drop table LARGE_PROPERTY;
 

@@ -62,4 +62,55 @@ GROUP BY INVOICES.INVOICE_NUM;
 SELECT INVOICE_NUM, TOTAL_AMOUNT FROM INVOICE_TOTAL
 WHERE TOTAL_AMOUNT > 250;
 
+-- Repeat the previous query without using the INVOICE_TOTAL VIEW
+SELECT INVOICES.INVOICE_NUM, SUM(INVOICE_LINE.QUANTITY * INVOICE_LINE.QUOTED_PRICE) AS TOTAL_AMOUNT FROM INVOICE_LINE
+JOIN INVOICES ON INVOICE_LINE.INVOICE_NUM = INVOICES.INVOICE_NUM
+GROUP BY INVOICES.INVOICE_NUM having TOTAL_AMOUNT > 250;
 
+-- List all the tables contained within the system catalog, but only display the first 10 records with a TABLE_TYPE of SYSTEM VIEW
+SELECT * FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'SYSTEM VIEW'
+LIMIT 10;
+
+-- List all the columns contained within the system catalog, but only display the first 11 records that are in the KimTay TABLE_SCHEMA
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = 'KimTay'
+LIMIT 11;
+
+-- List all the views contained within the system catalog, but only display the first 12 records.
+-- Dont return any null values
+SELECT * FROM INFORMATION_SCHEMA.VIEWS
+LIMIT 12;
+
+
+-- Write the command to display only tables within the system catalog that are of the type BASE TABLE. Display only the following columns: TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE.
+SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'KimTay' AND TABLE_TYPE = 'BASE TABLE';
+
+-- Create an index named ITEM_INDEX1 on the ITEM_ID column in the INVOICE_LINE table.
+CREATE INDEX ITEM_INDEX1 ON INVOICE_LINE (ITEM_ID);
+
+-- Create an index named ITEM_INDEX2 on the CATEGORY column in the ITEM table.
+CREATE INDEX ITEM_INDEX2 ON ITEM (CATEGORY);
+
+-- Create an index named ITEM_INDEX3 on the CATEGORY and LOCATION columns in the ITEM table.
+CREATE INDEX ITEM_INDEX3 ON ITEM (CATEGORY, LOCATION);
+
+-- Create an index named ITEM_INDEX4 on the CATEGORY and LOCATION columns in the ITEM table. List categories in descending order.
+ALTER TABLE ITEM ADD INDEX ITEM_INDEX4 (CATEGORY DESC, LOCATION);
+
+-- Delete the index ITEM_INDEX3 from the ITEM table.
+DROP INDEX ITEM_INDEX3 ON ITEM;
+
+-- List every table that you have created thus far. Display the TABLE_SCHEMA and TABLE_NAME columns.
+SELECT TABLE_SCHEMA, TABLE_NAME FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_SCHEMA="KimTay";
+
+-- List every column in the ITEM table and its associated data type.
+SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ITEM';
+
+-- Alter the INVOICE_LINE table by adding the INVOICE_NUM column as a foreign key referencing the INVOICE_NUM column in the INVOICES table.
+ALTER TABLE INVOICE_LINE ADD CONSTRAINT INVOICE_LINE_ibfk_1 FOREIGN KEY (INVOICE_NUM) REFERENCES INVOICES (INVOICE_NUM);
+
+-- Alter the table back to its original state.
+ALTER TABLE INVOICE_LINE DROP CONSTRAINT FK_INVOICE_LINE_INVOICE_NUM;

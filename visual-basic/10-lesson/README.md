@@ -17,5 +17,12 @@ Creating a Database application
  6. On the Save the Connection String to the Application Configuration page, choose next
  7. On the Choose your Database Objects page, you'll see a message that says the database doesn't contain any object. Choose Finish
 
+## Terms
+
+- **Class**: template definition of the methods and variables in a particular kind of object
+- **Collection**: a class used to represent a set of similar data type items as a single unit
+- **Array**: a data structure, which can store a fixed-size collection of elements of the same data type
+- **Constructor**: a special method of a class or structure in oop that inits a newly created object of that type
+- **Inheritance**: Used to define a relationship between two classes. Provides code reusability.
 
 

@@ -1,4 +1,4 @@
-﻿Public Class WebForm1
+Public Class WebForm1
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -9,21 +9,69 @@
         Dim boat_1(4) As Double
         Dim boat_2(4) As Double
         Dim boat_3(4) As Double
+        Dim sum1 As Integer = 0
+        Dim valid As Boolean = False
 
-        boat_1 = {CDbl(TextBox1.Text), CDbl(TextBox2.Text), CDbl(TextBox3.Text), CDbl(TextBox4.Text)}
-        boat_2 = {CDbl(TextBox7.Text), CDbl(TextBox8.Text), CDbl(TextBox9.Text), CDbl(TextBox10.Text)}
-        boat_3 = {CDbl(TextBox13.Text), CDbl(TextBox14.Text), CDbl(TextBox15.Text), CDbl(TextBox16.Text)}
+        Dim total1 As Integer
+        Dim total2 As Integer
+        Dim total3 As Integer
+        Dim placing(3) As Integer
+
+
+        Try
+            boat_1 = {CInt(TextBox1.Text), CInt(TextBox2.Text), CInt(TextBox3.Text), CInt(TextBox4.Text)}
+            boat_2 = {CInt(TextBox7.Text), CInt(TextBox8.Text), CInt(TextBox9.Text), CInt(TextBox10.Text)}
+            boat_3 = {CInt(TextBox13.Text), CInt(TextBox14.Text), CInt(TextBox15.Text), CInt(TextBox16.Text)}
+        Catch ex As Exception
+            ClientScript.RegisterStartupScript(Page.GetType(), "myalert", "alert('Characters in the textbox must be valid to convert to integers');", True)
+        End Try
 
         input_Valid(boat_1)
         input_Valid(boat_2)
         input_Valid(boat_3)
+
+        ' Sum the arrays
+        For i = 0 To 3
+            sum1 = boat_1(i) + boat_2(i) + boat_3(i)
+            If sum1 = 6 Then
+                valid = True
+            End If
+        Next
+
+
+
+        If Not valid Then
+            ClientScript.RegisterStartupScript(Page.GetType(), "myalert", "alert('You entered in race results that are impossible');", True)
+        Else
+            total1 = boat_1(0) + boat_1(1) + boat_1(2) + boat_1(3)
+            total2 = boat_2(0) + boat_2(1) + boat_2(2) + boat_2(3)
+            total3 = boat_3(0) + boat_3(1) + boat_3(2) + boat_3(3)
+
+            TextBox5.Text = total1
+            TextBox11.Text = total2
+            TextBox17.Text = total3
+
+            If total1 < total2 And total2 < total3 Then
+                TextBox6.Text = "1st"
+                TextBox12.Text = "2nd"
+                TextBox18.Text = "3rd"
+            ElseIf total1 < total2 And total2 > total3 And total1 < total3 Then
+                TextBox6.Text = "1st"
+                TextBox12.Text = "3rd"
+                TextBox8.Text = "2nd"
+            ElseIf total1 > total2 And total2 < total3 And total Then Then
+                TextBox6.Text = "1st"
+                TextBox12.Text = "3rd"
+                TextBox8.Text = "2nd"
+            End If
+        End If
     End Sub
 
     ' Check to see if the input is valid
     Sub input_Valid(array As Array)
-        For Each x As Double In array
+        For Each x As Integer In array
             If x < 0 Or x > 3 Then
-                ClientScript.RegisterStartupScript(Page.GetType(), "myalert", "alert('It bombed');", True)
+                ClientScript.RegisterStartupScript(Page.GetType(), "myalert", "alert('Your numbers are not in the valid range (1-3)');", True)
             End If
         Next
     End Sub

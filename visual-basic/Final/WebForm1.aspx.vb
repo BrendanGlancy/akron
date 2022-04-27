@@ -59,10 +59,46 @@ Public Class WebForm1
                 TextBox6.Text = "1st"
                 TextBox12.Text = "3rd"
                 TextBox8.Text = "2nd"
-            ElseIf total1 > total2 And total2 < total3 And total Then Then
-                TextBox6.Text = "1st"
+            ElseIf total1 > total2 And total2 < total3 And total1 < total3 Then
+                TextBox6.Text = "2nd"
+                TextBox12.Text = "1st"
+                TextBox18.Text = "3rd"
+            ElseIf total1 > total2 And total2 < total3 And total1 > total3 Then
+                TextBox6.Text = "3rd"
+                TextBox12.Text = "1st"
+                TextBox18.Text = "2nd"
+            ElseIf total1 > total2 And total2 > total3 And total1 > total3 Then
+                TextBox6.Text = "3rd"
+                TextBox12.Text = "2nd"
+                TextBox18.Text = "1st"
+            ElseIf total1 < total2 And total2 > total3 And total1 > total3 Then
+                TextBox6.Text = "2nd"
                 TextBox12.Text = "3rd"
-                TextBox8.Text = "2nd"
+                TextBox18.Text = "1st"
+            ElseIf total1 = total2 And total2 = total3 Then
+                TextBox6.Text = "TIED"
+                TextBox12.Text = "TIED"
+                TextBox18.Text = "TIED"
+            ElseIf total1 = total2 And total2 > total3 Then
+                TextBox6.Text = "TIED For 2nd"
+                TextBox12.Text = "TIED For 2nd"
+                TextBox18.Text = "1st"
+            ElseIf total1 < total2 And total2 = total3 Then
+                TextBox6.Text = "1st"
+                TextBox12.Text = "TIED For 2nd"
+                TextBox18.Text = "TIED For 2nd"
+            ElseIf total1 > total2 And total2 = total3 Then
+                TextBox6.Text = "3rd"
+                TextBox12.Text = "TIED For 1st"
+                TextBox18.Text = "TIED For 1st"
+            ElseIf total1 < total2 And total2 = total3 Then
+                TextBox6.Text = "1st"
+                TextBox12.Text = "TIED For 3rd"
+                TextBox18.Text = "TIED For 3rd"
+            ElseIf total1 = total3 And total2 < total3 Then
+                TextBox6.Text = "TIED For 2nd"
+                TextBox12.Text = "1st"
+                TextBox18.Text = "TIED For 2nd"
             End If
         End If
     End Sub
@@ -77,9 +113,27 @@ Public Class WebForm1
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
+        TextBox8.Text = ""
+        TextBox9.Text = ""
+        TextBox10.Text = ""
+        TextBox11.Text = ""
+        TextBox12.Text = ""
+        TextBox13.Text = ""
+        TextBox14.Text = ""
+        TextBox15.Text = ""
+        TextBox16.Text = ""
+        TextBox17.Text = ""
+        TextBox18.Text = ""
     End Sub
 
     Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ClientScript.RegisterStartupScript(Page.GetType(), "myalert", "alert('In order to close a window with a button, the window in the web browser must of opened them. In short it is very difficult to do this as visual basic code alone cannot, and if javascirpt is used the tab must've been opened with the same script');", True)
     End Sub
 End Class

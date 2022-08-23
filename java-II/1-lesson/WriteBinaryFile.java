@@ -1,11 +1,11 @@
+import java.io.*;
+
 /*
  * Filename: WriteBinaryFile.java
  * Author:   @author Brendan Glancy
  * Date:     @date 08/23/22
  * Purpose:  Write a binary file
  */
-
-import java.io.*;
 
 
 public class WriteBinaryFile {

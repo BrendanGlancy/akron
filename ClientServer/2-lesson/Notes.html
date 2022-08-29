@@ -1,0 +1,172 @@
+<!-- Standard html boilerplate -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!--- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Notes</title>
+  </head>
+  <body>
+    <!-- example of a navbar -->
+    <!-- use bootstrap navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Notes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" a
+          ria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- example welcome page -->
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to my Example page</h1>
+      <p class="lead">This is an example of a page made with HTML for my Client Server Programming Class</p>
+      <hr class="my-4">
+      <p>The button below is an example of a link, it take you to google</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="https://www.google.com/" role="button">Google</a>
+      </p>
+    </div>
+
+    <div class="container">
+      <!-- example of different images -->
+      <!-- add bootstrap classes to the images -->
+      <h2>Images</h2>
+      <img src="https://picsum.photos/200/300" alt="random image" class="img-thumbnail">
+      <img src="https://picsum.photos/201/300" alt="random image" class="img-fluid">
+      <img src="https://picsum.photos/201/303" alt="random image" class="img-fluid">
+      <br>
+      <br>
+
+      <!-- example of a list in html -->
+      <!-- add bootstrap classes to the list -->
+      <h2>List</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+      <br>
+
+      <!-- example of a table in html -->
+      <table class="table table-striped">
+        <h1>Table heading</h1>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+        </table>
+      <br>
+
+        <!-- example of different heading and paragraph tags -->
+        <!-- add bootstrap classes to the heading and paragraph tags -->
+        <h1 class="display-4">This is a heading</h1>
+        <p class="lead">This is a paragraph, with the bootstrap class lead</p>
+        <p>This is a paragraph, normal no css classes</p>
+        <p class="text-right">This is a paragraph, with text right</p>
+        <p class="text-center">This is a paragraph, with text center</p>
+        <p class="text-justify">This is a paragraph, with text justify</p>
+      <br>
+
+        <!-- example of different buttons -->
+        <!-- add bootstrap classes to the buttons -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+      <br>
+
+        <!-- example of different forms -->
+        <!-- add bootstrap classes to the forms -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      <br>
+
+        <!-- example of definition list -->
+        <!-- add bootstrap classes to the definition list -->
+        <h2>Definition List</h2>
+        <dl class="row">
+          <dt class="col-sm-3">Description lists</dt>
+          <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+          <dt class="col-sm-3">Euismod</dt>
+          <dd class="col-sm-9">
+            <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+            <p>Donec id elit non mi porta gravida at eget metus.</p>
+          </dd>
+        </dl>
+      </div>
+  </body>
+</html>

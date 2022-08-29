@@ -110,4 +110,50 @@ The client-server model describes a specific way devices access information stor
 | 4-8 bit components (32 bits) | 8-16 bit components (128 bits) |
 | 192.0.2.146  | 2001:0db8:85a3:0000:0000:8a2e:0370:7334 |
 
+### There are many application layer protocols, A few that are useful to web developers include:
+- **HTTP** The Hypertext Transfer Protocol is used for web communication
+- **SSH** The Secure Shell Protocol allows remote command-line connections to servers
+- **FTP** The file Transfer protocol is used for transferring files between computers
+- **POP/IMAP/SMTP** Email-related protocols for transferring and storing email.
+- **DNS** The Domain Name System protocol used for resolving domain names to IP addresses.
 
+
+### Generic top-leve domain (gTLD)
+- The Domain Name System protocol used for resolving domain names to IP addresses.
+- SPONSORED. TLDs including .gov, .mil, .edu, and others. These domains can have requirements for ownership and thus new second-level domains must have permission from the sponsor before acquiring a new address.
+- NEW. Starting in June 2012, ICANN invited companies to launch new TLDs in order to provide more choice than the handful of TLD that existed to date. Since then over 1000 new TLD have been created including .art, .cash, .cool, .jobs, .tax and so on. You can now purchase domain names under these new TLD at most registrars.
+
+## Uniform Resource Locators
+
+**http://www.funwebdev.com/index.php?page=18#article**
+- http:
+  - Protocol
+- www.funwebdev.com
+    - Domain
+- index.php
+  - Path
+- ?page=17
+  - Query String
+- #article
+  - Fragment
+
+### Query string components
+
+**?username=john&password=abcdefg**
+
+| Keys    | Values    | Delimiter  |
+|---------------- | --------------- | --------------- |
+| username    | john    | ?   |
+| password |abcdefg |  &   |
+
+### Common HTTP status codes
+- 100-199
+  - Information responses
+- Success responses
+  - 200-299
+- Redirection messages
+  - 300-299
+- Client error responses
+  - 400-499
+- Server error responses
+  - 500-599

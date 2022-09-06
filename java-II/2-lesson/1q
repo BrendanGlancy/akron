@@ -1,0 +1,22 @@
+// Test class to test the Point class
+
+public class PointTest {
+    // Create two double objects to use as coordinates
+    Double dlbx = new Double(1.0);
+    Double dlby = new Double(2.0);
+
+    // Create a point object that can hold a double x and double y
+    Point<Double> dPoint = new Point<Double>(dlbx, dlby);
+
+    // Create two Integer objects to use as coordinates
+    Integer intx = new Integer(1);
+    Integer inty = new Integer(2);
+
+    // Create a point object that can hold a Integer x and Integer y
+    Point<Integer> iPoint = new Point<Integer>(intx, inty);
+
+    // Display the point objects
+    System.out.println("Here are the coordinates of dPoint: " + dPoint.getX() + ", " + dPoint.getY());
+    System.out.println("Here are the coordinates of iPoint: " + iPoint.getX() + ", " + iPoint.getY());
+
+}

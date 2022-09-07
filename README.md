@@ -17,7 +17,9 @@ This course introduces computer programming and problem-solving in a structured 
 ## Summary
 Course introduces the JAVA programming language. Programming techniques are demonstrated through the coding, testing and debugging of JAVA applications and applets.
 
+
 <h2 align="center">Client Server Programming</h2>
+<img width="1440" alt="Screen Shot 2022-09-07 at 4 42 19 PM" src="https://user-images.githubusercontent.com/61941978/188973907-837983b6-26c9-4d8d-974f-ea9f5d18a516.png">
 
 ## Summary
 Introduces student to client/server programming concepts and implementations. Includes hands-on experience to show integration of databases in client-server program development.

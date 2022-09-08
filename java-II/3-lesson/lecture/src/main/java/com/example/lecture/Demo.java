@@ -32,7 +32,7 @@ public class Demo extends Application {
         // Set the spacing between the nodes in the vertical box to 10.
         vBox.setSpacing(10);
         // Set the padding of the vertical box.
-        vBox.setPadding(new Insets(10));
+        vBox.setPadding(new Insets(50));
         // Set the alignment of the vertical box to center.
         vBox.setAlignment(Pos.CENTER);
         // Add the horizontal box to the vertical box.

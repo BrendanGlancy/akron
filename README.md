@@ -25,6 +25,7 @@ Course introduces the JAVA programming language. Programming techniques are demo
 Introduces student to client/server programming concepts and implementations. Includes hands-on experience to show integration of databases in client-server program development.
 
 <h2 align="center">Java II Programming</h2>
+<img width="1440" alt="Screen Shot 2022-09-08 at 9 19 42 AM" src="https://user-images.githubusercontent.com/61941978/189132663-968d0848-3f8c-437e-a53f-0ae4b1e40f2c.png">
 
 ## Summary
 This course covers advanced object-oriented programming concepts, GUI programming, web application programming, network and security programming, JavaBeans and explores aggregations.

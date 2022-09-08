@@ -1,3 +1,9 @@
+<!--
+Name: Brendan Glancy
+Date: 09/8/2022
+Description: Introduction to HTML, Adding semantic markup
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +13,22 @@
 <body>
    <!-- This is the header of the file, a head tag needs to be added -->
    <header>
-      <div>
-         <img src="images/share-logo.png" alt="logo"/>
-         <!-- The navigation bar needs to be added -->
-         <nav>
-            <p>
-               <a href="#description">Description</a> | <a href="#related">Related</a> | <a href="#reviews">Reviews</a>
-            </p>
-         </nav>
-      </div>
+      <img src="images/share-logo.png" alt="logo"/>
+      <!-- The navigation bar needs to be added -->
+      <nav>
+         <p>
+            <a href="#description">Description</a> | <a href="#related">Related</a> | <a href="#reviews">Reviews</a>
+         </p>
+      </nav>
    </header>
 
 
    <!-- This is the main content of the file, a main tag needs to be added -->
-   <main>
-      <!-- This is a section, the section tag needs to be added -->
-      <section>
-         <h2>Venice - Grand Canal</h2>
+   <!-- This is a section, the section tag needs to be added -->
+   <h2>Venice - Grand Canal</h2>
 
-         <div>
+   <main>
+      <section>
            <h3 id="description">Description</h3>
            <p>This view of the Grand Canal in
               <a href="https://en.wikipedia.org/wiki/Venice">Venice</a>
@@ -38,50 +41,35 @@
                  <p>Photo by Randy Connolly</p>
               </figcaption>
             </figure>
-         </div>
       </section>
 
       <section>
-         <div>
             <h3 id="related">Related Images</h3>
             <img src="images/v1.jpg" alt="More Venice" /><img src="images/v2.jpg" alt="More Venice" /><img src="images/v3.jpg" alt="More Venice" />
-         </div>
       </section>
 
 
       <!-- This is the reviews section, a section tag needs to be added -->
       <section>
-         <div>
-            <h3 id="reviews">Reviews</h3>
-            <div>
-               <!-- This is a review, an article tag needs to be added -->
-               <article>
-                  <p>By Hypatia on <time>2019-10-23</time></p>
-                  <p>I love Venice in the morning.</p>
-               </article>
-            </div>
-            <hr>
-            <div>
-               <!-- This is a review, an article tag needs to be added -->
-               <article>
-                  <p>By Curia on <time>2019-12-11</time></p>
-                  <p>I want to visit Venice!</p>
-               </article>
-            </div>
-         </div>
-
-            <p>Share Your Travels &copy; 2019</p>
-         <div>
-            <p>Copyright &copy; 2020 Share Your Travels</p>
-         </div>
+         <h3 id="reviews">Reviews</h3>
+            <!-- This is a review, an article tag needs to be added -->
+            <article>
+               <p>By Hypatia on <time>2019-10-23</time></p>
+               <p>I love Venice in the morning.</p>
+            </article>
+         <hr>
+            <!-- This is a review, an article tag needs to be added -->
+            <article>
+               <p>By Curia on <time>2019-12-11</time></p>
+               <p>I want to visit Venice!</p>
+            </article>
       </section>
    </main>
    <footer>
+         <p>Copyright &copy; 2020 Share Your Travels</p>
          <p>
             <a href="#description">Description</a> | <a href="#related">Related</a> | <a href="#reviews">Reviews</a>
          </p>
-      </div>
    </footer>
-
    </body>
 </html>

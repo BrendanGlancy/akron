@@ -15,7 +15,7 @@ body {
 header {
    margin-left: 20px;
 }
-h1 { 
+h1 {
    text-align: center;
    font-weight: 600;
    font-size: 42px;
@@ -24,3 +24,80 @@ h1 {
 
 /* add styles here */
 
+/* add 40px padding to the body */
+body {
+   padding: 40px;
+}
+
+/* set the width of the section to 910px */
+/* the section should have the box-shadow property */
+section {
+   width: 910px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   margin-bottom: 20px;
+}
+
+/* styles for the "price free" class */
+.column {
+   display: inline-block;
+   width: 300px;
+   text-align: center;
+}
+
+.price.free {
+   background-color: #5BB189;
+}
+
+/* set the background color to 2F4F4F and font color to white*/
+.featured {
+   background-color: #2F4F4F;
+   color: white;
+}
+
+.price.standard {
+   background-color: #4b0082;
+}
+
+.price.professional {
+   background-color: #EC632A;
+}
+
+
+
+/* remove the list-style-type from the ul, and make each element box-shadow */
+ul {
+   list-style-type: none;
+}
+
+/* For the list items within each column, make every second item a different color usin the nth-child pseudo selector. Use the rgba() function which will darken the underlying background color*/
+li:nth-child(2n) {
+   background-color: rgba(47, 59, 64, 0.35);
+}
+
+/*
+make the background color of links in the list items a different color
+there will be two colors one of the regular background and one for the hover color
+remove the underline from the links
+round the corners of the links
+ */
+
+section div a {
+   background-color: #3A6BA5;
+   text-decoration: none;
+   color: white;
+   border-radius: 5px;
+   width: 300px;
+}
+
+section div a:hover {
+   background-color: #2F4F4F;
+   text-decoration: none;
+   color: white;
+   border-radius: 5px;
+   width: 300px;
+}
+
+#confidence {
+   background-color: #2F4F4F;
+   width: 910px;
+}

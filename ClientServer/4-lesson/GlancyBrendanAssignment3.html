@@ -105,13 +105,23 @@
       background-color: #0000FF;
       color: #FFFFFF;
     }
+    .header {
+      background-color: #334A88;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 10px;
+    }
   </style>
 </head>
 <body>
   <form action="http://www.xyzcarrental.com" method="post">
-    <h1>XYZ Car Rental</h1>
-    <h2>Car Rental Form</h2>
     <table>
+      <!-- Table header -->
+      <tr>
+        <th class="header" colspan="2">
+          <h1>XYZ Car Rental</h1>
+        </th>
+      </tr>
       <tr>
         <td>Customer Name:</td>
         <td><input type="text" name="customerName" size="30" maxlength="30"></td>

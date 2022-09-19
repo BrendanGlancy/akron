@@ -1,0 +1,147 @@
+<!--
+* Name: Brendan Glancy
+* Date: 09/14/22
+* Assignment: Assignment 3, Exercise on Web tables and forms
+* Desc: Create a table for XYZ Car rental company. The form must use the HTTP post method to send information in a secure way
+* Must include the following:
+* Customer Name (using text input)
+* Customer Email (using text or email input)
+* Customer Phone (using text or telephone input)
+* Number of days renting car (using text input)
+* Car size (Full medium or compact/small) (using radio buttons multi-item list control)
+* A submit button (using submit button)
+* A reset button (using reset button)
+-->
+
+<!-- Boilerplate HTML -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 3</title>
+  <!-- Embedded CSS -->
+  <style>
+    body {
+      background-color: #F0F0F0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    // line up h1 border with table border
+    h1 {
+      text-align: center;
+      color: #0000FF;
+      border: 1px solid #0000FF;
+      padding: 10px;
+      margin: 0px;
+    }
+    h2 {
+      text-align: center;
+      color: #0000FF;
+      padding: 10px;
+      margin: 0px;
+    }
+    form {
+      text-align: center;
+    }
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    th {
+      border: 1px solid black;
+      background-color: #0000FF;
+      color: #FFFFFF;
+    }
+    td {
+      border: 1px solid black;
+      text-align: center;
+    }
+    .center {
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 200px;
+    }
+    input[type="email"] {
+      width: 200px;
+    }
+    input[type="tel"] {
+      width: 200px;
+    }
+    input[type="submit"] {
+      background-color: #0000FF;
+      color: #FFFFFF;
+    }
+    input[type="reset"] {
+      background-color: #0000FF;
+      color: #FFFFFF;
+    }
+    // Display the radio buttons in a row
+    input[type="radio"] {
+      margin-left: 10px;
+      margin-right: 10px;
+      display: inline;
+    }
+    input[type="radio"]:first-child {
+      margin-left: 0px;
+    }
+    input[type="radio"]:last-child {
+      margin-right: 0px;
+    }
+    input[type="submit"] {
+      width: 100px;
+      border-radius: 5px;
+    }
+    input[type="reset"] {
+      width: 100px;
+      border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+      background-color: #0000FF;
+      color: #FFFFFF;
+    }
+    input[type="reset"]:hover {
+      background-color: #0000FF;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <form action="http://www.xyzcarrental.com" method="post">
+    <h1>XYZ Car Rental</h1>
+    <h2>Car Rental Form</h2>
+    <table>
+      <tr>
+        <td>Customer Name:</td>
+        <td><input type="text" name="customerName" size="30" maxlength="30"></td>
+      </tr>
+      <tr>
+        <td>Customer Email:</td>
+        <td><input type="email" name="customerEmail" size="30" maxlength="30"></td>
+      </tr>
+      <tr>
+        <td>Customer Phone:</td>
+        <td><input type="tel" name="customerPhone" size="30" maxlength="30"></td>
+      </tr>
+      <tr>
+        <td>Number of days renting car:</td>
+        <td><input type="text" name="numberOfDays" size="30" maxlength="30"></td>
+      </tr>
+      <tr>
+        <td>Car size:</td>
+        <td>
+          <input type="radio" name="carSize" value="Full">Full<br>
+          <input type="radio" name="carSize" value="Medium">Medium<br>
+          <input type="radio" name="carSize" value="Compact/Small">Compact/Small<br>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Submit"></td>
+        <td><input type="reset" value="Reset"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
+

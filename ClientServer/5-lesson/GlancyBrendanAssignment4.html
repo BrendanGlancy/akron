@@ -1,0 +1,78 @@
+<!--
+* Brendan Glancy
+* Date: 9/26/22
+* Description: Assignment 4:
+Using embedded JavaScript in HTML5, prompt users to enter the name of a patient in a health center, age of the patient, number of days to be admitted at the center, and the cost per day of admittance.
+
+Calculate the total cost of service rendered to the patient based on the information above.  The total cost will be calculated as: (days * cost). There are discounts to the cost per day and that must determined using a function to calculate the return the discounted cost per day.
+
+The discount function must take two arguments for the patient age and cost per day of admittance before returning the calculated discounted cost per day from the function.
+•	If the patient is over the age of 50,
+    a 15% discount should be applied to the cost per day.
+•	If the patient is between the ages of 31 and 50,
+    the discount must be 10%.
+•	Patients between the ages of 21 and 30 should also get a 5% discount
+•	All patients below the age of 21 get a 20% discount on the cost per day.
+
+The following data should also be displayed: patient name, patient age, cost per day, discounted total cost.
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 4</title>
+        <script>
+            function discount(age, cost) {
+                if (age > 50) {
+                    return cost * .85;
+                } else if (age > 30) {
+                    return cost * .90;
+                } else if (age > 20) {
+                    return cost * .95;
+                } else {
+                    return cost * .80;
+                }
+            }
+        </script>
+        <!-- Use bootstrap for styling -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Assignment 4</h1>
+        <script>
+            // Prompt the user of the name of the patient
+            var name = prompt("Enter the name of the patient: ");
+            // Prompt the user for the age of the patient
+            var age = prompt("Enter the age of the patient: ");
+            // Prompt the user for the number of days to be admitted
+            var days = prompt("Enter the number of days to be admitted: ");
+            // Prompt the user for the cost per day of admittance
+            var cost = prompt("Enter the cost per day of admittance: ");
+            // Calculate the total cost of service rendered to the patient
+            var totalDiscount = discount(age, cost) * days;
+            // Display the total cost without the discount
+            var total = cost * days;
+        </script>
+        <!-- put the name of the patient, age, cost per day, and discounted total cost in a table -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Patient Age</th>
+                    <th>Cost per Day</th>
+                    <th>Discounted Total Cost</th>
+                    <!-- this makes it easier to see if the logic above is correct -->
+                    <th>Total Cost (No Discount)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><script>document.write(name);</script></td>
+                    <td><script>document.write(age);</script></td>
+                    <td><script>document.write(cost);</script></td>
+                    <td><script>document.write(totalDiscount);</script></td>
+                    <td><script>document.write(total);</script></td>
+                </tr>
+            </tbody>
+    </body>
+</html>

@@ -2,19 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- link tag to bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <title>Lecture</title>
   </head>
-  <body>
+  <!-- style the body with bootstrap -->
+  <body class="container">
     <h1>Lecture</h1>
     <p>Here is the lecture</p>
 
     <!-- Diplay an alert using JavaScript -->
-    <script>
-      alert("Hello World");
-      document.write("Using javascript to write your name to the page: \n");
-      document.write(prompt("What is your name?"));
-    </script>
+    <div id="alert">
+      <script>
+        alert("Hello World");
+        document.write("Using javascript to write your name to the page: \n");
+        document.write(prompt("What is your name?"));
 
+        // make a var to hold the date
+        var date = new Date();
+
+        // If the date is before 12:00pm, display "Good Morning"
+        if (date.getHours() < 12) {
+          document.write("<br />");
+          document.write("Good Morning");
+        }
+
+        // If the date is after 12:00pm, display "Good Afternoon"
+        if (date.getHours() > 12) {
+          document.write("<br />");
+          document.write("Good Afternoon");
+        }
+
+        // Allow the user to choose from 4 different colors
+        var color = prompt("Choose a color: red, blue, green, or yellow");
+
+        // If the user chooses red, change the background color to red
+        if (color == "red") {
+          document.body.style.backgroundColor = "red";
+        }
+
+        // If the user chooses blue, change the background color to blue
+        if (color == "blue") {
+          document.body.style.backgroundColor = "blue";
+        }
+
+        // If the user chooses green, change the background color to green
+        if (color == "green") {
+          document.body.style.backgroundColor = "green";
+        }
+
+        // If the user chooses yellow, change the background color to yellow
+        if (color == "yellow") {
+          document.body.style.backgroundColor = "yellow";
+        }
+
+        // If the user chooses anything else, change the background color to black
+        if (color != "red" && color != "blue" && color != "green" && color != "yellow") {
+          document.body.style.backgroundColor = "black";
+        }
+
+        // After 30 seconds change the background color back to normal
+        setTimeout(function() {
+          document.body.style.backgroundColor = "white";
+        }, 30000);
+
+        // Create a function that will display the current date and time
+        function displayDate() {
+          document.write("<br />");
+          document.write("The current date and time is: ");
+          document.write(date.toString());
+        }
+
+        // Call the function
+        displayDate();
+
+        // Conditional operator example
+        var age = prompt("What is your age?");
+        var canVote = (age < 18) ? "Too young" : "Old enough";
+      </script>
+    </div>
 
   </body>
 </html>

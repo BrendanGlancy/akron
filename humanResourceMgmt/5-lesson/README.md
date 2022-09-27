@@ -23,3 +23,16 @@ and those external to the firm (external candidates), each of which are recruite
 
 **Business Clusters** Similar companies being located within close proximaty to each other (oil and gas companies in Houston or Silicon valley)
 
+### Sources of External Recruitment
+- Walk-Ins
+- Job Fairs
+- Educational Institutions
+- Unions
+- Social Networking
+- Employment Agencies
+- Job Boards
+- Advertisements
+- Employee Referrals
+- Search Firms
+
+

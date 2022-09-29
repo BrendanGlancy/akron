@@ -105,6 +105,8 @@ The client-server model describes a specific way devices access information stor
 - Link Layer (Mac)
     - Responsible for physical transmission of raw bits
 
+![FG_02_001](https://user-images.githubusercontent.com/61941978/193042617-249af617-ee5d-442f-831f-6357bdaf1f3f.jpg)
+
 | IPv4  | IPv6 |
 |--------------- | --------------- |
 | 4-8 bit components (32 bits) | 8-16 bit components (128 bits) |
@@ -138,6 +140,8 @@ The client-server model describes a specific way devices access information stor
   - Fragment
 
 ### Query string components
+
+![FG_02_011](https://user-images.githubusercontent.com/61941978/193042933-3fa1c90f-509d-48ea-9581-4e05ec3a070e.jpg)
 
 **?username=john&password=abcdefg**
 

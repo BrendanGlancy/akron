@@ -109,4 +109,26 @@ arr2 = [[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]]
 - ...nameOfArray
     - Insert an array into an array
 
+### Objects and OOP in JavaScript
 
+Four main concepts of OOP:
+- Encapsulation
+- Data Hiding
+- Inheritance
+- Polymorphism
+
+Creating objects in JavaScript
+
+```
+// You can create object in JS is a few differnt ways to
+
+const Dog = { bark: true }
+
+const Pug = Object.create(Dog)
+
+Pug.barks //> true
+
+let Cat = new Object()
+Cat.bark = false
+
+```

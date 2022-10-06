@@ -21,7 +21,7 @@ The following data should also be displayed: patient name, patient age, cost per
     <head>
         <meta charset="UTF-8">
         <title>Assignment 4</title>
-        <script>
+        <script type="text/javascript">
             function discount(age, cost) {
                 if (age > 50) {
                     return cost * .85;
@@ -42,14 +42,19 @@ The following data should also be displayed: patient name, patient age, cost per
         <script>
             // Prompt the user of the name of the patient
             var name = prompt("Enter the name of the patient: ");
+
             // Prompt the user for the age of the patient
             var age = prompt("Enter the age of the patient: ");
+
             // Prompt the user for the number of days to be admitted
             var days = prompt("Enter the number of days to be admitted: ");
+
             // Prompt the user for the cost per day of admittance
             var cost = prompt("Enter the cost per day of admittance: ");
+
             // Calculate the total cost of service rendered to the patient
             var totalDiscount = discount(age, cost) * days;
+
             // Display the total cost without the discount
             var total = cost * days;
         </script>

@@ -1,4 +1,4 @@
-/* Copyright (C) 1991-2021 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2022 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -410,7 +410,9 @@
 #if defined _FORTIFY_SOURCE && _FORTIFY_SOURCE > 0
 # if !defined __OPTIMIZE__ || __OPTIMIZE__ <= 0
 # elif !__GNUC_PREREQ (4, 1)
-# elif _FORTIFY_SOURCE > 2 && __glibc_clang_prereq (9, 0)
+# elif _FORTIFY_SOURCE > 2 && (__glibc_clang_prereq (9, 0)		      \
+			       || __GNUC_PREREQ (12, 0))
+
 #  if _FORTIFY_SOURCE > 3
 #  endif
 #  define __USE_FORTIFY_LEVEL 3
@@ -473,7 +475,7 @@
 /* Major and minor version number of the GNU C library package.  Use
    these macros to test for features in specific releases.  */
 #define	__GLIBC__	2
-#define	__GLIBC_MINOR__	34
+#define	__GLIBC_MINOR__	35
 
 #define __GLIBC_PREREQ(maj, min) \
 	((__GLIBC__ << 16) + __GLIBC_MINOR__ >= ((maj) << 16) + (min))

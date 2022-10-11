@@ -3,6 +3,7 @@
 In C++ Collections are know as templates
 
 ## Java Collections Hierarchy
+![java-collection-hierarchy](https://user-images.githubusercontent.com/61941978/195114400-945500da-83f4-4bb3-9297-c208060e9528.png)
 
 ### Types of Colletions in Java:
 - List
@@ -22,9 +23,8 @@ Queue - First in First Out FIFO
 
 The three types of collection we will talk about in JavaII
 
-**Set, List, and Map**
 
-| Column1    | Column2    | Column3    |
+| Set    | List    | Map    |
 |---------------- | --------------- | --------------- |
 | HashSet    | ArrayList    | HashMap    |
 | LinkedHashSet    | LinkedList    | LinkedHashMap    |
@@ -32,5 +32,6 @@ The three types of collection we will talk about in JavaII
 
 
 ## Mechanism of using an iterator
+![java-iterator](https://user-images.githubusercontent.com/61941978/195114467-039c1a68-a2da-4191-96e2-26fb15f78aed.png)
 
 

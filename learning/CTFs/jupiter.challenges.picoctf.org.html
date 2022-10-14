@@ -1,0 +1,46 @@
+
+<!-- saved from url=(0044)http://jupiter.challenges.picoctf.org:58112/ -->
+<html><script>(function(){window['_docs_annotate_canvas_by_ext']='kohfgcgbkjodfcfkcackpagifgbcmimk';})();</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+		<script src="./jupiter.challenges.picoctf.org_files/jquery-3.3.1.min.js"></script>
+		<script>
+			var bytes = [];
+			$.get("bytes", function(resp) {
+				bytes = Array.from(resp.split(" "), x => Number(x));
+			});
+
+			function assemble_png(u_in){
+				var LEN = 16;
+				var key = "0000000000000000";
+				var shifter;
+				if(u_in.length == LEN){
+					key = u_in;
+				}
+				var result = [];
+				for(var i = 0; i < LEN; i++){
+					shifter = key.charCodeAt(i) - 48;
+					for(var j = 0; j < (bytes.length / LEN); j ++){
+						result[(j * LEN) + i] = bytes[(((j + shifter) * LEN) % bytes.length) + i]
+					}
+				}
+				while(result[result.length-1] == 0){
+					result = result.slice(0,result.length-1);
+				}
+				document.getElementById("Area").src = "data:image/png;base64," + btoa(String.fromCharCode.apply(null, new Uint8Array(result)));
+				return false;
+			}
+		</script>
+	</head>
+	<body data-new-gr-c-s-check-loaded="14.1083.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+
+		<center>
+			<form action="http://jupiter.challenges.picoctf.org:58112/#" onsubmit="assemble_png(document.getElementById(&#39;user_in&#39;).value)">
+				<input type="text" id="user_in">
+				<input type="submit" value="Submit">
+			</form>
+			<img id="Area" src="data:image/png;base64,gPy2c7HTjvy9+IJdmgBEWoP/zKrvpxIz6SsAGtJIX3jjB8N+z/5zNY3ZAAt2wG4AAKr4SWdOCq7Q6Zy7uUHkAImA5EefCm8KHWBH7o1WW1IA1iVyBwDucoUAjAAmJJBspI0/AkVJD0FEAPkNAEBv3DAAN/8NDEQpQni8AEkbrUi9UACUAEAaewAgLO0A/CQTNABO42JYAbkBgLaxmyyEokQAAe+v+ERbVBLf329TGrzxDADFOVl0YN9goS2Ff30/UIFFO/GdAGk5Fx7xPuWAWyeYfZLYWwXZEDCfBMYXbLLHDgavM5rjLTiM3QDm5GPvhMaFSPNdA1Ze9pyZewHMyOmPf0CkyyQYAql5ep8oBBlAAPEJXtz+3XoIFuOM3fj6jUJOfr5J+GkFDhoTd99npUWxRD3D73PHfj0p8q9V0wsF+l1Pwk713/+9AIAJlrIAcPfSFSQAAvyQO2WkuV7oO5b/uwHGq7bkk0mVL1yFk/6t8if+39bEh/giks4/f38Wv1xYRReOp+34F9eUpjvz+K3Sqf7Rna7AIOQpwPUvz3iLHOD5HTfdbeIVgUspccCTLZA35H76f8W4m/sT3Avxq+XVT4ddMV6QJvp5cTpyTW+dkvKv7Lk8Q61n6eo8+Bvyc9/P2stzL/zxmBilc34wTGh+KuHi0zn87xXDzWv/24SUUas1T1sbrut81Ufd89Qm4Hw2Tfj8WKMsv20/vef7vfKN9vkPAALmB/ShHyq22w/dpPzPNV9jPL7oTv/FEKn8ZKQTniC9foyRnnT1RF6Vb/xKh71TSkfaY9zQVxjkC2/1AQBigy4WXkf0FpMVU5v881oYO0n333/yt/t8HPXex/h6zOZP25ML4crvGIQ3Wd2Pl4k/lk/TCBAEPD9jQQAC">
+		</center>
+
+	
+
+
+<iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;" src="./jupiter.challenges.picoctf.org_files/saved_resource.html"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

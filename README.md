@@ -19,7 +19,8 @@ Course introduces the JAVA programming language. Programming techniques are demo
 
 
 <h2 align="center">Client Server Programming</h2>
-<img width="1440" alt="Screen Shot 2022-09-07 at 4 42 19 PM" src="https://user-images.githubusercontent.com/61941978/188973907-837983b6-26c9-4d8d-974f-ea9f5d18a516.png">
+<img width="1440" alt="Screen Shot 2022-10-17 at 4 02 04 PM" src="https://user-images.githubusercontent.com/61941978/196272053-0104fb7f-5862-4c28-a338-e26bd5aec45e.png">
+
 
 ## Summary
 Introduces student to client/server programming concepts and implementations. Includes hands-on experience to show integration of databases in client-server program development.

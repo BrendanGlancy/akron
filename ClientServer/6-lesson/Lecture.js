@@ -1,4 +1,4 @@
-// Diplay a countdown timer in the browser window
+// Display a countdown timer in the browser window
 
 function displayTime() {
   var now = new Date();
@@ -67,4 +67,3 @@ function displayTime() {
 // Call the function to display the time
 // when the page is loaded
 window.onload = displayTime;
-

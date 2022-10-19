@@ -140,12 +140,15 @@ class Model extends Car {
  *
  */
 
-// Create an asynchronous function that will call an the github api
-// This function will return a promise
+/**
+  * @async - This function will run in the background.
+  * @param {number} ms - The number of milliseconds to wait.
+  * @returns {Promise} - A promise that will resolve after the specified number of milliseconds.
+  */
 
-async function getRepos() {
-  const response = await fetch("https://api.github.com/users/brendanglancy/repos");
-  const data = await response.json();
-  console.log(data);
+async function wait(ms) {
+  return new Promise(resolve => {
+    setTimeout(resolve, ms);
+  });
 }
-
+wait(1000).then(() => console.log("Hello World!"));

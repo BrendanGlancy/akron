@@ -1,7 +1,7 @@
 
 /**
  * Filename: Lab01.java
- * 
+ *
  * @Author: Brendan Glancy
  * @Date: 10/18/2022
  * @Description: Chapter 12 Programming Challenge 7. Travel Expenses

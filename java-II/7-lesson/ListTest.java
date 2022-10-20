@@ -13,16 +13,16 @@ public class ListTest {
     /**
      * @type LinkedList
      * @description A linkedlist is a collection of nodes each at a different
-     *             memory location. Each node contains a reference to the next
-     *             node in the list. The first node is called the head and the
-     *             last node is called the tail. The tail node points to null.
+     *              memory location. Each node contains a reference to the next
+     *              node in the list. The first node is called the head and the
+     *              last node is called the tail. The tail node points to null.
      *
-     *             The linkedlist is a dynamic data structure. It can grow and
-     *             shrink as needed. The linkedlist is not synchronized. It is
-     *             not thread safe.
+     *              The linkedlist is a dynamic data structure. It can grow and
+     *              shrink as needed. The linkedlist is not synchronized. It is
+     *              not thread safe.
      *
-     *             The linkedlist is a good choice when you need to add or
-     *             remove elements from the beginning or middle of the list.
+     *              The linkedlist is a good choice when you need to add or
+     *              remove elements from the beginning or middle of the list.
      */
     List<String> listOne = new LinkedList<String>();
     List<String> listTwo = new LinkedList<String>();
@@ -117,7 +117,8 @@ public class ListTest {
   private static void removeItems(List<String> list, int start, int end) {
     /**
      * @method subList
-     * @purpose returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+     * @purpose returns a view of the portion of this list between the specified
+     *          fromIndex, inclusive, and toIndex, exclusive.
      */
     list.subList(start, end).clear();
     printList(list);
@@ -135,12 +136,12 @@ public class ListTest {
      * @method hasPrevious
      * @returns boolean
      * @purpose returns true if the list iterator has more elements when
-     *         traversing the list in the reverse direction
+     *          traversing the list in the reverse direction
      *
      * @method previous
      * @returns String
      * @purpose returns the previous element in the list and moves the cursor
-     *        position backwards
+     *          position backwards
      */
     while (iterator.hasPrevious())
       System.out.printf("%s ", iterator.previous());

@@ -1,3 +1,4 @@
+
 /**
  * Description: To demonstrate the use of an iterator
  */
@@ -6,36 +7,54 @@ import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
-
 public class IteratorWithArrayList {
-  public static void main(String[] args){
-    // Array of names
-    String[] names = {"John", "Mary", "Peter", "Susan", "Kim", "Jen", "George", "Alan", "Stacy", "Michelle"};
+  public static void main(String[] args) {
+    /**
+     * @param names
+     * @type String[]
+     *
+     * @param list
+     * @type ArrayList<String>
+     */
 
-    // Create an ArrayList
+    String[] names = { "John", "Mary", "Peter", "Susan", "Kim", "Jen", "George", "Alan", "Stacy", "Michelle" };
     ArrayList<String> list = new ArrayList<>();
 
-    // Add elements to the list using a foreach loop
+    /**
+     * The for-each loop is used to iterate through the elements of an
+     * ArrayList. The syntax is:
+     *
+     * for (type var : collection) {
+     * // statements
+     * }
+     */
     for (String name : names) {
       list.add(name);
     }
 
     /**
-     * Define an action for the elements in the list
-     * This action will print the elements in the list
-     * The action is defined using a lambda expression
+     * @param action
+     * @type Consumer<String>
+     * @function forEach lambda expression
      */
     Consumer<String> action = x -> System.out.println("%s%n", x);
 
-    // Get the iterator for the list
-    // The iterator is used to traverse the list
+    /*
+     * @param iterator
+     *
+     * @type Iterator<String>
+     */
     Iterator<String> iterator = list.iterator();
 
     /**
-     * Traverse the list using the iterator
-     * The hasNext() method returns true if there is a next element
-     * The next() method returns the next element
-     * The forEachRemaining() method traverses the remaining elements
+     * @param hasNext
+     * @type boolean
+     * @function hasNext() method
+     *
+     * @param name
+     * @type String
+     *
+     * @condition if hasNext() is true, then print the next element
      */
     while (iterator.hasNext()) {
       String name = iterator.next();
@@ -44,6 +63,5 @@ public class IteratorWithArrayList {
         iterator.forEachRemaining(action);
       }
     }
-
   }
 }

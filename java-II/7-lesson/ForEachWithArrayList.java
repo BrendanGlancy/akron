@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class ForEachWithArrayList {
   public static void main(String[] args) {
     // Array of Names
-    String[] names = {"John", "Mary", "Peter", "Susan", "Kim", "Jen", "George", "Alan", "Stacy", "Michelle"};
+    String[] names = { "John", "Mary", "Peter", "Susan", "Kim", "Jen", "George", "Alan", "Stacy", "Michelle" };
 
     // Create an ArrayList of Strings
     ArrayList<String> namesArrayList = new ArrayList<String>();
@@ -17,8 +17,8 @@ public class ForEachWithArrayList {
      * ArrayList. The syntax is:
      *
      * for (type var : collection) {
-     *  // statements
-     *  }
+     * // statements
+     * }
      */
     for (String name : names) {
       namesArrayList.add(name);
@@ -34,7 +34,6 @@ public class ForEachWithArrayList {
      */
 
     namesArrayList.forEach(name -> {
-      // namesArrayList.indexOf(name) returns the index of the element
       System.out.println(namesArrayList.indexOf(name) + ": " + name);
     });
   }

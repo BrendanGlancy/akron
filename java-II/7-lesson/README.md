@@ -108,12 +108,36 @@ Tuesday, Oct. 25, 2022 in POL 222 during class time. It will cover the following
 ## Chapter 14, JavaFX, Graphics, Effects, and Media
 
 - Drawing Shapes
+  - Example import
+  ```java
+  import javafx.scene.shape.Circle
+  ```
+  - Basically you import the shape and then define its dimesions
 - Animations
+  ```java
+  import javafx.animation.TranslateTransition;
+  ```
+  - TranslateTransition takes a duration argument and shape
+  - getStartFromX and getStartFromY take a starting position
+  - setToX and setToY sets the ending position
 - Effect
 - Playing Sound Files
+  - For media files including playing a video
+  ```java
+  import javafx.scene.media.Media;
+  import javafx.scene.media.MediaPlayer;
+  ```
 - Playing Videos
+  - Methods for both:
+    - play()
+    - pause()
+    - stop()
 - Handling Key Events
 - Handling Mouse Events
+
+  - Mouse and Key events in JavaFX are handled in similar ways
+  - EventHandler<MouseEvent>
+  - EventHandler<KeyEvent>
 
   ```java
     // example of an event handling a button click

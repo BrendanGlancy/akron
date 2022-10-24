@@ -70,7 +70,7 @@ public class ListTest {
   /**
    * @method printList
    * @param list
-   * @returns void
+   * @return void
    */
   private static void printList(List<String> list) {
     for (String color : list)
@@ -80,23 +80,23 @@ public class ListTest {
   }
 
   /**
-   * @method convertToUppercaseString
+   * @method {convertToUppercaseString}
    * @param list
-   * @returns void
+   * @return void
    */
   private static void convertToUppercaseString(List<String> list) {
     ListIterator<String> iterator = list.listIterator();
 
     /**
      * @method hasNext
-     * @returns boolean
+     * @return boolean
      *
      * @method next
-     * @returns String
+     * @return String
      *
      * @method set
      * @param String
-     * @returns void
+     * @return void
      */
     while (iterator.hasNext()) {
       String color = iterator.next();

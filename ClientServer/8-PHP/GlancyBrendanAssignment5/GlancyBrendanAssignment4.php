@@ -24,11 +24,11 @@ $carType = $_POST['carSize'];
 $numberOfDays = $_POST['numberOfDays'];
 
 if ($carType == "Full") {
-    $costPerDay = 54.99;
+    $costPerDay = 39.99;
 } else if ($carType == "Medium") {
-    $costPerDay = 45.99;
+    $costPerDay = 30.99;
 } else if ($carType == "Small") {
-    $costPerDay = 36.99;
+    $costPerDay = 25.99;
 }
 
 $totalCost = $numberOfDays * $costPerDay;

@@ -33,9 +33,6 @@ if ($carType == "Full") {
 
 $totalCost = $numberOfDays * $costPerDay;
 
-// Create a new database 
-$database = new SQLite3('CarRental.db');
-
 // Create a mysql database connection user: root, password: password, database: GlancyBrendanAssignment5
 $conn = new mysqli('localhost', 'root', 'password', 'CarRental');
 // Check to see if the database exists

@@ -3,7 +3,7 @@
 ```js
 // init
 let count = 0;
-// condition testing 
+// condition testing
 while (count < 10) {
   // iteration
   count++;
@@ -11,19 +11,22 @@ while (count < 10) {
 ```
 
 built in functions in javascript arrays:
+
 - push()
 
 ---
 
 Core principals OOP:
+
 - abstraction
-- inheritance 
+- inheritance
 - encapsulation
-- data hiding 
+- data hiding
 
 ---
 
 Different Scopes JS:
+
 - block scope
 - module scope
 - global scope
@@ -32,11 +35,13 @@ Different Scopes JS:
 ---
 
 Dom Selection Methods:
+
 - getElementById
 - querySelector() references css
 - getElementByClassName
 
 JavaScript Events:
+
 - Mouse Events
   - Click
   - dblclick
@@ -46,8 +51,8 @@ JavaScript Events:
 - Keyboard Events
   - Add examples
 
-
 Common Server Side Technologies:
+
 - ASP
 - ASP.NET
 - Node.js
@@ -57,13 +62,10 @@ Common Server Side Technologies:
 - PHP
 
 Primative Datatypes PHP;
+
 - Boolean
 - Float
 - Integer
 - String
-- Others (Not Primative) 
+- Others (Not Primative)
   - Array
-
-
-
-

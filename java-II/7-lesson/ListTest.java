@@ -27,13 +27,6 @@ public class ListTest {
     List<String> listOne = new LinkedList<String>();
     List<String> listTwo = new LinkedList<String>();
 
-    /**
-     * @method add
-     * @purpose demonstrate adding items to a LinkedList
-     *
-     * @method addAll
-     * @purpose demonstrate adding all items from one collection to another
-     */
     for (String color : colors)
       listOne.add(color);
 
@@ -43,18 +36,6 @@ public class ListTest {
     listOne.addAll(listTwo);
     listTwo = null;
 
-    /**
-     * @purpose Output
-     *
-     * @function printList
-     * @param list
-     *
-     * @function removeItems
-     * @param list index start, index end
-     *
-     * @function reverseList
-     * @param list
-     */
     System.out.println("ListOne before converting to uppercase: ");
     printList(listOne);
 

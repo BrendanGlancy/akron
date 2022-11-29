@@ -25,41 +25,36 @@ plainTextOne = "reject virus now"
 plainTextTwo = "process it"
 plainTextThree = "defragment the hard drive"
 
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 keyOne = 2
 keyTwo = 3
 keyThree = 4
 
-def encryptOne(plainTextOne, keyOne):
-    """
-    the cipher is = plaintext - key^2
-    using 
-    """
-    
+# encrypt the plain text using the ciphers
+# 1. Plaintext – Key^2
+# 2. Plaintext +  (Key * Key^2)
+# 3. Plaintext – Key^2
+
+def encrypt(plainText, key, cipher):
+    cipherText = ""
+    for letter in plainText:
+        if letter == " ":
+            cipherText += " "
+        else:
+            letterIndex = alphabet.index(letter)
+            cipherText += cipher(letterIndex, key)
     return cipherText
 
-def encryptTwo(plainTextTwo, keyTwo):
-    """
-    the cipher is = plaintext + (key * key^2)
-    """
+def cipherOne(letterIndex, key):
+    return alphabet[(letterIndex - key**2) % len(alphabet)]
 
-    return cipherText
+def cipherTwo(letterIndex, key):
+    return alphabet[(letterIndex + key * key**2) % len(alphabet)]
 
-def encryptThree(plainTextThree, keyThree):
-    """
-    the cipher is = plaintext - key^2
-    """
+def cipherThree(letterIndex, key):
+    return alphabet[(letterIndex - key**2) % len(alphabet)]
 
-    return cipherText
-
-def main():
-    encryptedOne = encryptOne(plainTextOne, 2)
-    encryptedTwo = encryptTwo(plainTextTwo, 3)
-    encryptedThree = encryptThree(plainTextThree, 4)
-    print("Encrypted One: ", encryptedOne)
-    print("Encrypted Two: ", encryptedTwo)
-    print("Encrypted Three: ", encryptedThree)
-
-if __name__ == "__main__":
-    main()
+print("Ciphertext 1: ", encrypt(plainTextOne, keyOne, cipherOne))
+print("Ciphertext 2: ", encrypt(plainTextTwo, keyTwo, cipherTwo))
+print("Ciphertext 3: ", encrypt(plainTextThree, keyThree, cipherThree))

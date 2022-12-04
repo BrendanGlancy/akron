@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="CoffeeDB" uuid="fbb48328-801a-4132-99cc-bef60801a1d4">
+    <data-source source="LOCAL" name="CoffeeDB" uuid="95837439-b22d-41ec-ab9a-68904f7f6d44">
       <driver-ref>derby.embedded</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>

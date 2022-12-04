@@ -1,5 +1,3 @@
-package JavaIIDBs;
-
 import java.sql.*;   // Needed for JDBC classes
 
 /**
@@ -51,7 +49,7 @@ public class CreateCoffeeDB
 		try
 		{
 			// Get a Statement object.
-			Statement stmt  = conn.createStatement();;
+			Statement stmt  = conn.createStatement();
 
 			try
 			{

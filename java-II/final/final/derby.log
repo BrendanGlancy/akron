@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Dec 04 20:57:49 UTC 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0184-deee-45af-00000730da68 
+on database directory /home/brendan/Desktop/github/akron/java-II/final/final/CoffeeDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@67424e82 
+Loaded from file:/home/brendan/.var/app/com.jetbrains.IntelliJ-IDEA-Ultimate/config/JetBrains/IntelliJIdea2022.3/jdbc-drivers/Apache%20Derby/10.15.2.0/derby-10.15.2.0.jar
+java.vendor=JetBrains s.r.o.
+java.runtime.version=17.0.5+1-b653.14
+user.dir=/home/brendan/Desktop/github/akron/java-II/final/final
+os.name=Linux
+os.arch=amd64
+os.version=5.15.0-56-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

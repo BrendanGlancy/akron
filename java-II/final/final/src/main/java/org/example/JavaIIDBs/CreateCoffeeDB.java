@@ -1,3 +1,7 @@
+package org.example.JavaIIDBs;
+
+import org.apache.derby.jdbc.EmbeddedDriver;
+
 import java.sql.*;   // Needed for JDBC classes
 
 /**
@@ -13,6 +17,7 @@ public class CreateCoffeeDB
       
       try
       {
+		  // Drivermanager
          // Create a connection to the database.
          Connection conn =
                 DriverManager.getConnection(DB_URL);

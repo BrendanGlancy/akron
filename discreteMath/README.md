@@ -193,11 +193,29 @@ Z = {0, 1, 2, 3, ...}
 ```
 
 $$
-\begin{center}
-\begin{tikzpicture}
-\draw [-latex] (-1,0) -- (3,0);
-\foreach \x in {-3,-2,-1,0,1,2,3}
-\draw (\x,.1) -- (\x,-.1) node[below] {\x};
-\end{tikzpicture}
-\end{center}
+\documentclass[border=2pt]{standalone}
+\usepackage{pgfplots}
+\begin{document}
+    \begin{tikzpicture}
+        \begin{axis}[
+            % center the x axis
+            axis x line=middle,
+            % we don't need a y axis line ...
+            axis y line=none,
+            % ... and thus there is no need for much `height' of the axis
+            height=50pt,
+            % but `height' also changes `width' which is restored here
+            width=\axisdefaultwidth,
+            xmin=-3,
+            xmax=3,
+        ]
+            \addplot coordinates {
+                (0.5,0) (0.7,0) (0.9,0)
+            };
+        \end{axis}
+    \end{tikzpicture}
+\end{document}
+0
+
+
 $$

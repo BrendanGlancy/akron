@@ -15,6 +15,7 @@ Table of Contents:
    - [Universal Conditional Statements](#universal-conditional-statements)
    - [Universal Existential Statements](#universal-existential-statements)
    - [Existential Universal Statements](#existential-universal-statements)
+4. [Lesson 1.2](#the-language-of-sets-1.2)
 
 ## Introduction
 
@@ -130,3 +131,73 @@ Second Part: Universal
 
 - There is a real # "a" with the property that for every real # b, `ab = 0`
   (Most Formal)
+
+---
+
+# The Language of Sets 1.2
+
+A set can be intuitively thought of as a **_collection of elements_**
+
+**_Notation_**: If S is a set, then the notation **_X$\epsilon$S_** means that X is an element of S
+
+The notation **_X$\not\epsilon$S_** means that x is not an element of S
+
+- To specific a set, you many write all of its elements, separated with commas between curly brackets (set roster notation)
+
+### Example:
+
+`{3, 5, 7}` denotes the set whose elements are 3, 5, and 7
+
+### Set Ex 2:
+
+`{1, 2, 3, ..., 100}` refers to the set of all integers from 1 through 100. `...` is read **_and so forth_**
+
+### Set Ex 3 (infinite set)
+
+`{1, 2, 3, ...}` is an infinite set -> refers to the set of **\*all** positive integers
+
+- The **_order_** in which the elements are listed in a set does **_not_** matter + repeats do **_not_** matter (through repeats should be eliminated)
+
+```lua
+A = {4, 9, 13}
+B = {4, 9, 13}
+C = {1, 1, 1, 4, 9}
+
+-- These sets have exactly the same three elements,
+-- They are different ways to represent the same set
+```
+
+**_Note_**: {0} != 0 (different objects)
+
+- Ex: {5, {5}} has two elements
+  - 5 + {5} (the number five and a set containing the number 5)
+
+## Special Sets
+
+$\mathbb{R}$: is the set of all real numbers
+
+$\mathbb{Z}$: is the set of all numbers
+
+$\mathbb{Q}$: is the set of all rational numbers (quotients of integers)
+
+- May use a superscript + or - or the letters "nonneg" or "nonpos" to include only the positive, negative, non-negative, or non-positive elements of a set
+
+$\mathbb{R-}$: is the set of all **_negative_** real numbers
+
+$\mathbb{R}^{\geq 0}$: is the set of all non-negative integers
+
+```lua
+Z = {0, 1, 2, 3, ...}
+
+-- infinite set
+```
+
+$$
+\begin{center}
+\begin{tikzpicture}
+\draw [-latex] (-1,0) -- (3,0);
+\foreach \x in {-3,-2,-1,0,1,2,3}
+\draw (\x,.1) -- (\x,-.1) node[below] {\x};
+\end{tikzpicture}
+\end{center}
+$$

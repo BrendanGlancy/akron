@@ -215,7 +215,4 @@ $$
         \end{axis}
     \end{tikzpicture}
 \end{document}
-0
-
-
 $$

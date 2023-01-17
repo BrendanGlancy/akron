@@ -1,10 +1,10 @@
-# Speaking Mathematically: Variables
+# Discrete Math 501 UA
 
 **Goal:** To be able to use and understand language that expresses mathematical ideas clearly, precisely, and unambiguously.
 
 Table of Contents:
 
-1. [Introduction](#introduction)
+1. [Speaking Mathematically: Variables](#speaking-mathematically%3A-variables)
 2. [Examples](#examples)
    - [Example 1: Solving an equation with a variable](#example-1)
    - [Example 2: Using a variable to express a mathematical statement](#example-2)
@@ -16,8 +16,13 @@ Table of Contents:
    - [Universal Existential Statements](#universal-existential-statements)
    - [Existential Universal Statements](#existential-universal-statements)
 4. [Lesson 1.2](#the-language-of-sets-1.2)
+   - [Special Sets](#special-sets)
+   - [Cartesian Products + Order Pairs](#cartesian-products-%2B-order-pairs)
+5. [Lesson 2.1]
+6. [Lesson 2.2]
+7. [Lesson 2.3]
 
-## Introduction
+## Speaking Mathematically: Variables
 
 In mathematics, variables are similar to those used in computer programming. They can be used as placeholders when discussing something, and they may have one or more values, but the specific value is unknown. Variables are also used when we do not want to be restricted to considering only a particular concrete value.
 
@@ -192,27 +197,81 @@ Z = {0, 1, 2, 3, ...}
 -- infinite set
 ```
 
-$$
-\documentclass[border=2pt]{standalone}
-\usepackage{pgfplots}
-\begin{document}
-    \begin{tikzpicture}
-        \begin{axis}[
-            % center the x axis
-            axis x line=middle,
-            % we don't need a y axis line ...
-            axis y line=none,
-            % ... and thus there is no need for much `height' of the axis
-            height=50pt,
-            % but `height' also changes `width' which is restored here
-            width=\axisdefaultwidth,
-            xmin=-3,
-            xmax=3,
-        ]
-            \addplot coordinates {
-                (0.5,0) (0.7,0) (0.9,0)
-            };
-        \end{axis}
-    \end{tikzpicture}
-\end{document}
-$$
+The real # line is called Continuous because it is imagined to have no holes
+
+The set of integers $\mathbb{Z}$ corresponds to a collection of points located at **_fixed_** intervals along the real # line
+$\mathbb{Z}$ {..., -3, -2, -1, 0, 1, 2, 3, ...} Thus **_every_** integer is a real #.
+Since they are all separated from each other $\mathbb{Z}$ is called discrete
+
+**_Definition_**: If A <S-Del>+ B are sets, the A is called a subset of B, denoted `A <= B`, if + only if every element of A is also an element of B
+
+**\*Symbolically\***: A <= B means that **_for all_** elements x, if x$\mathbb{E}$B.
+
+**_Definition_**: If A + B are sets, then A is called **_not_** a subset of B, denoted A ~~<=~~ B, if + only if **_at least one_** element of A is **_not_** an element of B (note that A+B may still share some elements)
+
+**_Symbolically_**, A ~~<=~~ B means that **\*there is** at least one element x such that x$\mathbb{E}$A and x$\mathbb{\not E}$ A
+
+**_Definition_**: If A+B are sets, then A is called a **_proper subset_** of B, denoted `A<B` if and only if every element A is an element of B and there is at least one element of B that is **_not_** in A
+
+**_Symbolically_**, A<B means that **_for all_** elements x, if x$\mathbb{E}$A then x$\mathbb{E}$B **_and_** there exists at least one element x$\mathbb{E}$B such that x$\mathbb{\not E}$ A
+
+---
+
+**_Be careful_** to distinguish $\mathbb{E}$ + <=
+
+### Example
+
+Is `(a.)+=s 0<={0}` ? NO
+
+Is `(b.){2}<={1, 2, 3}` ? NO (is the set containing 2 a subset of the set containing 123)
+
+Is `(c.){2}` $\mathbb{E}$ `{{1}, {2}, {3}}`? (is the set containing 2 an element of the set containing the set containing 1 and the set containing 2 and the set containing 3) YES
+
+### Example
+
+List all the true **_subset_** containments among:
+
+- `A = {3,5,9}`
+- `B = {3}`
+- `C = {3,5}`
+- `D = {9,5}`
+
+A<=A (A is a subset of itself)
+B<=A (B is a subset of A)
+C<=A (C is a subset of A)
+C<=C (C is a subset of itself)
+D<=A (D is a subset of A)
+D<=D (D is a subset of itself)
+
+**_important_** for all set S, `S<=S` (all sets are subsets of themselves)
+But they are not proper subsets
+
+What is a proper subset?:
+
+- B<=A (B is a proper subset of A for example)
+
+## Cartesian Products + Order Pairs
+
+**_Notation_**: Given elements a + b, the symbol (a,b) denotes the **_ordered pair_** consisting of the elements a + b together with the specification that `a` is the first element of the pair and `b` is the second element of the pair
+
+**_two ordered pairs_** `(a,b)` + `(c,d)` are equal ((a,b)=(c,d)) if and only if a=c and b=d **_order matters_**
+
+**_Definition_** Given sets A + B the **_Cartesian_** product of A + B denoted `AxB` + read "Across B", id the set of the all **_ordered pairs_** where a$\mathbb{E}$A b$\mathbb{E}$B
+
+**_Symbolically_**, AxB = {(a,b) | a$\mathbb{E}$A + b$\mathbb{E}$B}
+
+### Example
+
+**_Let A = {1,3,5} + B = {1,8}A_**
+
+`AxB ={(1,1), (1,8), (3,1), (3,8), (5,1), (5,8)}`
+
+`BxA ={(1,1), (8,1), (1,3), (8,3), (1,5), (8,5)}`
+
+`BxB ={(1,1), (1,8), (8,1), (8,8)}`
+
+Example Problem: AxA
+
+**_If A has m element & B had n elements_** then AxB has mn elements (AxB m=3, n=2 mn=6)
+
+`AxA ={(1,1), (1,3), (1,5), (3,1), (3,3), (3,5), (5,1), (5,3), (5,5)}`

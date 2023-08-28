@@ -2,6 +2,10 @@
 
 **Dr. Zarreen Farooqi, Ph.D.** Polysky 222
 
+```python
+5% of the grade in this class is based on attendance
+```
+
 This course is how computers talk to each other
 
 ### Broad Overview of the course

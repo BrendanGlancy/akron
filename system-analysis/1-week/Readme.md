@@ -65,7 +65,7 @@ Combine a Transaction Processing System and data analytics system types to provi
 
 - Plan and brainstorm
 - Analyze requirements
-- Design the mockups
+- Design the mock-ups
 - Develop the code
 - Test the product
 - Implement and launch the product
@@ -85,3 +85,28 @@ Software Development
 
 
 **Scrum** is an agile methodology that involves a small team led by a Scrum master. The team works in short cycles called sprints. The team meets daily to discuss tasks and any obstacles that need to be removed. The Scrum master's job is to remove any obstacles to getting work done.
+
+# Week 2
+
+`Functional Decomposition` - is a method of analysis that breaks down a complex process into smaller, more manageable pasts. The goal is to simplify the system so that it is easier to understand.
+
+**7 components of an Information system**
+
+- Hardware
+- Software 
+- Data
+- People 
+- Outputs
+- Inputs 
+- Procedures
+
+A lot of organizations user applications from different vendors
+This creates a situation where you need Enterprise Application Integration
+
+``Assignment Week 2``
+
+PE 1-5. Read the I2C2 case study in Appendix A for I2C2’s existing clinic and pharmacy business and the project to update I2C2’s systems supporting that business. Consider that for this clinic and pharmacy business, I2C2 has an existing, well-understood set of business processes. Further, the systems supporting that business run well and already provide many of the features that I2C2 needs. Finally, I2C2 has been able to clearly describe the new software features needed to enhance those systems. Given this, explain the following:
+
+a. How much is this systems project like inventing a new gadget?
+b. How much is this systems project like creating blueprints to add rooms to a house?
+c. Given the previous points, would you suggest an agile approach using emergent requirements versus a plan-driven approach using big requirements up front (BRUF)? Why?

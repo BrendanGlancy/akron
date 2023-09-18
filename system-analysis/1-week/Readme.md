@@ -185,3 +185,62 @@ Association - A naturally occurring relationship between classes (UML term)
 `0..*`: Zero or more instances
 `1..*`: One or more instances
 `n`: Exactly n instances, where n is a specific integer
+
+# Week 4 
+
+`Next Monday We'll have the first Exam`
+
+UML Domain Class Notation
+
+- Domain class a name and attributes (no methods)
+- Class name is always capitalized 
+- Attribute names are not capitalized and use camelback notation (words run together and second word is capitalized)
+
+
+**Unary relationship** 
+- A unary relationship, also known as a reflexive relationship, is a relationship in which a class is associated with itself. For example, consider a Person class where each Person object may have a relationship to a 'parent' who is also a Person. This kind of relationship would be a unary relationship, since it involves only one class.
+
+**One-to-one relationship**
+- In a one-to-one (1:1) relationship, an instance of class A is associated with exactly one instance of class B, and an instance of class B is associated with exactly one instance of class A. For instance, consider two classes, Human and Heart. Each Human object has one Heart, and each Heart object belongs to one Human. This relationship would be modeled as one-to-one.
+**One-to-many relationship**
+- In a one-to-many (1:N) relationship, an instance of class A can be associated with zero, one, or multiple instances of class B, but each instance of class B is associated with exactly one instance of class A. For example, consider a Teacher class and a Student class. One Teacher can have multiple Students, but each Student has exactly one Teacher. This is a one-to-many relationship. 
+
+
+In UML class diagrams, these relationships are often depicted with lines connecting the classes involved. The multiplicity (1, 1.., 0..1, etc.) is usually indicated at each end of the line to specify the type of relationship. For example, for a one-to-many relationship between Teacher and Student, the line might have a "1" at the end touching the Teacher class and a "" at the end touching the Student class, indicating that one Teacher can have many Students.
+
+**Association class -** an association that is treated as a class in many to many association because it has attributes that need to be remembered (such as grade)
+
+In simple terms, both composition and aggregation are ways to describe relationships between two things (or "classes" in programming lingo) where one is considered a part of another. However the key difference lies in how tightly connected these two thing are 
+
+**Composition** - In composition, if the whole goes away or is destroyed, the part goes away with it. 
+
+**Aggregation** - In aggregation, even if the whole goes away, the part can still exist. 
+
+Aggregation is a design concept in object-oriented programming (OOP) that represents a "has-a" or "part-of" relationship between two classes. 
+
+`To review for the test read chapters 1-4`
+
+### User Stories 
+
+**Three parts to a user story**
+
+- **Who:** the type of user
+- **What:** What the user wants to accomplish
+- **Why:** The benefit or reason the user wants this feature
+
+Heres an exmaple of a user story, each line represents one of the three parts in order from above
+
+```
+As a frequent traveler,
+I want to be able to check into my flights via a mobile app,
+So that I can save time avoid long lines at the airport.
+```
+
+Evaluating user stories with the INVEST Model:
+
+- Independent (of other user stories)
+- Negotiable (one that leaves space for negotiation during construction)
+- Valuable (for the client)
+- Estimate (one that provides a sufficient foundation for a good approximation)
+- Small (allows its completion within a specific constrution cycle)
+- Testable 

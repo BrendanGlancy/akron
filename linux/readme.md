@@ -88,7 +88,26 @@ rm
 
 # remove directory
 rmdir
+
+# change mode 
+chmod
+
+# (modes) rwx - read write execute
 ```
+
+```zsh
+# example
+chmod 777 
+# allows all users to read write and execute a file
+```
+0 = no permissions whatsoever; this person cannot read, write, or execute the file.
+1 = execute only.
+2 = write only.
+3 = write and execute (1+2)
+4 = read only.
+5 = read and execute (4+1)
+6 = read and write (4+2)
+7 = read and write and execute (4+2+1)
 
 When you remove a file "rm" it is not actually deleted but rather it is just no longer allocated in memory. Meaning that file you "deleted" is sitting in your ram waiting to be overridden
 

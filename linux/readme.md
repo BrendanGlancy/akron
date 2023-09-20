@@ -224,3 +224,45 @@ Log files.
 Mailbox files.
 
 ---
+
+### Notes from John, day before the test
+
+Whats in:
+- "home folder" per pwd
+- List using ls (ls -tal)
+- Navigate using cd (up: cd ..)
+- Nano, to create text files
+- Wildcards
+- Couple new commands
+
+Whats out
+- [Symbolic] Links
+
+```bash
+# Wildcard command, this list all files that start with a b, since * represents a character that matches every char
+ls b*
+
+# Copy
+cp
+
+# move
+mv
+
+# make directory
+mkdir
+
+# remove
+rm
+
+# Create hard and symbolic links
+ln
+```
+
+| Wildcard | Description                                    | Example          | Matches                        |
+|----------|------------------------------------------------|------------------|---------------------------------|
+| *        | Matches zero or more characters                | `*.txt`          | All `.txt` files                |
+| ?        | Matches exactly one character                  | `?.txt`          | `a.txt`, `1.txt`, but not `aa.txt` |
+| []       | Matches any single character within the brackets| `[abc].txt`      | `a.txt`, `b.txt`, `c.txt`       |
+| [!...]   | Matches any single character NOT within the brackets| `[!abc].txt`  | `d.txt`, `e.txt`               |
+| [a-z]    | Matches any single character within the specified range | `[a-c].txt`  | `a.txt`, `b.txt`, `c.txt`     |
+| {}       | Matches any of the comma-separated patterns enclosed | `{a,b}.txt`    | `a.txt`, `b.txt`               |

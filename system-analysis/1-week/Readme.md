@@ -243,4 +243,6 @@ Evaluating user stories with the INVEST Model:
 - Valuable (for the client)
 - Estimate (one that provides a sufficient foundation for a good approximation)
 - Small (allows its completion within a specific constrution cycle)
-- Testable 
+- Testable (Particulary when Evaluated togehter with accpetance criteria)
+
+

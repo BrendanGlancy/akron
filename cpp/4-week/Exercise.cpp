@@ -36,9 +36,14 @@ int main() {
 
   // add some error checking here to make sure the user entered a valid type
   while (vehicleType != 'C' && vehicleType != 'P') {
+    // set vehicleType to a default value incase the user enters something longer than 1 character
+    vehicleType = 'X';
+
+    // Prompt the user for the vehicle quantity and type
     cout << "Invalid vehicle type. Please enter C or P: " << endl;
     cout << "Enter vehicle quantity: ";
     cin >> vehicleType;
+
     vehicleType = toupper(vehicleType);
 
     if (vehicleType == 'X') {

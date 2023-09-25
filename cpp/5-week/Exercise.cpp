@@ -59,6 +59,7 @@ int main() {
   string memoReference;
   string cargoRoofline;
   string wheelbase;
+  string cargoOrPassenger;
 
   // menu
   cout << "Welcome to the one line order program" << endl;
@@ -129,6 +130,32 @@ int main() {
     evOrIc = "IC";
   }
 
+  // c or p if its not an ev
+  if (evOrIc != "EV")
+  {
+    do {
+      cout << "(C)argo or (P)assenger: ";
+      if (!(cin >> menuChoice)) {
+        cout << "Error reading C or P" << endl;
+        return 1;
+      }
+      cin.ignore(numeric_limits<streamsize>::max(), '\n');
+      menuChoice = toupper(menuChoice);
+    } while (menuChoice != 'C' && menuChoice != 'P');
+
+    switch (menuChoice) {
+      case 'C':
+        cargoOrPassenger = "Cargo";
+        break;
+      case 'P':
+        cargoOrPassenger = "Passenger";
+        break;
+      default:
+        cout << "Error reading cargo roofline" << endl;
+        return 1;
+    }
+  }
+
   // cargo cargoRoofline
   if (evOrIc == "EV") {
     cargoRoofline = "Medium";
@@ -197,8 +224,10 @@ int main() {
   cout << "Color: " << color << endl;
   cout << "EV or IC: " << evOrIc << endl;
   if (evOrIc == "IC") {
+    cout << "Cargo or Passenger: " << cargoOrPassenger << endl;
     cout << "Cargo Roofline: " << cargoRoofline << endl;
     cout << "Wheelbase: " << wheelbase << endl;
+
   } else {
     cout << "Cargo Roofline: Medium" << endl;
     cout << "Wheelbase: Medium" << endl;
@@ -209,7 +238,7 @@ int main() {
   cout << "Writing to file..." << endl;
   ofstream outputFile;
   outputFile.open("output.txt");
-  outputFile << dealerName << "," << memoReference << "," << quantity << "," << color << "," << evOrIc << "," << cargoRoofline << "," << wheelbase << endl;
+  outputFile << dealerName << "," << memoReference << "," << quantity << "," << color << "," << evOrIc << "," << cargoOrPassenger << "," << cargoRoofline << "," << wheelbase << endl;
   outputFile.close();
   cout << "Done!" << endl;
 

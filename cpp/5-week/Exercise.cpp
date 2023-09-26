@@ -25,6 +25,7 @@
  */
 
 #include <iostream>
+#include <sstream>
 #include <string>
 #include <cctype>
 #include <limits>
@@ -79,23 +80,26 @@ int main() {
   
   // quantity
   do {
-    cout << "Quantity: ";
-    if (!(cin >> quantity)) {
-      cout << "Error reading quantity" << endl;
-      return 1;
-    }
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+      cout << "Quantity: ";
+      string quantityStr;
+      getline(cin, quantityStr);
+      stringstream(quantityStr) >> quantity; // Convert string to int
+      if (cin.fail() || quantity < 1 || quantity > 99) {
+          cout << "Error reading quantity" << endl;
+          return 1;
+      }
   } while (quantity < 1 || quantity > 99);
 
   // menu
   do {
-    cout << "Color (W)hite, (G)ray, (B)lack: ";
-    if (!(cin >> menuChoice)) {
-      cout << "Error reading color" << endl;
-      return 1;
-    }
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    menuChoice = toupper(menuChoice);
+      cout << "Color (W)hite, (G)ray, (B)lack: ";
+      string menuChoiceStr;
+      getline(cin, menuChoiceStr);
+      if (menuChoiceStr.empty()) {
+          cout << "Error reading color" << endl;
+          return 1;
+      }
+      menuChoice = toupper(menuChoiceStr[0]); // Convert string to char and make it uppercase
   } while (menuChoice != 'W' && menuChoice != 'G' && menuChoice != 'B');
 
   switch (menuChoice) {
@@ -115,13 +119,13 @@ int main() {
 
   // color 
   do {
-    cout << "EV or IC: ";
-    if (!(cin >> evOrIc)) {
-      cout << "Error reading EV or IC" << endl;
-      return 1;
-    }
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    evOrIc = toupper(evOrIc[0]);
+      cout << "EV or IC: ";
+      getline(cin, evOrIc);
+      if (evOrIc.empty()) {
+          cout << "Error reading EV or IC" << endl;
+          return 1;
+      }
+      evOrIc = string(1, toupper(evOrIc[0])); // Convert to uppercase
   } while (evOrIc != "E" && evOrIc != "I");
 
   if (evOrIc == "E") {

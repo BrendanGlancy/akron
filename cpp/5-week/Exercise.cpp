@@ -63,8 +63,17 @@ int main() {
   string cargoOrPassenger;
 
   // menu
-  cout << "Welcome to the one line order program" << endl;
-  cout << "Please enter the following information" << endl;
+  cout << "-----------------------------------------------------------------" << endl;
+  cout << " __          __         _                                     _ " << endl;
+  cout << " \\ \\        / /        | |                                   | |" << endl;
+  cout << "  \\ \\  /\\  / /    ___  | |   ___    ___    _ __ ___     ___  | |" << endl;
+  cout << "   \\ \\/  \\/ /    / _ \\ | |  / __|  / _ \\  | '_ ` _ \\   / _ \\ | |" << endl;
+  cout << "    \\  /\\  /    |  __/ | | | (__  | (_) | | | | | | | |  __/ |_|" << endl;
+  cout << "     \\/  \\/      \\___| |_|  \\___|  \\___/  |_| |_| |_|  \\___| (_)" << endl;
+  cout << "                                                                " << endl;
+  cout << "                                                                " << endl;
+  cout << "-----------------------------------------------------------------" << endl;
+  cout << ">>>>> Please enter the following information: <<<<<" << endl;
 
   cout << "Dealer Name: ";
   if (!getline(cin, dealerName)) {
@@ -139,11 +148,11 @@ int main() {
   {
     do {
       cout << "(C)argo or (P)assenger: ";
+      getline(cin, cargoOrPassenger);
       if (!(cin >> menuChoice)) {
         cout << "Error reading C or P" << endl;
         return 1;
       }
-      cin.ignore(numeric_limits<streamsize>::max(), '\n');
       menuChoice = toupper(menuChoice);
     } while (menuChoice != 'C' && menuChoice != 'P');
 
@@ -166,11 +175,11 @@ int main() {
   } else {
     do {
       cout << "Cargo Roofline (L)ow, (R)aised, (H)igh: ";
+      getline(cin, cargoRoofline);
       if (!(cin >> menuChoice)) {
         cout << "Error reading cargo roofline" << endl;
         return 1;
       }
-      cin.ignore(numeric_limits<streamsize>::max(), '\n');
       menuChoice = toupper(menuChoice);
     } while (menuChoice != 'L' && menuChoice != 'R' && menuChoice != 'H');
 

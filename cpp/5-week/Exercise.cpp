@@ -64,14 +64,13 @@ int main() {
 
   // menu
   cout << "-----------------------------------------------------------------" << endl;
-  cout << " __          __         _                                     _ " << endl;
-  cout << " \\ \\        / /        | |                                   | |" << endl;
-  cout << "  \\ \\  /\\  / /    ___  | |   ___    ___    _ __ ___     ___  | |" << endl;
-  cout << "   \\ \\/  \\/ /    / _ \\ | |  / __|  / _ \\  | '_ ` _ \\   / _ \\ | |" << endl;
-  cout << "    \\  /\\  /    |  __/ | | | (__  | (_) | | | | | | | |  __/ |_|" << endl;
-  cout << "     \\/  \\/      \\___| |_|  \\___|  \\___/  |_| |_| |_|  \\___| (_)" << endl;
-  cout << "                                                                " << endl;
-  cout << "                                                                " << endl;
+  cout << "  __          __    _                               _ " << endl;
+  cout << " \\ \\        / /   | |                             | |" << endl;
+  cout << "  \\ \\  /\\  / /___ | |  ___  ___   _ __ ___    ___ | |" << endl;
+  cout << "   \\ \\/  \\/ // _ \\| | / __|/ _ \\ | '_ ` _ \\  / _ \\| |" << endl;
+  cout << "    \\  /\\  /|  __/| || (__| (_) || | | | | ||  __/|_|" << endl;
+  cout << "     \\/  \\/  \\___||_| \\___|\\___/ |_| |_| |_| \\___|(_)" << endl;
+  cout << "                                                     " << endl;
   cout << "-----------------------------------------------------------------" << endl;
   cout << ">>>>> Please enter the following information: <<<<<" << endl;
 
@@ -146,87 +145,87 @@ int main() {
   // c or p if its not an ev
   if (evOrIc != "EV")
   {
-    do {
-      cout << "(C)argo or (P)assenger: ";
-      getline(cin, cargoOrPassenger);
-      if (!(cin >> menuChoice)) {
-        cout << "Error reading C or P" << endl;
-        return 1;
-      }
-      menuChoice = toupper(menuChoice);
-    } while (menuChoice != 'C' && menuChoice != 'P');
+      do {
+          cout << "(C)argo or (P)assenger: ";
+          getline(cin, cargoOrPassenger);
+          if (cargoOrPassenger.empty()) {
+              cout << "Error reading C or P" << endl;
+              return 1;
+          }
+          menuChoice = toupper(cargoOrPassenger[0]);
+      } while (menuChoice != 'C' && menuChoice != 'P');
 
-    switch (menuChoice) {
-      case 'C':
-        cargoOrPassenger = "Cargo";
-        break;
-      case 'P':
-        cargoOrPassenger = "Passenger";
-        break;
-      default:
-        cout << "Error reading cargo roofline" << endl;
-        return 1;
-    }
+      switch (menuChoice) {
+          case 'C':
+              cargoOrPassenger = "Cargo";
+              break;
+          case 'P':
+              cargoOrPassenger = "Passenger";
+              break;
+          default:
+              cout << "Error reading cargo roofline" << endl;
+              return 1;
+      }
   }
 
   // cargo cargoRoofline
   if (evOrIc == "EV") {
-    cargoRoofline = "Medium";
+      cargoRoofline = "Medium";
   } else {
-    do {
-      cout << "Cargo Roofline (L)ow, (R)aised, (H)igh: ";
-      getline(cin, cargoRoofline);
-      if (!(cin >> menuChoice)) {
-        cout << "Error reading cargo roofline" << endl;
-        return 1;
-      }
-      menuChoice = toupper(menuChoice);
-    } while (menuChoice != 'L' && menuChoice != 'R' && menuChoice != 'H');
+      do {
+          cout << "Cargo Roofline (L)ow, (R)aised, (H)igh: ";
+          getline(cin, cargoRoofline);
+          if (cargoRoofline.empty()) {
+              cout << "Error reading cargo roofline" << endl;
+              return 1;
+          }
+          menuChoice = toupper(cargoRoofline[0]);
+      } while (menuChoice != 'L' && menuChoice != 'R' && menuChoice != 'H');
 
-    switch (menuChoice) {
-      case 'L':
-        cargoRoofline = "Low";
-        break;
-      case 'R':
-        cargoRoofline = "Raised";
-        break;
-      case 'H':
-        cargoRoofline = "High";
-        break;
-      default:
-        cout << "Error reading cargo roofline" << endl;
-        return 1;
-    }
+      switch (menuChoice) {
+          case 'L':
+              cargoRoofline = "Low";
+              break;
+          case 'R':
+              cargoRoofline = "Raised";
+              break;
+          case 'H':
+              cargoRoofline = "High";
+              break;
+          default:
+              cout << "Error reading cargo roofline" << endl;
+              return 1;
+      }
   }
 
   // wheelbase
   if (evOrIc == "EV") {
-    wheelbase = "Medium";
+      wheelbase = "Medium";
   } else {
-    do {
-      cout << "Wheelbase (S)hort, (M)edium, (E)xtended: ";
-      if (!(cin >> menuChoice)) {
-        cout << "Error reading wheelbase" << endl;
-        return 1;
-      }
-      cin.ignore(numeric_limits<streamsize>::max(), '\n');
-      menuChoice = toupper(menuChoice);
-    } while (menuChoice != 'S' && menuChoice != 'M' && menuChoice != 'E');
+      do {
+          cout << "Wheelbase (S)hort, (M)edium, (E)xtended: ";
+          getline(cin, wheelbase);
+          if (wheelbase.empty()) {
+              cout << "Error reading wheelbase" << endl;
+              return 1;
+          }
+          menuChoice = toupper(wheelbase[0]);
+      } while (menuChoice != 'S' && menuChoice != 'M' && menuChoice != 'E');
 
-    switch (menuChoice) {
-      case 'S':
-        wheelbase = "Short";
-        break;
-      case 'M':
-        wheelbase = "Medium";
-        break;
-      case 'E':
-        wheelbase = "Extended";
-        break;
-      default:
-        cout << "Error reading wheelbase" << endl;
-        return 1;
-    }
+      switch (menuChoice) {
+          case 'S':
+              wheelbase = "Short";
+              break;
+          case 'M':
+              wheelbase = "Medium";
+              break;
+          case 'E':
+              wheelbase = "Extended";
+              break;
+          default:
+              cout << "Error reading wheelbase" << endl;
+              return 1;
+      }
   }
 
   // output

@@ -266,3 +266,46 @@ ln
 | [!...]   | Matches any single character NOT within the brackets| `[!abc].txt`  | `d.txt`, `e.txt`               |
 | [a-z]    | Matches any single character within the specified range | `[a-c].txt`  | `a.txt`, `b.txt`, `c.txt`     |
 | {}       | Matches any of the comma-separated patterns enclosed | `{a,b}.txt`    | `a.txt`, `b.txt`               |
+
+# Part 2 | Devices
+
+Part II is on devices, covers chapter 3 and 4
+
+**Foundation**
+- Everything in Unix is a file (name, place, attributes) - whether a file or not!
+
+This chapter is a basic tour of the kernal-provided device infrastructure in a functioning Linux system. 
+
+### On Devices
+- Kernal presents I/O interfaces to user as files
+- Device interfaces reside in the /dev directory 
+    - `ls -l /dev | more`
+    - Reveals device inventory but deemed not helpful
+    - Yours should reveal many tty's (cf Teletype)
+- Four notional types
+    - Block (ie, bulk or chunked)
+    - Character 
+    - Pipe
+    - Socket (we will defer this, of occasional use to programmers)
+    - Note: ls -tal will reveal the mode interface, typically b or c prepended to permissions
+
+### Review on environment variables
+- From your VM
+    - "go home" uses "tilde" `cd ~`
+- Display environment variables using env - suggest: `env | more`
+- Environment variable are dynamic, local, personal
+    - Are defaults for use by application program
+    - Are defaults for use at CLI
+- Foremost is PATH
+    - Concatenation of locations in priority order to seek for file (each rwx)
+    - Installer should append new program's direcotyr to PATH
+    - Echo $PATH
+
+### Form ls /dev to /sys/fs
+- Alternative locus to interface for each device, by type
+    - These are symbolic links, mentioned in Ward Ch02
+- Whereas ls is to view, /sys/fs exists to add/modify/delete (A/M/D)
+    - It's OK to look: /sys/dev enumerates block and character interfaces
+    - Do: cd to sys/dev/block an run ls -l to see specific interfaces and locatin
+- Its presence does not infer the exact tool(s) used to `udevadm info --query=all --name=/dev/sda`
+- Simple sample query - only approved use of udevadm (Section 3.5)

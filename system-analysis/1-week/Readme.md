@@ -245,4 +245,10 @@ Evaluating user stories with the INVEST Model:
 - Small (allows its completion within a specific constrution cycle)
 - Testable (Particulary when Evaluated togehter with accpetance criteria)
 
+### Lab -03
 
+Do exercise labeled PE 3-6 at the end of Chapter 03 in the text. 
+
+Answer the questions at the end of the exercise and label them properly. No hand-written answers. You should be able to reason what you include in the answer even though in this case you only need to create a UML Domain Class Diagram. You do need to identify the classes, their attributes, associations and multiplicity. You may do the domain model in Visio, paste it in Word and upload the Word document. There are other software available online to do UML diagrams. DO NOT give me links to diagrams done in these software. These links don't work.
+
+Answers should be in a Word and text file with your name near the top of the page. This file should be uploaded to the dropbox in Brightspace. The dropbox is available through Assessments or right under this assignment.

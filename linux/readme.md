@@ -1,5 +1,18 @@
 # Intro To Unix / Linux
 
+## Table of Contents
+1. [Introduction to Unix/Linux](#introduction-to-unixlinux)
+   1. [Professor Information](#professor-information)
+   2. [Known Commands](#known-commands)
+   3. [Unknown Commands](#unknown-commands)
+   4. [Commands for the Test](#commands-for-the-test)
+2. [Linux Directory Hierarchy](#linux-directory-hierarchy)
+3. [Part 2 | Devices](#part-2--devices)
+   1. [Foundation](#foundation)
+   2. [On Devices](#on-devices)
+   3. [Review on Environment Variables](#review-on-environment-variables)
+   4. [From ls /dev to /sys/fs](#from-ls-dev-to-sysfs)
+
 **Professor John Hoag**: Polysky 211
 
 Commands I knew coming into this class

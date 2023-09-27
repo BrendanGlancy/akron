@@ -2,10 +2,9 @@
 
 ## Table of Contents
 1. [Introduction to Unix/Linux](#introduction-to-unixlinux)
-   1. [Professor Information](#professor-information)
-   2. [Known Commands](#known-commands)
-   3. [Unknown Commands](#unknown-commands)
-   4. [Commands for the Test](#commands-for-the-test)
+   1. [Known Commands](#known-commands)
+   2. [Unknown Commands](#unknown-commands)
+   3. [Commands for the Test](#commands-for-the-test)
 2. [Linux Directory Hierarchy](#linux-directory-hierarchy)
 3. [Part 2 | Devices](#part-2--devices)
    1. [Foundation](#foundation)
@@ -15,7 +14,7 @@
 
 **Professor John Hoag**: Polysky 211
 
-Commands I knew coming into this class
+Commands I knew coming into this class [#known-commands]
 
 ```bash
 ls

@@ -1,0 +1,2 @@
+# remove css
+*.css linguist-vendored=true

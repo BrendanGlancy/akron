@@ -103,11 +103,15 @@ int main() {
       cout << "Color (W)hite, (G)ray, (B)lack: ";
       string menuChoiceStr;
       getline(cin, menuChoiceStr);
+      // Convert to uppercase
+      menuChoiceStr = string(1, toupper(menuChoiceStr[0]));
       if (menuChoiceStr.empty()) {
           cout << "Error reading color" << endl;
           return 1;
+      } else if (menuChoiceStr == "Q") {
+        return 1;
       }
-      menuChoice = toupper(menuChoiceStr[0]); // Convert string to char and make it uppercase
+      menuChoice = toupper(menuChoiceStr[0]);
   } while (menuChoice != 'W' && menuChoice != 'G' && menuChoice != 'B');
 
   switch (menuChoice) {
@@ -129,11 +133,13 @@ int main() {
   do {
       cout << "EV or IC: ";
       getline(cin, evOrIc);
+      evOrIc = string(1, toupper(evOrIc[0])); // Convert to uppercase
       if (evOrIc.empty()) {
           cout << "Error reading EV or IC" << endl;
           return 1;
+      } else if (evOrIc == "Q") {
+        return 1;
       }
-      evOrIc = string(1, toupper(evOrIc[0])); // Convert to uppercase
   } while (evOrIc != "E" && evOrIc != "I");
 
   if (evOrIc == "E") {

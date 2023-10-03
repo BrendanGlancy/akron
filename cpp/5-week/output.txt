@@ -1,1 +1,1 @@
-Ganley,Ford,15,Gray,IC,Passenger,High,Medium
+Ford,memo,10,Black,IC,Passenger,High,Extended

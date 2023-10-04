@@ -1,0 +1,124 @@
+desc: (none)
+cmd: ./Exercise
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2392986
+mem_heap_B=73728
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2399853
+mem_heap_B=74752
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2422339
+mem_heap_B=75776
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2467920
+mem_heap_B=76248
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2469585
+mem_heap_B=84440
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2482486
+mem_heap_B=84440
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=peak
+n4: 84440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x491A371: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+  n1: 73728 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 73728 0x4006567: call_init (dl-init.c:33)
+    n1: 73728 0x4006567: _dl_init (dl-init.c:117)
+     n0: 73728 0x4020329: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 8192 0x4987733: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+  n1: 8192 0x498B775: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+   n1: 8192 0x498B973: std::basic_ofstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+    n0: 8192 0x10B484: main (in /home/brendan/Desktop/github/akron/cpp/5-week/Exercise)
+ n1: 2048 0x4B76C23: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4B85D5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4B84D5B: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 1024 0x4B85E15: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x4984F50: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+      n1: 1024 0x49394A9: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+       n0: 1024 0x10A7B2: main (in /home/brendan/Desktop/github/akron/cpp/5-week/Exercise)
+   n1: 1024 0x4B84FDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x4B83754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x4B83754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x4B78056: fwrite (iofwrite.c:39)
+       n1: 1024 0x49B02E4: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+        n1: 1024 0x49B068A: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+         n0: 1024 0x10A5EB: main (in /home/brendan/Desktop/github/akron/cpp/5-week/Exercise)
+ n0: 472 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=2482486
+mem_heap_B=76248
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2484570
+mem_heap_B=75776
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2497561
+mem_heap_B=2048
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2498506
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2498540
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

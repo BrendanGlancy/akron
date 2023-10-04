@@ -1,29 +1,3 @@
-/**
- * @file Exercise.cpp
- * @brief Our first graded project
- * @author: Brendan Glancy
- *
- *
- *  Specifications for first graded
- *  deliverable
- *   Call this the “one line order” [later tasks will be multiline]
- *   Nonvalidated header information: Dealer Name, Memo Reference
- *   Validated information
- *   Quantity
- *   Color {White, Gray, Black}
- *   EV or IC
- *   Note: EV is Cargo only, Medium length and roofline
- *   IC can be {C or P}; Cargo roofline {L,R,H} and wheelbase {S,M,E}
- *   Echo all inputs
- *   Write to file (one line, fields comma delimited)
- *   Later version will use objects for multiline
- *   Later later version will implement pricing
- *
- * Hints 
- *  Notional done - with each data entry do-while loop, then proceed
- *  Notional quit - no more data entry, do not write results
- */
-
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -31,24 +5,6 @@
 #include <limits>
 #include <fstream>
 using namespace std;
-
-/**
-  * @brief Input validation
-  *
-  * Menu Letter Input
-  *   For two choices: if-then-else
-  *   For three or more choices: switch with default
-  *   In addition to choices, include a “quit” option (Q or q)
-  *   Meaning prompt (can include blank lines) optional default case 
-  *   Intercept and warn errors
-  *   Upper case outcome
-  *   do-while suggested
-  *
-  * Numeric Input 
-  *   Mostly same as above
-  *   Range checking (1-99 incluse) could default to 1
-  *
-  */
 
 int main() {
   // init
@@ -250,10 +206,13 @@ int main() {
   cout << "Writing to file..." << endl;
   ofstream outputFile;
   outputFile.open("output.txt");
+  if (!outputFile.is_open()) {
+    cerr << "Error opening file" << endl;
+    return 1;
+  }
   outputFile << dealerName << "," << memoReference << "," << quantity << "," << color << "," << evOrIc << "," << cargoOrPassenger << "," << cargoRoofline << "," << wheelbase << endl;
   outputFile.close();
   cout << "Done!" << endl;
-
 
   return 0;
 }

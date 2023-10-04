@@ -21,7 +21,7 @@ private:
 
   void welcomeMessage() {
     cout << "-----------------------------------------------------------------" << endl;
-    cout << " __          __    _                               _ " << endl;
+    cout << "  __          __    _                               _ " << endl;
     cout << " \\ \\        / /   | |                             | |" << endl;
     cout << "  \\ \\  /\\  / /___ | |  ___  ___   _ __ ___    ___ | |" << endl;
     cout << "   \\ \\/  \\/ // _ \\| | / __|/ _ \\ | '_ ` _ \\  / _ \\| |" << endl;
@@ -50,130 +50,60 @@ private:
   }
 
   string setColor(string prompt) {
-    char menuChoice;
-    string color;
-    menuChoice = toupper(prompt[0]);
-    switch (menuChoice) {
-      case 'W':
-        color = "White";
-        break;
-      case 'G':
-        color = "Gray";
-        break;
-      case 'B':
-        color = "Black";
-        break;
-      default:
-        cout << "Error reading color" << endl;
+    char choice = toupper(prompt[0]);
+    switch (choice) {
+      case 'W': return "White";
+      case 'G': return "Grey";
+      case 'B': return "Black";
+      default: cout << "Error reading color" << endl;
         exit(1);
     }
     return color;
   }
 
   string setEngineType() {
-    string evOrIc;
     do {
-      cout << "EV or IC: ";
-      getline(cin, evOrIc);
-      if (evOrIc.empty()) {
-        cout << "Error reading EV or IC" << endl;
-        exit(1);
+      auto type = inputWithPrompt("EV or IC: ");
+      if (type == "E" || type == "EV") return "EV";
+      if (type == "I" || type == "IC") return "IC";
+      cout << "Error reading cargo roofline" << endl;
+    } while (true);
+  }
+
+  string setCargoOrPassenger(string cargoOrPassenger) {
+    while (true) {
+      char choice = toupper(inputWithPrompt("(C)argo or (P)assenger: ")[0]);
+      switch (choice) {
+          case 'C': return "Cargo";
+          case 'P': return "Passenger";
+          default: cout << "Error reading cargo roofline" << endl;
       }
-      evOrIc = string(1, toupper(evOrIc[0])); // Convert to uppercase
-    } while (evOrIc != "E" && evOrIc != "I");
-
-    if (evOrIc == "E") {
-      evOrIc = "EV";
-    } else {
-      evOrIc = "IC";
     }
-    return evOrIc;
   }
 
-  string setCargoOrPassenger(string cargoOrPassenger, string evOrIc) {
-    char menuChoice;
-    if (evOrIc != "EV") {
-        do {
-            cout << "(C)argo or (P)assenger: ";
-            getline(cin, cargoOrPassenger);
-            if (cargoOrPassenger.empty()) {
-                cout << "Error reading C or P" << endl;
-                exit(1);
-            }
-            menuChoice = toupper(cargoOrPassenger[0]);
-        } while (menuChoice != 'C' && menuChoice != 'P');
-
-        switch (menuChoice) {
-            case 'C':
-                cargoOrPassenger = "Cargo";
-                break;
-            case 'P':
-                cargoOrPassenger = "Passenger";
-                break;
-            default:
-                cout << "Error reading cargo roofline" << endl;
-                exit(1);
-        }
+  string setCargoRoofline(string cargoRoofline) {
+    while (true) {
+      char choice = toupper(inputWithPrompt("Cargo Roofline (L)ow, (R)aised, (H)igh: ")[0]);
+      switch (choice) {
+          case 'L': return "Low";
+          case 'R': return "Raised";
+          case 'H': return "High";
+          default: cout << "Error reading cargo roofline" << endl;
+      }
     }
-    return cargoOrPassenger;
-  }
 
-  string setCargoRoofline(string cargoOrPassenger, string evOrIc, string cargoRoofline, string wheelbase) {
-    char menuChoice;
-    do {
-        cout << "Cargo Roofline (L)ow, (R)aised, (H)igh: ";
-        getline(cin, cargoRoofline);
-        if (cargoRoofline.empty()) {
-            cout << "Error reading cargo roofline" << endl;
-            exit(1);
-        }
-        menuChoice = toupper(cargoRoofline[0]);
-    } while (menuChoice != 'L' && menuChoice != 'R' && menuChoice != 'H');
-
-    switch (menuChoice) {
-        case 'L':
-            cargoRoofline = "Low";
-            break;
-        case 'R':
-            cargoRoofline = "Raised";
-            break;
-        case 'H':
-            cargoRoofline = "High";
-            break;
-        default:
-            cout << "Error reading cargo roofline" << endl;
-            exit(1);
-    }
-    return cargoRoofline;
   }
 
   string setWheelbased(string wheelbase) {
-    char menuChoice;
-    do {
-        cout << "Wheelbase (S)hort, (M)edium, (E)xtended: ";
-        getline(cin, wheelbase);
-        if (wheelbase.empty()) {
-            cout << "Error reading wheelbase" << endl;
-            exit(1);
-        }
-        menuChoice = toupper(wheelbase[0]);
-    } while (menuChoice != 'S' && menuChoice != 'M' && menuChoice != 'E');
-
-    switch (menuChoice) {
-        case 'S':
-            wheelbase = "Short";
-            break;
-        case 'M':
-            wheelbase = "Medium";
-            break;
-        case 'E':
-            wheelbase = "Extended";
-            break;
-        default:
-            cout << "Error reading wheelbase" << endl;
-            exit(1);
+    while (true) {
+      char choice = toupper(inputWithPrompt("Wheelbase (S)hort, (M)edium, (E)xtended: ")[0]);
+      switch (choice) {
+          case 'S': return "Short";
+          case 'M': return "Medium";
+          case 'E': return "Extended";
+          default: cout << "Error reading wheelbase" << endl;
+      }
     }
-    return wheelbase;
   }
 
   void collectData() {
@@ -183,8 +113,8 @@ private:
     color = setColor(inputWithPrompt("Color (W)hite, (G)ray, (B)lack: "));
     evOrIc = setEngineType();
     if (evOrIc != "EV") {
-      cargoOrPassenger = setCargoOrPassenger(cargoOrPassenger, evOrIc);
-      cargoRoofline = setCargoRoofline(cargoOrPassenger, evOrIc, cargoRoofline, wheelbase);
+      cargoOrPassenger = setCargoOrPassenger(cargoOrPassenger);
+      cargoRoofline = setCargoRoofline(cargoRoofline);
       wheelbase = setWheelbased(wheelbase);
     } else if (evOrIc == "EV") {
       cargoOrPassenger = "Cargo";
@@ -204,7 +134,6 @@ private:
       cout << "Cargo or Passenger: " << cargoOrPassenger << endl;
       cout << "Cargo Roofline: " << cargoRoofline << endl;
       cout << "Wheelbase: " << wheelbase << endl;
-
     } else {
       cout << "Cargo or Passenger: Cargo" << endl;
       cout << "Cargo Roofline: Medium" << endl;
@@ -217,8 +146,8 @@ private:
     if (!outputFile.is_open()) {
       throw runtime_error("Error opening file");
     }
-  outputFile << dealerName << "," << memoReference << "," << quantity << "," << color << "," << evOrIc << "," << cargoOrPassenger << "," << cargoRoofline << "," << wheelbase << endl;
-  outputFile.close();
+    outputFile << dealerName << "," << memoReference << "," << quantity << "," << color << "," << evOrIc << "," << cargoOrPassenger << "," << cargoRoofline << "," << wheelbase << endl;
+    outputFile.close();
   }
 };
 

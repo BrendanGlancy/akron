@@ -321,3 +321,45 @@ This chapter is a basic tour of the kernal-provided device infrastructure in a f
     - Do: cd to sys/dev/block an run ls -l to see specific interfaces and locatin
 - Its presence does not infer the exact tool(s) used to `udevadm info --query=all --name=/dev/sda`
 - Simple sample query - only approved use of udevadm (Section 3.5)
+
+Commands we covered:
+- dd
+- cronjobs
+    - `crontab -e`
+- Daemons
+
+## Frameworks / Schemas for learning
+- Just a structure, details forthcoming, for consistency
+- Three-layer model: userland, OS, Hardware
+- OS manages two kinds of resources: computer and memory
+- Every resource "is a file" with name, place, attributes
+- CPU Time moves fast (frequency in GHz) time allocated in "slices"
+- Multiple levels of details - and all are true
+- Course attention to: storage, startup, networking, security
+- Everything we teach should fit into your Framework
+
+**3.5 on udev ... omit**
+
+### Transition to 3.6 on SCSII
+
+- Small Computer System interfaces
+    - Deprecated, in that we don't actually connect to modern devices this way
+    - Signature "daisy chain" serialized cabling, such that devices numbered 0-7 
+    - Relevant in that Unix kernal refers to mass storage (HDD, SSD, CD-R) as SCSI
+- Keyword topology: structure matters
+    - Figure 4.1 in the boolk describes a functional set of peers on a bus topology
+    - Was structurally true, once, and that's what metters to Unix
+    - Modern approach is hierarchical, through a controller - workable on a chassis
+    - We have other general options: star, mesh, etc
+
+
+### A Reconciliation
+- In kernal level, for all things block
+- To "know how to talk to..."
+- Note real hardware types, bottom
+    - SATA disks, CD/DVD,USB
+    - With respective driver
+- Hard drives undergo "translation"
+    - From SCSI to SATA
+- Note bifurcation of sda and sr0 types
+- Different process can use diff drivers

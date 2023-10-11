@@ -340,7 +340,7 @@ Commands we covered:
 
 **3.5 on udev ... omit**
 
-### Transition to 3.6 on SCSII
+### Transition to 3.6 on SCSI
 
 - Small Computer System interfaces
     - Deprecated, in that we don't actually connect to modern devices this way

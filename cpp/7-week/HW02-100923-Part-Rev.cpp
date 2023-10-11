@@ -1,7 +1,5 @@
 // JCH 10/09/23 - revised
-
 // introduce struct, specifically array of struct
-
 // introduce int function and invocation 
 
 #include <iostream>

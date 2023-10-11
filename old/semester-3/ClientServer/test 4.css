@@ -1,0 +1,25 @@
+/* set all h1 and h2 heading element to red */
+h1, h2 {
+  color: red;
+}
+
+/* set the font family for all span element that are contained direct within h1 element to sans serif */
+h1 > span {
+  font-family: sans-serif;
+}
+
+/* Set the font-style to italic for an id named reference */
+#reference {
+  font-style: italic;
+}
+
+/* Set the text-decoration to none for all visted hyperlinks */
+a:visited {
+  text-decoration: none;
+}
+
+/* selector for a white text color and red background color for a class named red_white */
+.red_white {
+  color: white;
+  background-color: red;
+}

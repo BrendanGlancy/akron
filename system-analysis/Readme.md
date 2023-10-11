@@ -42,3 +42,4 @@ Schedule
 | 14    | MW (Sec 001)       | Week 14 (11/27 – 12/01)                          | Iterative software Construction              | Ch. 15                                      |
 | 15    | MW (Sec 001)       | Week 15 (11/04 – 12/08)                          | Change Management and Deployment            | Ch. 16                                      |
 | 16    | MW (Sec 001)       | Week 16 (12/11 – 12/15)                          | Exam #3; Wednesday, Dec. 13, 2023 @ 02:30 – 04:30 pm. |                                             |
+

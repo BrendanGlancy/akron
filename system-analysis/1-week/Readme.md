@@ -252,3 +252,108 @@ Do exercise labeled PE 3-6 at the end of Chapter 03 in the text.
 Answer the questions at the end of the exercise and label them properly. No hand-written answers. You should be able to reason what you include in the answer even though in this case you only need to create a UML Domain Class Diagram. You do need to identify the classes, their attributes, associations and multiplicity. You may do the domain model in Visio, paste it in Word and upload the Word document. There are other software available online to do UML diagrams. DO NOT give me links to diagrams done in these software. These links don't work.
 
 Answers should be in a Word and text file with your name near the top of the page. This file should be uploaded to the dropbox in Brightspace. The dropbox is available through Assessments or right under this assignment.
+
+## Using activity diagrams to Identify user stories
+
+Approaches include:
+- using activity diagrams: to ID user stories within a business process epic
+    - User/system interactions
+    - System automated functions
+- Identifying collectionsm of related but otherwise independent user stories
+    - individual reports in a data warehouse
+
+### Agile Modeling prinicpals
+- Software is your primary goal
+- Next effort is your secondary goal
+- Minimize remodeling
+- Embrace change, change incrementally
+- Model with a Purpose
+- Build multiple modelsHihg quality modes, get feedback
+- Focus on content not Representation
+- Communcate and learn 
+
+
+### The Unified process (UP) - Phases
+
+UP SDLC - iterates into four phases
+
+- Inception
+    - develop an approximate vision of the system
+- Elaboration
+    - Define the vision
+- construction
+    - Iteratively implement the remaining lower rise, element and prepare for deployment
+- Transition
+    - Complete the beta test and deploy
+
+### XP Cores Values and Practices
+
+- Communication
+- Simplicity
+- Feedback
+- Courage
+ 
+**XP Practices**
+
+1. Pair programming
+2. Test-Driven Development / Testing
+3. Continuous Integration
+4. Refactoring
+5. Simple Design
+6. Collective Code Ownership
+7. System Metaphor
+8. Small Releases
+9. Simple design
+10. Customer Reviews
+11. Code Standards
+12. 40-hour week
+
+**XP Project Approach**
+
+1. Create user stories
+2. Create System Metaphor
+3. Create acceptance test
+4. Plan releases
+5. acceptance test
+6. start next release
+
+## Scrum
+
+- Scrum sprints
+    - A time controlled mini-project to implement part of the system
+
+1. Create product backlog
+2. Scrum Planning meeting
+3. Scrum Master Scrum team start working on the backlog
+4. Scrum Sprint (daily meetings)
+5. Incremental Software results
+    - Plan for the next sprint
+
+**Agile Approach to release planning**
+
+1. Assign the highest priority product backlog stories to the Sprint 1 backlog
+2. After Sprint 1, review the process updates remaining in the product backlog
+3. Assign the (revised) highest-priority product backlog stories to the Sprint 2 backlog
+4. Pattern repeats for all the remaining sprints
+
+**Hybrid Approach to release planning**
+
+1. Unified Planning: Combine the broad timeline and milestones of traditional methods with Agile's user stories to create a prioritized product backlog. Ensure high-value features are addressed early while aligning with project goals and milestones.
+
+2. Iterative Development with Checkpoints: Work in sprints, delivering increments of the product. After each sprint or at predefined intervals, review progress against the high-level plan and milestones, making necessary adjustments.
+
+3. Feedback and Refinement: After each release or demo, gather feedback and adjust the product backlog accordingly. Reprioritize based on evolving requirements, ensuring alignment with initial objectives.
+
+4. Conclusive Phase: As the product nears its final release, conduct comprehensive testing and complete essential documentation, ensuring that the deliverable is robust and meets the set milestones.
+
+# Chapter 7
+
+**ERP Implementation activities**
+
+1. Construction
+2. Glue Code (GC)
+3. Change Management
+4. Deployment 
+5. Maintenance
+
+`Lab-03 - PE 4-6 not difficult but long`

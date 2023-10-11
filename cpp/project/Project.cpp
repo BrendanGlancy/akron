@@ -1,10 +1,17 @@
 #include <iostream>
 #include <sstream>
+#include <stdexcept>
 #include <string>
 #include <cctype>
 #include <limits>
 #include <fstream>
 using namespace std;
+
+struct car {
+  string brand;
+  string model;
+  int year;
+};
 
 class VechicleConfiguration {
 public:
@@ -29,6 +36,9 @@ private:
     cout << "     \\/  \\/  \\___||_| \\___|\\___/ |_| |_| |_| \\___|(_)" << endl;
     cout << "                                                     " << endl;
     cout << "-----------------------------------------------------------------" << endl;
+    cout << endl;
+    cout << "IMPORTANT: If you want to exit this program enter [Q/q]" << endl;
+    cout << endl;
     cout << ">>>>> Please enter the following information: <<<<<" << endl;
   }
 
@@ -55,8 +65,8 @@ private:
       case 'W': return "White";
       case 'G': return "Grey";
       case 'B': return "Black";
-      default: cout << "Error reading color" << endl;
-        exit(1);
+      case 'Q': runtime_error("User quit");
+      default: throw runtime_error("Error reading color");
     }
     return color;
   }
@@ -66,7 +76,7 @@ private:
       auto type = inputWithPrompt("EV or IC: ");
       if (type == "E" || type == "EV") return "EV";
       if (type == "I" || type == "IC") return "IC";
-      cout << "Error reading cargo roofline" << endl;
+      throw runtime_error("Error reading engine type");
     } while (true);
   }
 
@@ -76,7 +86,8 @@ private:
       switch (choice) {
           case 'C': return "Cargo";
           case 'P': return "Passenger";
-          default: cout << "Error reading cargo roofline" << endl;
+          case 'Q': runtime_error("User quit");
+          default: throw runtime_error("Error reading cargo or passenger type");
       }
     }
   }
@@ -88,10 +99,10 @@ private:
           case 'L': return "Low";
           case 'R': return "Raised";
           case 'H': return "High";
-          default: cout << "Error reading cargo roofline" << endl;
+          case 'Q': runtime_error("User quit");
+          default: throw runtime_error("Error reading cargo roofline");
       }
     }
-
   }
 
   string setWheelbased(string wheelbase) {
@@ -101,7 +112,23 @@ private:
           case 'S': return "Short";
           case 'M': return "Medium";
           case 'E': return "Extended";
-          default: cout << "Error reading wheelbase" << endl;
+          case 'Q': runtime_error("User quit");
+          default: throw runtime_error("Error reading wheelbase");
+      }
+    }
+  }
+
+  void setCarData(int quantity) {
+    car myCar[quantity];
+    for (int i = 0; i < quantity; i++) {
+      cout << endl;
+      cout << ">>>>> Please enter the following information for car #" << i + 1 << ": <<<<<" << endl;
+      myCar[i].brand = inputWithPrompt("Brand: ");
+      myCar[i].model = inputWithPrompt("Model: ");
+      string yearStr = inputWithPrompt("Year: ");
+      stringstream(yearStr) >> myCar[i].year;
+      if (myCar[i].year < 2000 || myCar[i].year >= 2024) {
+        throw runtime_error("Error reading year");
       }
     }
   }
@@ -112,6 +139,7 @@ private:
     quantity = inputQuantity();
     color = setColor(inputWithPrompt("Color (W)hite, (G)ray, (B)lack: "));
     evOrIc = setEngineType();
+    setCarData(quantity);
     if (evOrIc != "EV") {
       cargoOrPassenger = setCargoOrPassenger(cargoOrPassenger);
       cargoRoofline = setCargoRoofline(cargoRoofline);

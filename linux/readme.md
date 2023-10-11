@@ -363,3 +363,43 @@ Commands we covered:
     - From SCSI to SATA
 - Note bifurcation of sda and sr0 types
 - Different process can use diff drivers
+
+### Disk Drives as a metaphor for storage
+
+- AKA mass storage
+- Magnetice tape is linear, ie with beginning and end, cassette Optional
+- Notional disk, ie platter, has concentirc rings such that 
+    - typology: hard (not removable) or floppy (removable)
+- Hard Disk Physical Structure - also Section 4.1.
+
+---
+
+- Recall that resource attributes are rwx (and maybe d, b, c)
+- Consider that access can be random or sequential with respect to rwx
+- Tape is intrinsically linear, and may or may not have directory at front 
+- Disk is intrinsically random, and it requires a directory (and more)
+- Note that file objects are permitted to have various sizes
+    - which makes access interesting
+
+### Partitions 
+
+- To be considered part of the "Unix Legacy" - show we start a list
+    - ASCII character, SCSI drives, 80-column screens, command lines 
+- As root, perform: parted -l [partition editor, one of many]
+- Notable consequences 
+    - Can have multiple partitions on one physical device
+    - One is deemed bootable, to contain, to contain the "master boot record"
+        - Start here: is amenable to OS updates
+        - Other may not even run often, and require intervention to update
+
+### MBR: Master boot record
+
+- From parted -l
+- Primary partition contains content that is automatically executed first
+    - Mine display program called a loader, named grub
+    - Mine also displays the Windows partition form Virtualbox
+- Secondary and extended partitions available 
+- Pay attention:
+    - Command fdisk -l provides a useful view of physicla and logical devices
+    - Use of fdisk with other operand will change machine setup and perhaps "instability"
+

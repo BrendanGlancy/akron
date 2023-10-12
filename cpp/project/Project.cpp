@@ -56,6 +56,7 @@ private:
     if (quantity < 1 || quantity > 99) {
       throw runtime_error("Error reading quantity");
     }
+
     return quantity;
   }
 

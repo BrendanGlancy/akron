@@ -81,7 +81,7 @@ private:
     } while (true);
   }
 
-  string setCargoOrPassenger(string cargoOrPassenger) {
+  string setCargoOrPassenger() {
     while (true) {
       char choice = toupper(inputWithPrompt("(C)argo or (P)assenger: ")[0]);
       switch (choice) {
@@ -93,7 +93,7 @@ private:
     }
   }
 
-  string setCargoRoofline(string cargoRoofline) {
+  string setCargoRoofline() {
     while (true) {
       char choice = toupper(inputWithPrompt("Cargo Roofline (L)ow, (R)aised, (H)igh: ")[0]);
       switch (choice) {
@@ -106,7 +106,7 @@ private:
     }
   }
 
-  string setWheelbased(string wheelbase) {
+  string setWheelbased() {
     while (true) {
       char choice = toupper(inputWithPrompt("Wheelbase (S)hort, (M)edium, (E)xtended: ")[0]);
       switch (choice) {
@@ -142,9 +142,9 @@ private:
     evOrIc = setEngineType();
     setCarData(quantity);
     if (evOrIc != "EV") {
-      cargoOrPassenger = setCargoOrPassenger(cargoOrPassenger);
-      cargoRoofline = setCargoRoofline(cargoRoofline);
-      wheelbase = setWheelbased(wheelbase);
+      cargoOrPassenger = setCargoOrPassenger();
+      cargoRoofline = setCargoRoofline();
+      wheelbase = setWheelbased();
     } else if (evOrIc == "EV") {
       cargoOrPassenger = "Cargo";
       cargoRoofline = "Medium";

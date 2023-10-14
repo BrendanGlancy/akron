@@ -15,11 +15,15 @@ struct car {
 
 class VechicleConfiguration {
 public:
-  void start() {
+  void run() {
     welcomeMessage();
-    collectData();
-    displayData();
-    saveToFile();
+    try {
+      collectData();
+      displayData();
+      saveToFile();
+    } catch (const runtime_error& e) {
+      cerr << e.what() << endl;
+    }
   }
 
 private:
@@ -183,7 +187,7 @@ private:
 int main() {
   try {
     VechicleConfiguration app;
-    app.start();
+    app.run();
   } catch (const exception& e) {
     cerr << e.what() << endl;
     exit(1);

@@ -1,10 +1,8 @@
 # Chapter 1
 
-What is a system:
-**A collection of part that work together to achieve a goal**
+What is a system: **A collection of part that work together to achieve a goal**
 
-What is an information system:
-**A system that deals with information**
+What is an information system: **A system that deals with information**
 
 ## Three components of computer information system:
 
@@ -15,51 +13,70 @@ What is an information system:
 ## Basic Concepts of system analysis and design
 
 **Software**
+
 - System Software, talks to the hardware
 - Application Software, User interaction software
 
-**Computer Application (App)** - a computer software program that executes on a computing device to carry out a specific set of functions 
+**Computer Application (App)** - a computer software program that executes on a
+computing device to carry out a specific set of functions
+
 - Modest Scope
 
-**Information System** - a set of interrelated components that collects, processes and provides as output the information needed to complete business tasks
+**Information System** - a set of interrelated components that collects,
+processes and provides as output the information needed to complete business
+tasks
+
 - Broader scope than "app"
 - Includes database and related manual processes
 
-## Analysis 
+## Analysis
 
 - System analysis
-    - What is required for the new system to solve a problem
+  - What is required for the new system to solve a problem
 - Systems design
-    - How the system will operate to solve a problem
+  - How the system will operate to solve a problem
 
-### Software Development 
+### Software Development
 
-User stories are a key part of agile software development. They are short, simple descriptions of a software feature or functionality from the perspective of a user. User stories are written in plain language and are intended to be easily accessible. They are used to capture requirements in an agile project and help the development team understand the needs and expectations of the users.
+User stories are a key part of agile software development. They are short,
+simple descriptions of a software feature or functionality from the perspective
+of a user. User stories are written in plain language and are intended to be
+easily accessible. They are used to capture requirements in an agile project and
+help the development team understand the needs and expectations of the users.
 
-This is where we decide what features our software product needs, and then we imagine how that will effect the design **required features effect the design** think of a truck and a race car
+This is where we decide what features our software product needs, and then we
+imagine how that will effect the design **required features effect the design**
+think of a truck and a race car
 
-Its the same for information systems, based on the features which you get from user stories, you develop the design requirements
+Its the same for information systems, based on the features which you get from
+user stories, you develop the design requirements
 
 ### Structured Analysis and Design
 
 **Waterfall** Approach to Software development
+
 - Too ridged
 - Focuses on compartmentalizing projects into several phases.
 
 **Agile** Approach
+
 - Focuses on self-adaptive processes with an emphasis on individual talents.
 
 ### Different types on Information Systems
 
 Transaction Processing System (EX. ATM)
 
-Combine a Transaction Processing System and data analytics system types to provide overall support systems
+Combine a Transaction Processing System and data analytics system types to
+provide overall support systems
 
-**Management information systems** (MIS): Help middle managers plan and control workflow.
+**Management information systems** (MIS): Help middle managers plan and control
+workflow.
 
-**Decision support systems** (DSS): Computer-based systems that support business or organizational decision-making.
+**Decision support systems** (DSS): Computer-based systems that support business
+or organizational decision-making.
 
-**Executive information systems** (EIS): A type of DSS that helps senior executives make decisions.
+**Executive information systems** (EIS): A type of DSS that helps senior
+executives make decisions.
 
 ### The SDLC (Software Development Life Cycle) generally follows these seven stages:
 
@@ -71,45 +88,59 @@ Combine a Transaction Processing System and data analytics system types to provi
 - Implement and launch the product
 - Maintenance
 
-**Project** - a planned undertaking that has a beginning and end and that produces some definite result
+**Project** - a planned undertaking that has a beginning and end and that
+produces some definite result
 
 - Used to develop an information system
 - Requires knowledge of systems analysis and systems design tools and techniques
 
-### Agile Development 
+### Agile Development
 
 Software Development
+
 - More like inventing a gadget then building a house
 - Big requirements upfront not a viable option
 - So instead "Build a little, review a little, revise a little"
 
-
-**Scrum** is an agile methodology that involves a small team led by a Scrum master. The team works in short cycles called sprints. The team meets daily to discuss tasks and any obstacles that need to be removed. The Scrum master's job is to remove any obstacles to getting work done.
+**Scrum** is an agile methodology that involves a small team led by a Scrum
+master. The team works in short cycles called sprints. The team meets daily to
+discuss tasks and any obstacles that need to be removed. The Scrum master's job
+is to remove any obstacles to getting work done.
 
 # Week 2
 
-`Functional Decomposition` - is a method of analysis that breaks down a complex process into smaller, more manageable pasts. The goal is to simplify the system so that it is easier to understand.
+`Functional Decomposition` - is a method of analysis that breaks down a complex
+process into smaller, more manageable pasts. The goal is to simplify the system
+so that it is easier to understand.
 
 **7 components of an Information system**
 
 - Hardware
-- Software 
+- Software
 - Data
-- People 
+- People
 - Outputs
-- Inputs 
+- Inputs
 - Procedures
 
-A lot of organizations user applications from different vendors
-This creates a situation where you need Enterprise Application Integration
+A lot of organizations user applications from different vendors This creates a
+situation where you need Enterprise Application Integration
 
-``Assignment Week 2``
+`Assignment Week 2`
 
-PE 1-5. Read the I2C2 case study in Appendix A for I2C2’s existing clinic and pharmacy business and the project to update I2C2’s systems supporting that business. Consider that for this clinic and pharmacy business, I2C2 has an existing, well-understood set of business processes. Further, the systems supporting that business run well and already provide many of the features that I2C2 needs. Finally, I2C2 has been able to clearly describe the new software features needed to enhance those systems. Given this, explain the following:
+PE 1-5. Read the I2C2 case study in Appendix A for I2C2’s existing clinic and
+pharmacy business and the project to update I2C2’s systems supporting that
+business. Consider that for this clinic and pharmacy business, I2C2 has an
+existing, well-understood set of business processes. Further, the systems
+supporting that business run well and already provide many of the features that
+I2C2 needs. Finally, I2C2 has been able to clearly describe the new software
+features needed to enhance those systems. Given this, explain the following:
 
-a. How much is this systems project like inventing a new gadget?
-b. How much is this systems project like creating blueprints to add rooms to a house?
-c. Given the previous points, would you suggest an agile approach using emergent requirements versus a plan-driven approach using big requirements up front (BRUF)? Why?
+a. How much is this systems project like inventing a new gadget? b. How much is
+this systems project like creating blueprints to add rooms to a house? c. Given
+the previous points, would you suggest an agile approach using emergent
+requirements versus a plan-driven approach using big requirements up front
+(BRUF)? Why?
 
 ### Business Analysis Modeling:
 
@@ -121,106 +152,138 @@ c. Given the previous points, would you suggest an agile approach using emergent
 Fundamental Types of Models in SYSA&D
 
 - Two fundamental types of models in SA&D
-    - Models of the real world context and systems as part of it (analysis models)
-    - Models of the internal structure of the information systems that enable the real-world systems to work (design models)
+  - Models of the real world context and systems as part of it (analysis models)
+  - Models of the internal structure of the information systems that enable the
+    real-world systems to work (design models)
 
-**Model** - Representation of the real world
-EX: model airplanes & cars
+**Model** - Representation of the real world EX: model airplanes & cars
 
-### Modeling for Software Development 
+### Modeling for Software Development
 
 - Software modeling is shaped by 4 interweaved factors:
-    1. How the real world is seen
-    2. How software is defined
-    3. The process of development and
-    4. the modeling language
+
+  1. How the real world is seen
+  2. How software is defined
+  3. The process of development and
+  4. the modeling language
 
 - UML can do (Unified modeling language)
-1. Behavioral modeling (Use cases, their dependencies, generalization, separating and combining)
-2. Structural modeling (Classes, relationships, multiplicity, aggregation, interfaces) and 
-3. Dynamic modeling (methods in the classes, sequence diagrams, activity diagrams, statechart diagrams, collaboration diagrams)
+
+1. Behavioral modeling (Use cases, their dependencies, generalization,
+   separating and combining)
+2. Structural modeling (Classes, relationships, multiplicity, aggregation,
+   interfaces) and
+3. Dynamic modeling (methods in the classes, sequence diagrams, activity
+   diagrams, statechart diagrams, collaboration diagrams)
 
 ### Our focus: Business Process Modeling
 
 - Tool UML Activity diagram, a widely used tool for behavioral modeling
-    - determining what actions and activities take place in the context of the area of interest
-- Purpose: Articulating activities and specific rules for control and object flows that specify the way in which and organized group of actors (typically human beings) act to achieve a goal
+  - determining what actions and activities take place in the context of the
+    area of interest
+- Purpose: Articulating activities and specific rules for control and object
+  flows that specify the way in which and organized group of actors (typically
+  human beings) act to achieve a goal
 
 ### Chapter 3: Identifying and Documenting Key Concepts of the Domain of Interest
 
 Entity Relationship Diagram (ERD or ER diagram)
 
-- Are there any tangible things? Are there any organizational units? Sites/Location? Are there incidents or events that need to be recorded
+- Are there any tangible things? Are there any organizational units?
+  Sites/Location? Are there incidents or events that need to be recorded
 
 Association - A naturally occurring relationship between classes (UML term)
 
 **Minimum and Maximum Multiplicity**
 
 - Associations have minimum and maximum constraints
-    - Minimum is zero, the association is optional
-    - If the minimum is at least one, the association is mandatory
+  - Minimum is zero, the association is optional
+  - If the minimum is at least one, the association is mandatory
 
-
-| ERD Terminology       | UML Class Diagrams       | Description |
-|-----------------------|--------------------------|-------------|
-| Entity                | Class                    | Represents a thing with stored information. |
-| Attribute             | Attribute                | Describes a property of an entity or class. |
-| Relationship          | Association              | Describes how entities or classes relate to each other. |
-| Primary Key           | Key Constraint           | A unique identifier for records in an entity or objects in a class. |
-| Foreign Key           | N/A (Explicitly shown through associations) | A field in an entity that links to the primary key of another entity. |
-| Composite Attribute   | N/A (Broken down into simpler attributes) | An attribute that can be divided into sub-parts, representing more basic attributes with independent meanings. |
-| Multi-valued Attribute| Collection Attribute     | An attribute that holds multiple values. |
-| Derived Attribute     | Derived Attribute        | An attribute whose value can be derived from other attributes in the database. |
-| Weak Entity           | Dependent Class          | An entity that depends on another entity for its existence. |
-| Cardinality           | Multiplicity             | Indicates the maximum number of times an instance in one entity can relate to instances of another entity. |
-| ISA (Is a)            | Inheritance              | Represents an inheritance relationship between a superclass and subclass. |
+| ERD Terminology        | UML Class Diagrams                          | Description                                                                                                    |
+| ---------------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Entity                 | Class                                       | Represents a thing with stored information.                                                                    |
+| Attribute              | Attribute                                   | Describes a property of an entity or class.                                                                    |
+| Relationship           | Association                                 | Describes how entities or classes relate to each other.                                                        |
+| Primary Key            | Key Constraint                              | A unique identifier for records in an entity or objects in a class.                                            |
+| Foreign Key            | N/A (Explicitly shown through associations) | A field in an entity that links to the primary key of another entity.                                          |
+| Composite Attribute    | N/A (Broken down into simpler attributes)   | An attribute that can be divided into sub-parts, representing more basic attributes with independent meanings. |
+| Multi-valued Attribute | Collection Attribute                        | An attribute that holds multiple values.                                                                       |
+| Derived Attribute      | Derived Attribute                           | An attribute whose value can be derived from other attributes in the database.                                 |
+| Weak Entity            | Dependent Class                             | An entity that depends on another entity for its existence.                                                    |
+| Cardinality            | Multiplicity                                | Indicates the maximum number of times an instance in one entity can relate to instances of another entity.     |
+| ISA (Is a)             | Inheritance                                 | Represents an inheritance relationship between a superclass and subclass.                                      |
 
 ### UML Domain Class Notation
 
 - Domain class a name and attributes (no methods)
 - Class name is always capitalized
 
-`0..1`: Zero or one instance (Optional relationship)
-`1`: Exactly one instance (Mandatory relationship)
-`0..*`: Zero or more instances
-`1..*`: One or more instances
-`n`: Exactly n instances, where n is a specific integer
+`0..1`: Zero or one instance (Optional relationship) `1`: Exactly one instance
+(Mandatory relationship) `0..*`: Zero or more instances `1..*`: One or more
+instances `n`: Exactly n instances, where n is a specific integer
 
-# Week 4 
+# Week 4
 
 `Next Monday We'll have the first Exam`
 
 UML Domain Class Notation
 
 - Domain class a name and attributes (no methods)
-- Class name is always capitalized 
-- Attribute names are not capitalized and use camelback notation (words run together and second word is capitalized)
+- Class name is always capitalized
+- Attribute names are not capitalized and use camelback notation (words run
+  together and second word is capitalized)
 
+**Unary relationship**
 
-**Unary relationship** 
-- A unary relationship, also known as a reflexive relationship, is a relationship in which a class is associated with itself. For example, consider a Person class where each Person object may have a relationship to a 'parent' who is also a Person. This kind of relationship would be a unary relationship, since it involves only one class.
+- A unary relationship, also known as a reflexive relationship, is a
+  relationship in which a class is associated with itself. For example, consider
+  a Person class where each Person object may have a relationship to a 'parent'
+  who is also a Person. This kind of relationship would be a unary relationship,
+  since it involves only one class.
 
 **One-to-one relationship**
-- In a one-to-one (1:1) relationship, an instance of class A is associated with exactly one instance of class B, and an instance of class B is associated with exactly one instance of class A. For instance, consider two classes, Human and Heart. Each Human object has one Heart, and each Heart object belongs to one Human. This relationship would be modeled as one-to-one.
-**One-to-many relationship**
-- In a one-to-many (1:N) relationship, an instance of class A can be associated with zero, one, or multiple instances of class B, but each instance of class B is associated with exactly one instance of class A. For example, consider a Teacher class and a Student class. One Teacher can have multiple Students, but each Student has exactly one Teacher. This is a one-to-many relationship. 
 
+- In a one-to-one (1:1) relationship, an instance of class A is associated with
+  exactly one instance of class B, and an instance of class B is associated with
+  exactly one instance of class A. For instance, consider two classes, Human and
+  Heart. Each Human object has one Heart, and each Heart object belongs to one
+  Human. This relationship would be modeled as one-to-one. **One-to-many
+  relationship**
+- In a one-to-many (1:N) relationship, an instance of class A can be associated
+  with zero, one, or multiple instances of class B, but each instance of class B
+  is associated with exactly one instance of class A. For example, consider a
+  Teacher class and a Student class. One Teacher can have multiple Students, but
+  each Student has exactly one Teacher. This is a one-to-many relationship.
 
-In UML class diagrams, these relationships are often depicted with lines connecting the classes involved. The multiplicity (1, 1.., 0..1, etc.) is usually indicated at each end of the line to specify the type of relationship. For example, for a one-to-many relationship between Teacher and Student, the line might have a "1" at the end touching the Teacher class and a "" at the end touching the Student class, indicating that one Teacher can have many Students.
+In UML class diagrams, these relationships are often depicted with lines
+connecting the classes involved. The multiplicity (1, 1.., 0..1, etc.) is
+usually indicated at each end of the line to specify the type of relationship.
+For example, for a one-to-many relationship between Teacher and Student, the
+line might have a "1" at the end touching the Teacher class and a "" at the end
+touching the Student class, indicating that one Teacher can have many Students.
 
-**Association class -** an association that is treated as a class in many to many association because it has attributes that need to be remembered (such as grade)
+**Association class -** an association that is treated as a class in many to
+many association because it has attributes that need to be remembered (such as
+grade)
 
-In simple terms, both composition and aggregation are ways to describe relationships between two things (or "classes" in programming lingo) where one is considered a part of another. However the key difference lies in how tightly connected these two thing are 
+In simple terms, both composition and aggregation are ways to describe
+relationships between two things (or "classes" in programming lingo) where one
+is considered a part of another. However the key difference lies in how tightly
+connected these two thing are
 
-**Composition** - In composition, if the whole goes away or is destroyed, the part goes away with it. 
+**Composition** - In composition, if the whole goes away or is destroyed, the
+part goes away with it.
 
-**Aggregation** - In aggregation, even if the whole goes away, the part can still exist. 
+**Aggregation** - In aggregation, even if the whole goes away, the part can
+still exist.
 
-Aggregation is a design concept in object-oriented programming (OOP) that represents a "has-a" or "part-of" relationship between two classes. 
+Aggregation is a design concept in object-oriented programming (OOP) that
+represents a "has-a" or "part-of" relationship between two classes.
 
 `To review for the test read chapters 1-4`
 
-### User Stories 
+### User Stories
 
 **Three parts to a user story**
 
@@ -228,7 +291,8 @@ Aggregation is a design concept in object-oriented programming (OOP) that repres
 - **What:** What the user wants to accomplish
 - **Why:** The benefit or reason the user wants this feature
 
-Heres an exmaple of a user story, each line represents one of the three parts in order from above
+Heres an exmaple of a user story, each line represents one of the three parts in
+order from above
 
 ```
 As a frequent traveler,
@@ -247,22 +311,32 @@ Evaluating user stories with the INVEST Model:
 
 ### Lab -03
 
-Do exercise labeled PE 3-6 at the end of Chapter 03 in the text. 
+Do exercise labeled PE 3-6 at the end of Chapter 03 in the text.
 
-Answer the questions at the end of the exercise and label them properly. No hand-written answers. You should be able to reason what you include in the answer even though in this case you only need to create a UML Domain Class Diagram. You do need to identify the classes, their attributes, associations and multiplicity. You may do the domain model in Visio, paste it in Word and upload the Word document. There are other software available online to do UML diagrams. DO NOT give me links to diagrams done in these software. These links don't work.
+Answer the questions at the end of the exercise and label them properly. No
+hand-written answers. You should be able to reason what you include in the
+answer even though in this case you only need to create a UML Domain Class
+Diagram. You do need to identify the classes, their attributes, associations and
+multiplicity. You may do the domain model in Visio, paste it in Word and upload
+the Word document. There are other software available online to do UML diagrams.
+DO NOT give me links to diagrams done in these software. These links don't work.
 
-Answers should be in a Word and text file with your name near the top of the page. This file should be uploaded to the dropbox in Brightspace. The dropbox is available through Assessments or right under this assignment.
+Answers should be in a Word and text file with your name near the top of the
+page. This file should be uploaded to the dropbox in Brightspace. The dropbox is
+available through Assessments or right under this assignment.
 
 ## Using activity diagrams to Identify user stories
 
 Approaches include:
+
 - using activity diagrams: to ID user stories within a business process epic
-    - User/system interactions
-    - System automated functions
+  - User/system interactions
+  - System automated functions
 - Identifying collectionsm of related but otherwise independent user stories
-    - individual reports in a data warehouse
+  - individual reports in a data warehouse
 
 ### Agile Modeling prinicpals
+
 - Software is your primary goal
 - Next effort is your secondary goal
 - Minimize remodeling
@@ -270,21 +344,21 @@ Approaches include:
 - Model with a Purpose
 - Build multiple modelsHihg quality modes, get feedback
 - Focus on content not Representation
-- Communcate and learn 
-
+- Communcate and learn
 
 ### The Unified process (UP) - Phases
 
 UP SDLC - iterates into four phases
 
 - Inception
-    - develop an approximate vision of the system
+  - develop an approximate vision of the system
 - Elaboration
-    - Define the vision
+  - Define the vision
 - construction
-    - Iteratively implement the remaining lower rise, element and prepare for deployment
+  - Iteratively implement the remaining lower rise, element and prepare for
+    deployment
 - Transition
-    - Complete the beta test and deploy
+  - Complete the beta test and deploy
 
 ### XP Cores Values and Practices
 
@@ -292,7 +366,7 @@ UP SDLC - iterates into four phases
 - Simplicity
 - Feedback
 - Courage
- 
+
 **XP Practices**
 
 1. Pair programming
@@ -320,31 +394,42 @@ UP SDLC - iterates into four phases
 ## Scrum
 
 - Scrum sprints
-    - A time controlled mini-project to implement part of the system
+  - A time controlled mini-project to implement part of the system
 
 1. Create product backlog
 2. Scrum Planning meeting
 3. Scrum Master Scrum team start working on the backlog
 4. Scrum Sprint (daily meetings)
 5. Incremental Software results
-    - Plan for the next sprint
+   - Plan for the next sprint
 
 **Agile Approach to release planning**
 
 1. Assign the highest priority product backlog stories to the Sprint 1 backlog
 2. After Sprint 1, review the process updates remaining in the product backlog
-3. Assign the (revised) highest-priority product backlog stories to the Sprint 2 backlog
+3. Assign the (revised) highest-priority product backlog stories to the Sprint 2
+   backlog
 4. Pattern repeats for all the remaining sprints
 
 **Hybrid Approach to release planning**
 
-1. Unified Planning: Combine the broad timeline and milestones of traditional methods with Agile's user stories to create a prioritized product backlog. Ensure high-value features are addressed early while aligning with project goals and milestones.
+1. Unified Planning: Combine the broad timeline and milestones of traditional
+   methods with Agile's user stories to create a prioritized product backlog.
+   Ensure high-value features are addressed early while aligning with project
+   goals and milestones.
 
-2. Iterative Development with Checkpoints: Work in sprints, delivering increments of the product. After each sprint or at predefined intervals, review progress against the high-level plan and milestones, making necessary adjustments.
+2. Iterative Development with Checkpoints: Work in sprints, delivering
+   increments of the product. After each sprint or at predefined intervals,
+   review progress against the high-level plan and milestones, making necessary
+   adjustments.
 
-3. Feedback and Refinement: After each release or demo, gather feedback and adjust the product backlog accordingly. Reprioritize based on evolving requirements, ensuring alignment with initial objectives.
+3. Feedback and Refinement: After each release or demo, gather feedback and
+   adjust the product backlog accordingly. Reprioritize based on evolving
+   requirements, ensuring alignment with initial objectives.
 
-4. Conclusive Phase: As the product nears its final release, conduct comprehensive testing and complete essential documentation, ensuring that the deliverable is robust and meets the set milestones.
+4. Conclusive Phase: As the product nears its final release, conduct
+   comprehensive testing and complete essential documentation, ensuring that the
+   deliverable is robust and meets the set milestones.
 
 # Chapter 7
 
@@ -353,9 +438,70 @@ UP SDLC - iterates into four phases
 1. Construction
 2. Glue Code (GC)
 3. Change Management
-4. Deployment 
+4. Deployment
 5. Maintenance
 
 `Lab-03 - PE 4-6 not difficult but long`
 
-### 
+### Use Cases
+
+Typically includes:
+
+- Use case name
+- Scenario
+- Brief description
+- actors
+- Related use cases
+- Stakeholders
+- Preconditions
+- Postconditions
+
+Guideline for writing effective use cases
+
+1. Write each set in form of subject-verb-direct object (and sometimes preposition-indirect object)
+2. Make sure it is clear who the initiator of the step is
+3. Write the steps form the perspective of the independent observer
+4. Write each step at about the same level of abstraction
+5. Ensure the use case has a sensible set of steps 
+6. Apply KISS principals liberally
+7. Write repeating instructions after the set of steps to be repeated
+
+
+**Four types of actors**
+
+1. Primary business actor
+2. Primary system actor
+3. External server actor
+4. External receiver actor
+
+### Use case diagrams
+
+**Abstract use case** - use case that reduces redundancy in two or more other use cases by combining common steps found in both
+
+**Depends on** - use case relationship that specify which other use cases must be performed before the current use case
+`<<depends on>>`
+
+### Use-Case Ranking and Priority Matrix
+
+| Use-Case          | Priority | Business Value | Implementation Complexity | Rank |
+|-------------------|----------|----------------|---------------------------|------|
+| User Registration | High     | High           | Low                       | 1    |
+| User Login        | High     | Medium         | Low                       | 2    |
+| Data Backup       | Medium   | High           | High                      | 3    |
+| Search Feature    | Low      | Medium         | Medium                    | 4    |
+| User Profile Edit | Medium   | Low            | Low                       | 5    |
+
+## Priority Levels:
+- **High:** Must be implemented in the first release.
+- **Medium:** Can be deferred to subsequent releases but is still important.
+- **Low:** Can be deferred or might not be implemented depending on time and resources.
+
+## Business Value:
+- **High:** Critical for the business operations or revenue.
+- **Medium:** Important but not critical.
+- **Low:** Nice to have.
+
+## Implementation Complexity:
+- **High:** Requires significant effort and time.
+- **Medium:** Requires a moderate amount of effort.
+- **Low:** Can be implemented quickly with minimal effort.

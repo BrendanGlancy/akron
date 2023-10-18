@@ -481,7 +481,7 @@ Guideline for writing effective use cases
 **Depends on** - use case relationship that specify which other use cases must be performed before the current use case
 `<<depends on>>`
 
-### Use-Case Ranking and Priority Matrix
+## Use-Case Ranking and Priority Matrix
 
 | Use-Case          | Priority | Business Value | Implementation Complexity | Rank |
 |-------------------|----------|----------------|---------------------------|------|
@@ -491,17 +491,97 @@ Guideline for writing effective use cases
 | Search Feature    | Low      | Medium         | Medium                    | 4    |
 | User Profile Edit | Medium   | Low            | Low                       | 5    |
 
-## Priority Levels:
+### Priority Levels:
 - **High:** Must be implemented in the first release.
 - **Medium:** Can be deferred to subsequent releases but is still important.
 - **Low:** Can be deferred or might not be implemented depending on time and resources.
 
-## Business Value:
+### Business Value:
 - **High:** Critical for the business operations or revenue.
 - **Medium:** Important but not critical.
 - **Low:** Nice to have.
 
-## Implementation Complexity:
+### Implementation Complexity:
 - **High:** Requires significant effort and time.
 - **Medium:** Requires a moderate amount of effort.
 - **Low:** Can be implemented quickly with minimal effort.
+
+### SSD System Sequence Diagram
+
+A System Sequence Diagram (SSD) is a visual representation that depicts interactions between an external actor and the system under design. It provides a high-level view of the ordered sequence of interactions related to a specific use case scenario. The main objective is to illustrate the flow of messages in the system and how the system will respond to external events.
+
+We are thinking about function calls in this notation, this step it where you begin to think about how your program is going to be written
+
+
+#### Notation
+
+In the context of SSDs, we are essentially mapping user or external system actions into system operations or function calls. This visualization step helps software designers and developers start thinking about the actual implementation.
+
+- **Actor**: This is an external entity, often a user, that interacts with the system. It's represented by a "stick figure."
+  
+- **System**: This represents the system or software that's being designed. It's usually represented as a big rectangle.
+
+- **Message**: Arrows pointing from the actor to the system denote function calls or messages sent to the system. These arrows are often annotated with conditions or iterative markers when needed.
+
+- **Lifeline**: This is a dotted line that descends from each object, representing the object's existence over time.
+
+- **Return Message**: Arrows pointing from the system back to the actor denote return values or messages sent from the system to the actor.
+
+#### Example
+
+Let's use a "User Login" scenario to help illustrate:
+
+```
+User System
+| |
+| login(username, password) |
+|------------------->|
+| |
+| return success/failure |
+|<-------------------|
+| |
+```
+
+In the SSD above:
+
+1. The "User" (actor) sends a `login` message (function call) to the system with the parameters `username` and `password`.
+2. The system processes the message and sends back a return message indicating either a success or failure of the login operation.
+
+#### Importance of SSDs
+
+- **Design Thinking**: Helps developers think about the function signatures and potential parameters.
+  
+- **Communication**: Provides a clear communication tool among stakeholders, ensuring everyone understands the system's primary interactions.
+  
+- **Requirements Validation**: Acts as a validation step to ensure the system's design will meet the requirements.
+
+- **Blueprint**: Acts as a blueprint for developers when they start implementing specific functionalities.
+
+In summary, System Sequence Diagrams serve as an essential bridge between the high-level requirements and the detailed design, helping stakeholders envision how the system will operate.
+
+## CRUD Matrix
+
+| Entity/Functionality | Create | Read | Update | Delete |
+|----------------------|--------|------|--------|--------|
+| User Profile         |   X    |  X   |   X    |   X    |
+| Orders               |   X    |  X   |   X    |   X    |
+| Inventory            |   X    |  X   |   X    |        |
+| Blog Posts           |   X    |  X   |   X    |   X    |
+| Comments             |   X    |  X   |        |   X    |
+
+Legend:
+- **X**: Supported operation.
+- (Empty Cell): Unsupported operation.
+
+## Integrating Requirements Models
+
+Use case Diagrams
+- Use case descriptions
+- Activity diagrams
+- System sequence diagrams (ssd)
+
+Domain model class diagram
+- (SSD) System sequence diagrams
+- State machine diagrams
+
+

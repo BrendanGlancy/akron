@@ -584,4 +584,28 @@ Domain model class diagram
 - (SSD) System sequence diagrams
 - State machine diagrams
 
+# Chapter 9 - Architectural Context for Systems Development
+
+**Dimensions of Enterprise Architecture**
+- Business Architecture
+- Data Architecture
+- Application Architecture
+- Technology Architecture
+
+### Zachman Framework for Enterprise Architectures
+
+- the Zachman Framework, in brief
+- A well known mechanism for organizing Enterprise Architecture 
+- Five actor roles: Planner, Owner, Designer, builder, subcontractor
+
+# Zachman Framework
+
+| Stakeholder / Abstraction | Data (What)                          | Process (How)                | Network (Where)                 | People (Who)                     | Time (When)                     | Motivation (Why)              |
+|---------------------------|--------------------------------------|-----------------------------|--------------------------------|---------------------------------|--------------------------------|------------------------------|
+| Planner (Scope)           | High-level data entities             | Business goals & strategies | Geographic locations & network | Organizational units & structure | Business events & cycles       | Business objectives           |
+| Owner (Business Model)    | Business entities & relationships    | Business process diagrams   | Business logistics             | Roles & responsibilities         | Business schedules              | Business rules & regulations  |
+| Designer (System Model)   | Logical data model                   | System functionality        | System architecture            | System user roles & interfaces  | System processing schedules    | System rationale & objectives |
+| Builder (Technology Model)| Physical data schema                 | Technology processes        | Technology infrastructure      | Software components & modules   | System execution timing        | System constraints & limits   |
+| Subcontractor (Detailed Representations) | Data tables & structures | Code & scripts            | Network configurations          | Interface designs               | Event-driven architectures     | Implementation justifications |
+| Working System            | Actual data                          | Running applications       | Deployed network & servers     | Active users & sessions         | Real-time system clocks        | Active motivations & drivers  |
 

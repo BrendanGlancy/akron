@@ -610,3 +610,6 @@ Domain model class diagram
 | Working System            | Actual data                          | Running applications       | Deployed network & servers     | Active users & sessions         | Real-time system clocks        | Active motivations & drivers  |
 
 
+`Test 2 October 30th`
+
+Read chapters 4-7

@@ -1,0 +1,180 @@
+/**
+ * Name: Brendan Glancy
+ * Date: 09/13/2022
+ * Assignment: Project 2 Chapter 4
+ * Description: This is the CSS file for the Project 2 Chapter 4, styles have been added to make it look similar to the picture in the textbook as instructed
+ */
+
+* {
+   box-sizing: border-box;
+}
+body, section, header, div, p, h1, h2, h3, ul, li {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Open Sans', sans-serif;
+   box-sizing: border-box;
+   background-color: #e4e7eb;
+   font-weight: 300;
+}
+
+header {
+   margin-left: 20px;
+}
+
+h1 {
+   text-align: center;
+   font-weight: 600;
+   font-size: 42px;
+   padding: 10px 0;
+}
+
+/* add styles here */
+
+/* add font-weights: 800, 600, 400, 300 */
+/* add font-sizes:  36px, 24px, 18px, 14px, 12px */
+ul span {
+   font-weight: 600;
+   font-size: 18px;
+}
+
+h3 {
+   font-weight: 800;
+   font-size: 24px;
+   padding: 10px 0;
+}
+
+
+/* add 40px padding to the body */
+body {
+   padding: 40px;
+   background-color: #e4e7eb;
+}
+
+/* set the width of the section to 910px */
+/* the section should have the box-shadow property */
+section {
+   width: 910px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+   display: inline-block;
+}
+
+
+/* styles for the "price free" class */
+div.column {
+   display: inline-block;
+   width: 300px;
+   text-align: center;
+   padding-bottom: 30px;
+   background-color: #fff;
+}
+
+.price.free {
+   background-color: #5BB189;
+}
+
+.price {
+   padding: 10px 0;
+   font-weight: 800;
+   font-size: 36px;
+}
+
+.price span {
+   font-weight: 300;
+   font-size: 14px;
+}
+
+
+/* set the background color to 2F4F4F and font color to white*/
+.column.featured {
+   background-color: #2F4F4F;
+   color: white;
+}
+
+.price.standard {
+   background-color: #4b0082;
+}
+
+.price.professional {
+   background-color: #EC632A;
+}
+
+/* remove the list-style-type from the ul, and make each element box-shadow */
+ul {
+   list-style-type: none;
+}
+
+section ul {
+   margin-bottom: 40px;
+}
+
+ul li {
+   padding: 10px 0;
+}
+
+/* For the list items within each column, make every second item a different color usin the nth-child pseudo selector. Use the rgba() function which will darken the underlying background color*/
+section li:nth-child(2n) {
+   background-color: rgba(47, 59, 64, 0.35);
+}
+
+/*
+make the background color of links in the list items a different color
+there will be two colors one of the regular background and one for the hover color
+remove the underline from the links
+round the corners of the links
+ */
+
+section div a {
+   background-color: #3A6BA5;
+   text-decoration: none;
+   color: white;
+   border-radius: 5px;
+   display: inline-block;
+   width: 267px;
+   padding: 12px 0;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+   font-weight: 400;
+}
+
+section div a:hover {
+   background-color: #2F4F4F;
+}
+
+
+/* for the confidence div, the list items have a background image (checkmark.png) set the background-size to 24px. */
+/* the padding-left and margin of each li will have to be modified so they don't overlap the image */
+#confidence {
+   margin-top: 20px;
+   width: 910px;
+   background-color: #2F4F4F;
+   color: white;
+   font-weight: 400;
+   padding: 20px 40px;
+}
+
+#confidence li {
+   background-image: url(checkmark.svg);
+   background-size: 24px;
+   background-repeat: no-repeat;
+   font-size: 18px;
+   font-weight: 400;
+   padding: 0 0 30px 40px;
+}
+
+#confidence a {
+   color: lightblue;
+}
+
+#confidence p {
+   font-weight: 300;
+   font-size: 18px;
+   padding-bottom: 20px;
+}
+
+#confidence h2 {
+   font-weight: 600;
+   font-size: 36px;
+   padding: 10px 0;
+}
+

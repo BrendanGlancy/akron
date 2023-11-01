@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2fdf827-bdc1-42ce-8c6c-2cdc34d2983e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c101.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c111.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c121.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c130.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c141.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c150.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c161.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c171.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c180.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c180.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c191.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c191.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c1a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c1a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c1b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c1b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c200.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c200.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c211.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c211.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c221.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c221.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c230.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c241.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c31.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c380.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c380.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c391.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c391.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c3a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c3a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c3b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c3b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c41.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c51.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c60.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c71.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c81.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/c90.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/ca1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/cb1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/seg0/cf0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeDB/service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeDB/service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JavaIIDBs/CreateCoffeeDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JavaIIDBs/CreateCoffeeDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CreateCoffeeDB.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ISxJ5X2VJ3nPtqb9YCQazOpqH8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/brendan/.var/app/com.jetbrains.IntelliJ-IDEA-Ultimate/config/JetBrains/IntelliJIdea2022.3/jdbc-drivers/Apache Derby/10.15.2.0/derby-10.15.2.0.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="JavaFXDBViewer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaFXDBViewer" />
+      <module name="final" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JavaFXDBViewer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2fdf827-bdc1-42ce-8c6c-2cdc34d2983e" name="Changes" comment="" />
+      <created>1670188715877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670188715877</updated>
+      <workItem from="1670188716957" duration="1219000" />
+      <workItem from="1670190482412" duration="9718000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

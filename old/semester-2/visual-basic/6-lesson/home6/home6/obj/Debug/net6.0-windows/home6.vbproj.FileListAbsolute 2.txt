@@ -1,0 +1,17 @@
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\bin\Debug\net6.0-windows\home6.exe
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\bin\Debug\net6.0-windows\home6.deps.json
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\bin\Debug\net6.0-windows\home6.runtimeconfig.json
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\bin\Debug\net6.0-windows\home6.dll
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\bin\Debug\net6.0-windows\ref\home6.dll
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\bin\Debug\net6.0-windows\home6.pdb
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.vbproj.AssemblyReference.cache
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.Form1.resources
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.vbproj.GenerateResource.cache
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.AssemblyInfoInputs.cache
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.AssemblyInfo.vb
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.vbproj.CoreCompileInputs.cache
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.dll
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\ref\home6.dll
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.pdb
+C:\Users\dreadpirate\OneDrive\Desktop\github\akron\visual-basic\home6\home6\obj\Debug\net6.0-windows\home6.genruntimeconfig.cache

@@ -1,0 +1,897 @@
+What constitutes the primary source material for use case narratives?
+Answer: A) Google searches
+B) Technical manuals
+C) Stakeholder interviews
+D) Historical sales data
+
+
+Copied to clipboard: Comparing the agile approach vs. the plan-driven approach in today's environment:
+Question 4 options:
+
+1)
+
+Agile has largely replaced plan-driven.
+
+2)
+
+Plan-driven has largely replaced agile.
+
+3)
+
+Either can be used equally well in any software construction project, so long as the team uses the chosen approach effectively.
+
+4)
+
+Both are used, but each is best suited for certain, specific types of projects.
+
+5)
+
+None of the above are true.
+Answer: 4)
+
+Both are used, but each is best suited for certain, specific types of projects.
+
+
+Copied to clipboard: Comparing iterative vs. non-iterative software construction:
+Question 6 options:
+
+1)
+
+Iterative construction is always superior to non-iterative construction.
+
+2)
+
+Non-iterative construction is always superior to iterative construction.
+
+3)
+
+Iterative construction is superior to non-iterative construction for agile projects only.
+
+4)
+
+Non-iterative construction helps avoid the "Yes, but" syndrome.
+
+5)
+
+None of the above are true.
+Answer: 3)
+
+Iterative construction is superior to non-iterative construction for agile projects only.
+
+
+Copied to clipboard: The Home Grounds Model defines different sets of major project characteristics indicating the type of project approach that is most appropriate and likely to succeed—which of the following is NOT one of the major categories of project characteristics:
+Question 7 options:
+
+1)
+
+Functional requirements characteristics
+
+2)
+
+Non-functional requirements characteristics
+
+3)
+
+Hybrid project characteristics
+
+4)
+
+Team characteristics
+
+5)
+
+All of the above are major categories of Home Grounds Model project characteristics
+Answer: 3)
+
+Hybrid project characteristics
+
+
+Copied to clipboard: In a project characteristics radar chart, which of the following is NOT a Big Requirements Up Front factor:
+Question 8 options:
+
+1)
+
+Number
+
+2)
+
+Complexity
+
+3)
+
+Interdependence
+
+4)
+
+Supportability
+
+5)
+
+Clarity
+Answer: 1) Number
+
+
+Copied to clipboard: In a project characteristics radar chart, which of the following is NOT a Big Design Up Front factor:
+Question 9 options:
+
+1)
+
+Performance
+
+2)
+
+Stability
+
+3)
+
+Criticality
+
+4)
+
+Integration
+
+5)
+
+Technology
+Answer: 5) Technology
+
+
+Copied to clipboard: Which of the following is not a non-functional requirement:
+Question 10 options:
+
+1)
+
+Average response time.
+
+2)
+
+Security to protect confidential customer data.
+
+3)
+
+Number of simultaneous users supported.
+
+4)
+
+Ability to communicate with other systems using web services.
+
+5)
+
+Domain model.
+Answer: 5)
+
+Domain model.
+
+
+Copied to clipboard: A Gantt chart is:
+Question 11 options:
+
+1)
+
+An alternative to entity relationship diagrams and class diagrams used in configuration projects.
+
+2)
+
+A project management tool listing tasks, their sequence, durations, and team members.
+
+3)
+
+A method of depicting project characteristics in three major categories.
+
+4)
+
+A project management tool specifically for listing prioritized user stories.
+
+5)
+
+None of the above.
+Answer: 2)
+
+A project management tool listing tasks, their sequence, durations, and team members.
+
+
+Copied to clipboard: In comparison to plan-driven projects, agile projects:
+Question 12 options:
+
+1)
+
+Have no up-front planning—all project planning is handled during sprints.
+
+2)
+
+Have more up-front planning to set the stage for performing construction via sprints.
+
+3)
+
+Have relatively little (although still some) up-front planning.
+
+4)
+
+Tend to be used in software configuration projects.
+
+5)
+
+Have no need for project planning tools and techniques.
+Answer: 3)
+
+Have relatively little (although still some) up-front planning.
+
+
+Copied to clipboard: Compared to a house construction project from an existing blueprint, systems projects generally involve:
+Question 13 options:
+
+1)
+
+Higher design risk and lower replication risk.
+
+2)
+
+Lower design risk and higher replication risk.
+
+3)
+
+Higher design risk and higher replication risk.
+
+4)
+
+Lower design risk and lower replication risk.
+
+5)
+
+It is not possible draw any such general conclusion—systems projects are too variable for that.
+Answer: 1)
+
+Higher design risk and lower replication risk.
+
+
+Copied to clipboard: In a Gantt-lite chart, construction sprints:
+Question 16 options:
+
+1)
+
+Are generally not indicated at all.
+
+2)
+
+Are included with specific user stories shown, including numerical rankings.
+
+3)
+
+Show the sprint schedule while omitting in-depth details.
+
+4)
+
+Are only included when using the agile approach.
+
+5)
+
+None of the above are true.
+Answer: 3)
+
+Show the sprint schedule while omitting in-depth details.
+
+
+Copied to clipboard: In the MoSCoW model of user story prioritization, the "could-have" level of prioritization:
+Question 17 options:
+
+1)
+
+Is also called "nice-to-have" prioritization.
+
+2)
+
+Is not used when implementing semi-flexible, "guardrails" scope.
+
+3)
+
+Designates user stories to defer until Sprint 3.
+
+4)
+
+Is a higher-level of prioritization than "should-have" prioritization.
+
+5)
+
+None of the above are true.
+Answer: 1)
+
+Is also called "nice-to-have" prioritization.
+
+
+Copied to clipboard: At the end of a sprint, which of the following occurs:
+Question 18 options:
+
+1)
+
+A software demonstration collects user feedback.
+
+2)
+
+The team adds, revises, and reprioritizes stories from the product backlog.
+
+3)
+
+Stories for the next sprint are finalized.
+
+4)
+
+All of the above are true.
+
+5)
+
+Note of the above are true.
+Answer: 4)
+
+All of the above are true.
+
+
+Copied to clipboard: During project planning, for iterative, sprint-based software construction:
+Question 20 options:
+
+1)
+
+We should plan out construction tasks in detail for hybrid, but not agile, projects.
+
+2)
+
+We should plan out construction tasks in detail for agile, but not hybrid, projects.
+
+3)
+
+We should not plan out construction tasks in detail for any software construction project.
+
+4)
+
+We should plan out construction tasks in detail for both hybrid and agile construction projects.
+
+5)
+
+None of the above are true.
+Answer: 4)
+
+We should plan out construction tasks in detail for both hybrid and agile construction projects.
+
+
+Copied to clipboard: Which one of the following statements is not true?
+Question 21 options:
+
+1)
+
+Organizations frequently combine approaches to acquiring software capabilities
+
+2)
+
+Seemingly simple software solutions frequently include complex elements behind the surface
+
+3)
+
+Custom, proprietary software solutions cannot run on an IaaS platform
+
+4)
+
+The total cost of a COTS-based solution often depends on the number of users
+
+5)
+
+Developing new software is inherently risky
+Answer: 3)
+
+Custom, proprietary software solutions cannot run on an IaaS platform
+
+
+Copied to clipboard: Which one of the following statements is true?
+Question 23 options:
+
+1)
+
+SaaS offers application capabilities on the cloud
+
+2)
+
+IaaS offers application capabilities on premises
+
+3)
+
+On-premises is a new, recently developed system infrastructure model
+
+4)
+
+IaaS offers application capabilities on the cloud
+
+5)
+
+SaaS offers infrastructure capabilities on the cloud
+Answer: 1)
+
+SaaS offers application capabilities on the cloud
+
+
+Copied to clipboard: Which one of the following describes software portfolio architecture best?
+Question 24 options:
+
+1)
+
+An organized list of all applications within the organization
+
+2)
+
+A model that describes the organizational structure for and dependencies between an organization's software applications
+
+3)
+
+A set of investment decisions that a hedge fund focused on software companies has made over time
+
+4)
+
+A collection of descriptions of software applications within an organization
+
+5)
+
+None of the above
+Answer: 2)
+
+A model that describes the organizational structure for and dependencies between an organization's software applications
+
+
+Copied to clipboard: Which one of the following statements describes the difference between outsourcing and consulting?
+Question 25 options:
+
+1)
+
+Consulting focuses on the development of specific software capabilities
+
+2)
+
+Consulting arrangements are less tightly specified than outsourcing
+
+3)
+
+Outsourcing covers always a larger footprint than consulting
+
+4)
+
+Outsourcing has a stronger focus on the future needs of the client
+
+5)
+
+Consulting projects include always the full development life cycle
+Answer: 2)
+
+Consulting arrangements are less tightly specified than outsourcing
+
+
+Copied to clipboard: Which one of the following approaches is best aligned with agile development?
+Question 26 options:
+
+1)
+
+Captive unit
+
+2)
+
+Nearshoring
+
+3)
+
+Onshore outsourcing
+
+4)
+
+Offshoring
+
+5)
+
+On-site
+Answer: 5)
+
+On-site
+
+
+Copied to clipboard: Which one of the following is not a typical vendor selection criterion?
+Question 28 options:
+
+1)
+
+Vendor's reputation
+
+2)
+
+Vendor's financial stability
+
+3)
+
+Cultural fit with the vendor
+
+4)
+
+Vendor's philosophy related to tailoring system capabilities
+
+5)
+
+All of the above are vendor selection criteria
+Answer: 5)
+
+All of the above are vendor selection criteria
+
+
+Copied to clipboard: A vendor has agreed to take care of a predefined set of maintenance activities during a period of seven years for a large client that has agreed to pay for these activities a specific amount of money divided equally across the years. What is this pricing model called?
+Question 29 options:
+
+1)
+
+Cost plus
+
+2)
+
+Time and materials
+
+3)
+
+Fixed price
+
+4)
+
+Fixed margin
+
+5)
+
+None of the above
+Answer: 3)
+
+Fixed price
+
+
+Copied to clipboard: A large European energy firm has established a software development unit in Malaysia after finding there a university program that specializes in its needs. Which category of the following does this belong?
+Question 30 options:
+
+1)
+
+On-site
+
+2)
+
+Captive unit
+
+3)
+
+Offshoring
+
+4)
+
+Nearshoring
+
+5)
+
+Onshore outsourcing
+Answer: 3)
+
+Offshoring
+
+
+Copied to clipboard: Which one of the following describes the relationship between a use case diagram and use case narrative(s)?
+Question 32 options:
+
+1)
+
+One use case narrative incorporates multiple use case diagrams
+
+2)
+
+One use case diagram includes multiple use cases, the details of which are described with use case narratives
+
+3)
+
+One use case narrative is described with exactly one use case narrative
+
+4)
+
+One use case diagram includes one use case narrative
+
+5)
+
+Use case narrative and use case diagrams are entirely separated from each other
+Answer: 2)
+
+One use case diagram includes multiple use cases, the details of which are described with use case narratives
+
+
+Copied to clipboard: The purpose of use case models is to identify
+Question 31 options:
+
+1)
+
+Key concepts of the domain
+
+2)
+
+Business processes
+
+3)
+
+Functional design of the system
+
+4)
+
+Details of the user interface
+
+5)
+
+None of the above
+Answer: 3)
+
+Functional design of the system
+
+
+Copied to clipboard: Consider the following statement "More than three complaints have been received from the same customer within a two week period." Which one of the fully dressed use case sections is it most likely to belong?
+Question 34 options:
+
+1)
+
+Main scenario
+
+2)
+
+Precondition
+
+3)
+
+Minimal guarantee
+
+4)
+
+Success guarantee
+
+5)
+
+Trigger
+Answer: 2)
+
+Precondition
+
+
+Copied to clipboard: Consider the following statement "In the case of a system failure during the transaction, all changes are cancelled and errors are logged." Which one of the fully dressed use case sections is it most likely to belong?
+Question 35 options:
+
+1)
+
+Minimal guarantee
+
+2)
+
+Precondition
+
+3)
+
+Alternative scenario
+
+4)
+
+Success guarantee
+
+5)
+
+Trigger
+Answer: 1)
+
+Minimal guarantee
+
+
+Copied to clipboard: A statement within a use case is numbered "7.b.2" Which one of the fully dressed use case sections is it most likely to belong?
+Question 36 options:
+
+1)
+
+Main scenario
+
+2)
+
+Precondition
+
+3)
+
+Alternative scenario
+
+4)
+
+Trigger
+
+5)
+
+Success guarantee
+Answer: 3)
+
+Alternative scenario
+
+
+Copied to clipboard: What is the primary reason for creating use case slices?
+Question 39 options:
+
+1)
+
+Splitting the use case in a way that is suitable for construction
+
+2)
+
+Improving the clarity of the use case
+
+3)
+
+Achieving a better fit with the INVEST criteria
+
+4)
+
+Supporting business processes better
+
+5)
+
+Achieving a better fit with the domain model
+Answer: 1) Splitting the use case in a way that is suitable for construction
+
+
+Copied to clipboard: Which one of the following best reflects the meaning of architecture as context for systems development?
+Question 41 options:
+
+1)
+
+Design of the space in which development teams work
+
+2)
+
+Broad, long-term decisions regarding the general systems development and operating environment
+
+3)
+
+Detailed description of the technical infrastructure in which the system will be running
+
+4)
+
+Non-functional requirements of the system
+
+5)
+
+None of the above
+Answer: 2)
+
+Broad, long-term decisions regarding the general systems development and operating environment
+
+
+Copied to clipboard: Which one of the following has the broadest scope?
+Question 42 options:
+
+1)
+
+Technology architecture
+
+2)
+
+Data architecture
+
+3)
+
+Application architecture
+
+4)
+
+Enterprise architecture
+
+5)
+
+Development architecture
+^CTraceback (most recent call last):
+  File "copier.py", line 40, in <module>
+    clipboard_listener()
+  File "copier.py", line 13, in clipboard_listener
+    chat_gepity(clipboard_value)
+  File "copier.py", line 24, in chat_gepity
+    response = openai.ChatCompletion.create(
+  File "/opt/anaconda3/lib/python3.8/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 155, in create
+    response, _, api_key = requestor.request(
+  File "/opt/anaconda3/lib/python3.8/site-packages/openai/api_requestor.py", line 289, in request
+    result = self.request_raw(
+  File "/opt/anaconda3/lib/python3.8/site-packages/openai/api_requestor.py", line 606, in request_raw
+    result = _thread_context.session.request(
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/anaconda3/lib/python3.8/http/client.py", line 1332, in getresponse
+    response.begin()
+  File "/opt/anaconda3/lib/python3.8/http/client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "/opt/anaconda3/lib/python3.8/http/client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/anaconda3/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/anaconda3/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/anaconda3/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+
+(base) MacBook-Pro-7:tmp brendanglancy$ python copier.py
+Copied to clipboard: A university has just started to use application software for student management, finance, and human resources that is offered by as a service by an external vendor and that is entirely running on IT infrastructure paid for by the vendor. Which model is the university using?
+Question 47 options:
+
+1)
+
+IaaS
+
+2)
+
+Client/server
+
+3)
+
+Monolithic
+
+4)
+
+PaaS
+
+5)
+
+SaaS
+Answer: 5)
+
+SaaS
+
+
+Copied to clipboard: Which one of the following is a popular model for evaluating applications in an organization's application portfolio?
+Question 49 options:
+
+1)
+
+TOGAF
+
+2)
+
+TIME
+
+3)
+
+EAI
+
+4)
+
+REST
+
+5)
+
+SaaS
+Answer: 2) TIME
+
+
+Copied to clipboard: Which one of the following is not one of the Zachman actor roles?
+Question 43 options:
+
+1)
+
+Subcontractor
+
+2)
+
+Builder
+
+3)
+
+Planner
+
+4)
+
+Designer
+
+5)
+
+Director
+Answer: 5) Director

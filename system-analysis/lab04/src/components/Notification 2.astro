@@ -1,0 +1,55 @@
+---
+const {type, message} = Astro.props;
+---
+
+<div class={`notification ${type}`} role="alert">
+    <p>${message}</p>
+    <button @click="closeNotification">Close</button>
+</div>
+
+<script>
+    const closeNotification = (event) => {
+        event.currentTarget.parentElement.style.display = 'none';
+    };
+</script>
+
+<style>
+  .notification {
+    border: 1px solid;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .notification button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .info {
+    background-color: #e7f3fe;
+    border-color: #a1caff;
+    color: #000;
+  }
+  
+  .success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+  .warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+  }
+  
+  .error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+</style>

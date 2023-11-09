@@ -20,14 +20,21 @@ def chat_gepity(clipboard_value):
     openai.api_key = "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"
     # print(openai.Model.list())
     
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt="Answer this multiple choice or fill in the blank question as an expert on system design and analysis: " + clipboard_value,
-        max_tokens=100
-    )
-    
-    answer = response.choices[0].text.strip()
-    print(f"Answer from API: {answer}")
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are an expert in system design and analysis and the following multiple choice question by picking one of the choices."},
+                {"role": "user", "content": clipboard_value}
+            ]
+        )
+        
+        answer = response['choices'][0]['message']['content']
+        print(f"Answer: {answer}")
+        print("\n")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+
 
 if __name__ == "__main__":
     clipboard_listener()

@@ -1,0 +1,75 @@
+<!--
+Name: Brendan Glancy
+Date: 09/8/2022
+Description: Introduction to HTML, Adding semantic markup
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Share Your Travels</title>
+</head>
+<body>
+   <!-- This is the header of the file, a head tag needs to be added -->
+   <header>
+      <img src="images/share-logo.png" alt="logo"/>
+      <!-- The navigation bar needs to be added -->
+      <nav>
+         <p>
+            <a href="#description">Description</a> | <a href="#related">Related</a> | <a href="#reviews">Reviews</a>
+         </p>
+      </nav>
+   </header>
+
+
+   <!-- This is the main content of the file, a main tag needs to be added -->
+   <!-- This is a section, the section tag needs to be added -->
+   <h2>Venice - Grand Canal</h2>
+
+   <main>
+      <section>
+           <h3 id="description">Description</h3>
+           <p>This view of the Grand Canal in
+              <a href="https://en.wikipedia.org/wiki/Venice">Venice</a>
+              was taken from the <strong>Ponte di Rialto</strong>.
+           </p>
+           <!-- this is a figure, a figure tag needs to be added -->
+           <figure>
+              <img src="images/venice.jpg" alt="Venice"/>
+              <figcaption>
+                 <p>Photo by Randy Connolly</p>
+              </figcaption>
+            </figure>
+      </section>
+
+      <section>
+            <h3 id="related">Related Images</h3>
+            <img src="images/v1.jpg" alt="More Venice" /><img src="images/v2.jpg" alt="More Venice" /><img src="images/v3.jpg" alt="More Venice" />
+      </section>
+
+
+      <!-- This is the reviews section, a section tag needs to be added -->
+      <section>
+         <h3 id="reviews">Reviews</h3>
+            <!-- This is a review, an article tag needs to be added -->
+            <article>
+               <p>By Hypatia on <time>2019-10-23</time></p>
+               <p>I love Venice in the morning.</p>
+            </article>
+         <hr>
+            <!-- This is a review, an article tag needs to be added -->
+            <article>
+               <p>By Curia on <time>2019-12-11</time></p>
+               <p>I want to visit Venice!</p>
+            </article>
+      </section>
+   </main>
+   <footer>
+         <p>Copyright &copy; 2020 Share Your Travels</p>
+         <p>
+            <a href="#description">Description</a> | <a href="#related">Related</a> | <a href="#reviews">Reviews</a>
+         </p>
+   </footer>
+   </body>
+</html>

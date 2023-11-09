@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usepackage{pgf-umlcd}
+
+\begin{document}
+
+\begin{figure}
+\begin{tikzpicture}
+
+% Classes
+\umlclass[x=0,y=4]{Store}{
+  - storeID : int \\
+  - location : String
+}{}
+
+\umlclass[x=0,y=0]{Employee}{
+  - employeeID : int \\
+  - name : String \\
+  - role : String
+}{}
+
+\umlclass[x=6,y=4]{RepairJob}{
+  - jobID : int \\
+  - status : String \\
+  - estimatedCompletion : Date \\
+  - actualCompletion : Date \\
+  - cost : float
+}{}
+
+\umlclass[x=6,y=0]{Watch}{
+  - watchID : int \\
+  - type : String \\
+  - brand : String \\
+  - model : String
+}{}
+
+\umlclass[x=6,y=-4]{Customer}{
+  - customerID : int \\
+  - name : String \\
+  - contactNumber : String \\
+  - type : String
+}{}
+
+\umlclass[x=0,y=-4]{Comment}{
+  - commentID : int \\
+  - content : String \\
+  - dateCreated : Date
+}{}
+
+\umlclass[x=12,y=4]{Estimate}{
+  - estimateID : int \\
+  - amount : float \\
+  - schedule : Date
+}{}
+
+% Associations
+\umlassoc[mult1=1,mult2=*,name=assoc1]{Store}{RepairJob}
+\umlassoc[mult1=1,mult2=*,name=assoc2]{Store}{Employee}
+\umlassoc[mult1=*,mult2=1,name=assoc3]{RepairJob}{Watch}
+\umlassoc[mult1=*,mult2=*,name=assoc4]{RepairJob}{Comment}
+\umlassoc[mult1=1,mult2=*,name=assoc5]{RepairJob}{Estimate}
+\umlassoc[mult1=*,mult2=1,name=assoc6]{Customer}{Comment}
+\umlassoc[mult1=*,mult2=*,name=assoc7]{Customer}{RepairJob}
+
+% Association descriptions
+\path (assoc1) -- node[auto,swap] {has} (RepairJob);
+\path (assoc2) -- node[auto,swap] {employs} (Employee);
+\path (assoc3) -- node[auto,swap] {repairs} (Watch);
+\path (assoc4) -- node[auto,swap] {receives} (Comment);
+\path (assoc5) -- node[auto,swap] {is estimated by} (Estimate);
+\path (assoc6) -- node[auto,swap] {makes} (Comment);
+\path (assoc7) -- node[auto,swap] {orders} (RepairJob);
+
+\end{tikzpicture}
+\caption{A UML Class Diagram for WKYOT}
+\end{figure}
+
+\end{document}

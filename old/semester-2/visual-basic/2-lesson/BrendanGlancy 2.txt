@@ -1,0 +1,164 @@
+# Chapter 1 review questions 1-30
+
+-  1
+
+    A(n) __ is the thin dotted line that encloses an object in the Designer.
+
+     Bounding Box
+-  2
+
+
+    The small squares that appear on the right edge, bottom edge, and lower-right corner of a form's bounding box are called ___________
+
+     Sizing Handles
+-  3
+
+    _______ is the name of the blank form that Visual Studio initially creates in a new project.
+
+    Form1
+
+-  4
+
+    The ________ property holds the text that is displayed on the face of the button.
+
+    Text
+
+-  5
+
+    A(n) __________ is a procedure that executes when a specific event takes place while an application is running.
+
+    event handler
+
+-  6
+
+    The statement "MessageBox.Show" is an example of a(n) __________
+
+    Method Call
+
+-  7
+
+    In programming we use the term "string" to mean ________
+
+    String of Characters
+
+-  8
+
+    A piece of data that is written into a program's code is a(n) _________
+
+    Literal
+
+-  9
+
+    The time during which you build the GUI and write the application's code is referred to as __________
+
+    Design time
+
+-  10
+
+    The time during which an application is executing is referred to as ________
+
+    Runtime
+
+-  11
+
+    When you want to display text on a form, you use a _______ control.
+
+    Label
+
+-  12
+
+    The ___________ property allows you to set the font, font style, and size of the control's text
+
+    Font
+
+-  13
+
+    A(n) ______________ property can be set to one of two possible values: True or False
+
+    Boolean
+
+-  14
+
+    Label controls have a(n) ________ property that determines whether or not they can be resized
+
+    AutoSize
+
+-  15
+
+    The _____________ property can be used to change the text's alignment in the label
+
+    TextAlign
+
+-  16
+
+    In code, you use a(n) _____________ to store a value in a control's property
+
+    Assign Statement
+
+-  17
+
+    The equal sign (=) is known as the ________________
+
+    Assignment operator
+
+-  18
+
+    The standard notation for referring to a contol's property in code is _____________
+
+    ControlName.PropertyName
+
+-  19
+
+    ____________ is a feature of Visual Studio that provides automatic code completion as you write programming statements
+
+    IntelliSense
+
+
+-  20
+
+    You can use a __________ control to display a graphic image on a form
+
+    PictureBox
+
+-  21
+
+    Once you have created a PictureBox control, you use its __________ property to specify the image it will display
+
+    Image
+
+-  22
+
+    The PictureBox control's ___________ property specifies how the control's image is to be displayed
+
+    SizeMode
+
+-  23
+
+    ______________ is the image's width to height ratio
+
+    Aspect Ratio
+
+-  24
+
+    Most controls have a ____________ property that determines whether the control can be seen on the form at run time
+
+    Visible
+
+-  25
+
+    ____________ are short notes placed in program code, explaining how the code works
+
+    Comments
+
+-  26
+
+    Programmers commonly use blank lines and indentations in their code to create a sense of ______________
+
+    Visual Organization
+
+-  27
+
+
+    To close an application's form in code, you use the statement __________
+
+    Me.Close()

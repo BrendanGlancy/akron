@@ -17,7 +17,7 @@ def clipboard_listener():
 def chat_gepity(clipboard_value):
     print(f"Copied to clipboard: {clipboard_value}")
     openai.organization = "org-CUdodZ48VjZcXBFRtTrlRuFw"
-    openai.api_key = ""
+    openai.api_key = "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"
     # print(openai.Model.list())
     
     response = openai.Completion.create(

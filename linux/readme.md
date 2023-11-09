@@ -505,4 +505,12 @@ Commands we covered:
 - Runlevel: who -r 
 - Graceful shutdown -r
 
+# Segment 17 - Vi / vim
 
+- Nation Conference on AI in Education - Fairfield OH 11/7/23
+    - State standards on CS ED in K12 (2022) and CTE (2023) include AI 
+    - Instructor explained 
+        - Prompt Engineering AND 
+        - Algorithms - "Five tribes" from book Master Algorithms
+        - Platforms: Pythons and C++ for Tensorflow and Pytorch - on Apple M2/M3
+- Chapter title is "Gentle introductionm to vi"

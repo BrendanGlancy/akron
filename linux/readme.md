@@ -514,3 +514,18 @@ Commands we covered:
         - Algorithms - "Five tribes" from book Master Algorithms
         - Platforms: Pythons and C++ for Tensorflow and Pytorch - on Apple M2/M3
 - Chapter title is "Gentle introductionm to vi"
+
+# Segment 22 Ward Ch 9-10
+
+- This concludes Networking, so we will plan and conduct Q3 
+    - More one-slide topics:
+        - Ch09, ARP and WLANS, but not new CLI commands
+        -Ch10, servers and services; diagnostic tools
+- The remaining topics will be scriptin, per Ward Ch 11, thru Week 16
+
+## ARP (Address Resolution Protocol)
+
+- Lets Fram similar problems 
+    - Devices comunicate across the Internet by IP address, but we have only hostnames
+    - Devices communicate across LAN by MAC address, but we have only IP address
+- How the 

@@ -617,3 +617,36 @@ Read chapters 4-7
 ## POST TEST 2
 
 `PE 5-7` you dont need more than one paragraph
+
+
+Q:
+`PE 5-7` 
+You work on a seven-person software team constructing new software applications that are small, simple, and have rapidly changing requirements. As such, your team utilizes the agile Scrum methodology. This includes developing detailed requirements in an emergent manner during construction sprints. However, your CIO has asked your team to take on a different kind of project: implementing a COTS software package focused on supporting your firm’s accounts payable function. This is because your firm’s accounts payable requirements are similar to many other firms using this COTS system. As such, this COTS system has been implemented hundreds of times across many other organizations, and there is a well-understood pattern for configuring and testing that system. Given this, would you advocate retaining the Scrum approach for this project? If not, what approach would you advocate? Explain your answer.
+
+
+PR:
+In this scenario, your team, which is accustomed to working with the agile Scrum methodology on small, simple projects with rapidly changing requirements, is faced with a different kind of project: implementing a Commercial Off-The-Shelf (COTS) software package for accounts payable. The key factors to consider here are the nature of the project and how well it aligns with the principles and practices of Scrum.
+
+Scrum Methodology:
+
+Scrum is an agile process framework used primarily for managing software development projects, aiming for a flexible and holistic product development strategy.
+It works well for projects where requirements are expected to change frequently, and there's a need for regular feedback from the end-user.
+Scrum emphasizes iterative progress, collaboration, and a flexible response to change.
+COTS Implementation:
+
+Implementing a COTS system is typically a more structured process.
+These systems often come with established best practices for configuration and testing, as they have been implemented in numerous other organizations.
+The requirements for a COTS implementation are usually well-defined and less prone to change, as the goal is to configure and adapt the existing software to meet the organization's needs.
+Analysis:
+
+Given that the COTS system for accounts payable has a well-understood pattern for configuration and testing, it suggests a more predictable and stable set of requirements.
+Scrum, with its focus on adaptability to changing requirements and iterative development, might not be the most efficient methodology for this type of project.
+A more traditional project management approach, like Waterfall, could be more suitable. The Waterfall model is a sequential design process, often used in software development processes, where progress is seen as flowing steadily downwards (like a waterfall) through several phases. This approach might be more effective for a COTS implementation where the requirements are well-defined and stable.
+Recommendation:
+
+For the COTS implementation project, a more traditional project management approach like Waterfall should be considered. This is because the project has well-defined requirements and a known pattern for successful implementation, which aligns well with the sequential and phase-based approach of Waterfall.
+However, it's important to maintain some level of flexibility. Even in a COTS implementation, unexpected challenges can arise. Therefore, incorporating elements of agility in planning and execution, such as regular check-ins and reviews, can help in addressing any unforeseen issues effectively.
+In conclusion, while Scrum has been effective for your team's typical projects, the specific nature of the COTS implementation project suggests that a more traditional, structured approach like Waterfall might be more appropriate, albeit with some level of agility incorporated to handle any unexpected challenges.
+
+In this scenario, my hypothetical team, is used to working with the agile Scrum methodology. This makes sense as this methodology works well on projects with rapidly changing requirements. Now we are faced with a new project that is different from what we are used to, configuring a COTS software package to support the firm's accounts payable function. The key factors here is the nature of the project and how well it aligns with the principles and practices of Scrum. The important thing to consider here in regards to the decision to use Scrum or not is the need for regular user feedback from the end user. Given this and the fact that the COTS system has a well-understood pattern for configuration and testing, it suggests to me that this project has a more predictable and stable set of requirements. Therefore it would probably be more beneficial to use a more traditional project management approach, like Waterfall. The Waterfall model utilizes a sequential design process, which would be more effective in our case. Even in a COTS implementation, unexpected challenges can arise. Therefore, incorporating elements of agility in planning and execution, such as regular check-ins and reviews, can help in addressing any unforeseen issues effectively. In conclusion even though Scrum has been effective with past projects for my team, the specific nature of the COTS implementation project suggests that a more traditional, structured approach like Waterfall might be more appropriate.
+

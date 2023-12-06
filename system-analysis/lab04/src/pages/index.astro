@@ -6,19 +6,26 @@ import Notification from '../components/Notification.astro';
 
 <Layout title="Watch Repair">
 	<main>
-		<h1>Estimate and Repair Schedule</h1>
+		<h1>Store Manager</h1>
 		<p class="instructions">
-      Estimate: <code><strong>$75<strong></code> <br/>
-      Estimated Repair Time: <code><strong>2-3 weeks</strong></code>
+      The repair was nto completed as expected
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				title="Accept"
-				body="Accept the estimate and pay the $75 fee."
-        onClick={() => Notification.show('Accept')}
+				title="Interface"
+				body="Used for reviewing and validating repair jobs"
 			/>
 			<Card
-				title="Decline"
+				title="Payment status"
+				body="Finished"
+        onClick={() => Notification.show('Decline')}
+			/>
+			<Card
+				title="Approve"
+        onClick={() => Notification.show('Decline')}
+			/>
+			<Card
+				title="Deny"
         onClick={() => Notification.show('Decline')}
 			/>
 		</ul>

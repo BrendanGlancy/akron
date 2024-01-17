@@ -22,3 +22,50 @@
 | 16 MW Week 16 (04/29 – 05/03) | Classifying Stream Data | Chap 21 | |
 | 17 Week 17 (05/06 – 05/10) | Exam # 3: (to be confirmed later) | | Wed., May. 08, 2024 @ 12:15 – 02:15 pm |
 
+# Topics
+
+- Statistics
+- Data
+- Levels of measurement
+- Sampling
+- Data organization
+- Central tendency and Variation
+- Correlation and Regression
+- Elementary probability theory
+
+## Sampling
+
+- **A simple random sample** of n measurements from a population is a subset of the population selected in such a manner that every sample of size n from the population has an equal chance of being selected
+    - Every sample of size n from the population has an equal chance of being selected
+    - No researcher bias occurs in the items selected for the sample
+    - A random sample may not always reflect the diversity of the population
+- **Stratified Sampling** - Entire population is divided into distinct subgroups (called strata). All members of a stratum share a specific characteristic, you then draw a random sample from each stratum
+- **Sampling frame** - List of individuals from which a sample is actually selected the sampling frame, Ideally, the sampling frame is the entire population
+- **Undercoverage** - The sample frame does not match the population, we have what is called Undercoverage
+- **Sampling Error** - the extent to which to sample information does not match the corresponding population information
+
+- Frequency Tables: partitiions data into classes or intervals of equal width and show how many data values are in each class. The classes or intervals are constructed so that each data value falls into exactly one class.
+
+**EXAMPLE BELOW**
+
+### Frequency Table
+
+The table below represents the frequency of categories in a sample dataset:
+
+| Category | Frequency | Percentage |
+|----------|-----------|------------|
+| Category A | 15        | 30%        |
+| Category B | 10        | 20%        |
+| Category C | 20        | 40%        |
+| Category D | 5         | 10%        |
+| **Total**  | **50**    | **100%**   |
+
+## Observations
+
+- **Category C** has the highest frequency with 20 occurrences, which is 40% of the total.
+- **Category D** has the lowest frequency with 5 occurrences, accounting for 10% of the total.
+- The total number of observations is 50.
+
+# Histogram: effective visual display of data in a frequency table
+
+- Distribution Shapes

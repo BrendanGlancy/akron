@@ -71,3 +71,13 @@ The table below represents the frequency of categories in a sample dataset:
 - Distribution Shapes
 
 ![histogram-example-2](https://github.com/BrendanGlancy/akron/assets/61941978/c5455022-a898-4eeb-9536-c3a3190cee72)
+
+
+Stem-and-Leaf Plot:
+
+Stem | Leaf
+-----|-------
+  5  | 1 3 7
+  6  | 0 2 6 8
+  7  | 1 4 4 9
+  8  | 2 5 7 9

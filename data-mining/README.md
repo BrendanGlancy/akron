@@ -69,3 +69,5 @@ The table below represents the frequency of categories in a sample dataset:
 # Histogram: effective visual display of data in a frequency table
 
 - Distribution Shapes
+
+![histogram-example-2](https://github.com/BrendanGlancy/akron/assets/61941978/c5455022-a898-4eeb-9536-c3a3190cee72)

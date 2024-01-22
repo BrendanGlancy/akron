@@ -100,3 +100,12 @@ Stem | Leaf
 ## Box and Whisker Plot
 
 ![box-plot](https://github.com/BrendanGlancy/akron/assets/61941978/3d5ac468-eddb-4c24-b977-47852f6a0c25)
+
+Sometimes we run into data that seems incorrect, we call these **outliers**
+
+## Correlation and Regression
+
+- Scattergram: A graph in which data pairs (x, y) are plotted as individual points on a grid with horizontal axis x and vertical axis y. x is called the explanatory variable (independent variable) and y the response variable (or dependent variable)
+
+
+

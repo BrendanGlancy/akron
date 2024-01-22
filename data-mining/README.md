@@ -98,3 +98,5 @@ Stem | Leaf
 - For whole numbers P (where 1 <= P <= 99), the pth percentage of a distribution is a value such that P% of the data fall below it and (100 - P)% of the data fall at or above it 
 
 ## Box and Whisker Plot
+
+![box-plot](https://github.com/BrendanGlancy/akron/assets/61941978/3d5ac468-eddb-4c24-b977-47852f6a0c25)

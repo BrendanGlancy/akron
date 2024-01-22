@@ -86,3 +86,15 @@ Stem | Leaf
 
 ![time series](https://github.com/BrendanGlancy/akron/assets/61941978/ad919761-9449-4d04-8270-c6d31b14d3d1)
 
+## Measure of Variation
+
+- Range: difference between the largest and the smallest values of a data distribution
+- Variance and Standard Deviation: Measure distribution or spread around an expected value
+    - The larger the SD the larger the spread, if we have a small standard deviation then there is a sharp peak
+- Coefficient of Variation: standard deviation as a percent of the sample or population mean
+
+## Percentiles
+
+- For whole numbers P (where 1 <= P <= 99), the pth percentage of a distribution is a value such that P% of the data fall below it and (100 - P)% of the data fall at or above it 
+
+## Box and Whisker Plot

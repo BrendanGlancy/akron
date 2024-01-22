@@ -107,5 +107,6 @@ Sometimes we run into data that seems incorrect, we call these **outliers**
 
 - Scattergram: A graph in which data pairs (x, y) are plotted as individual points on a grid with horizontal axis x and vertical axis y. x is called the explanatory variable (independent variable) and y the response variable (or dependent variable)
 
+![scatterplot_example_4col](https://github.com/BrendanGlancy/akron/assets/61941978/f7b92c36-d83d-4355-a703-40de3810ccfb)
 
 

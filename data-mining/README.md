@@ -81,3 +81,5 @@ Stem | Leaf
   6  | 0 2 6 8
   7  | 1 4 4 9
   8  | 2 5 7 9
+
+## Time Series

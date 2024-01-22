@@ -83,3 +83,6 @@ Stem | Leaf
   8  | 2 5 7 9
 
 ## Time Series
+
+![time series](https://github.com/BrendanGlancy/akron/assets/61941978/ad919761-9449-4d04-8270-c6d31b14d3d1)
+

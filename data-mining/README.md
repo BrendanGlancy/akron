@@ -82,31 +82,75 @@ Stem | Leaf
   7  | 1 4 4 9
   8  | 2 5 7 9
 
-## Time Series
+### Time Series
 
 ![time series](https://github.com/BrendanGlancy/akron/assets/61941978/ad919761-9449-4d04-8270-c6d31b14d3d1)
 
-## Measure of Variation
+### Measure of Variation
 
 - Range: difference between the largest and the smallest values of a data distribution
 - Variance and Standard Deviation: Measure distribution or spread around an expected value
     - The larger the SD the larger the spread, if we have a small standard deviation then there is a sharp peak
 - Coefficient of Variation: standard deviation as a percent of the sample or population mean
 
-## Percentiles
+### Percentiles
 
 - For whole numbers P (where 1 <= P <= 99), the pth percentage of a distribution is a value such that P% of the data fall below it and (100 - P)% of the data fall at or above it 
 
-## Box and Whisker Plot
+### Box and Whisker Plot
 
 ![box-plot](https://github.com/BrendanGlancy/akron/assets/61941978/3d5ac468-eddb-4c24-b977-47852f6a0c25)
 
 Sometimes we run into data that seems incorrect, we call these **outliers**
 
-## Correlation and Regression
+### Correlation and Regression
 
 - Scattergram: A graph in which data pairs (x, y) are plotted as individual points on a grid with horizontal axis x and vertical axis y. x is called the explanatory variable (independent variable) and y the response variable (or dependent variable)
 
 ![scatterplot_example_4col](https://github.com/BrendanGlancy/akron/assets/61941978/f7b92c36-d83d-4355-a703-40de3810ccfb)
 
+- Outlier: a data point that has an unusual combination of data values
+- Quantitatively:
+    - Beyond 3 std devations
+    - Fill in later 
+
+**Sample Correlation Coefficient** r = a numerical measurement that assess the strength of a linear relationship between x and y
+
+### Linear Regression 
+
+- Lineaer regression provides a line of least square fit to the pairs (x, y)
+
+- Probability Assignments
+    - Intuition
+    - relative frequency
+    - equally likely outcomes
+
+### Law of Large Numbers
+
+- In the long run, as the sample size increases and increases the relative frequencies of outcomes get closer and closer to the theorictical probability value
+
+### Compound Events
+
+- Two events are independent if the occurrence or nonoccurence of one event does not chagne the probability that the other event will occur
+- If the probability/outcome of an event changes the probability of another event, the probability of the second event is dependent of the first event
+- For independent events A and B
+    - P(A and B) = P(A).P(B)
+- General rule for any events, use conditional probabilities
+
+- Conditional probability
+    - P(A|B) = P(A and B) / P(B)
+- Two events are mutually exclusive or disjoint it the cannot occure together. In particular A and B are mutually exclusive if P(A and B) = 0
+
+## Random Variables and Probability Distribution
+- A Quantitative variable x is a random variable if the value that x takes on in a given experiment or observation is a chance or random outcome
+**Discrete random variable**
+**Continuous random variable**
+**Probability random variable**
+
+The areas are important because each area is equal to the probability that the measurement of an item selected at random fall in this interval
+
+- How to determine whether data has a normal distribution 
+    - Histogram: Should be roughly a bell shape
+    - Outliers: for a normal distribution there should be no more than one outlier
+    - Skewness: normal distributions are symmetric.  
 

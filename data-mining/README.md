@@ -154,3 +154,26 @@ The areas are important because each area is equal to the probability that the m
     - Outliers: for a normal distribution there should be no more than one outlier
     - Skewness: normal distributions are symmetric.  
 
+## Origins and Data Mining 
+
+- Draw idead from Machine Learning/AI, pattern recognition, statistics, and database systems
+
+### Datamining tasks
+- Prediction Methods
+    - Use some variables to predict unknown of future values of other values
+- Description Methods
+    - Find human-interpretable patterns that describe the data
+
+### 6 common data mining task
+- Description 
+- Estimation
+- Prediction
+- Classification
+- Clustering
+- Association
+
+### Illustrating Document Clustering
+- Clustering points: 3204 Artcles of Los Angeles Times
+- Similarity Measure: How many words are common in these documents
+
+

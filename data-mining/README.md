@@ -176,4 +176,29 @@ The areas are important because each area is equal to the probability that the m
 - Clustering points: 3204 Artcles of Los Angeles Times
 - Similarity Measure: How many words are common in these documents
 
+### Attribute Values
 
+- Attribute Values are numbers or symbols assigned ot an attribute
+    - Nominal 
+    - Ordinal
+    - Interval
+    - Ratio
+
+**Discrete and Continuous Values**
+
+- Discrete Attribute
+    - Has only a finite or countably infinite set of values
+    - Examples: zip codes
+    - Often represented as interger variabels
+
+- Continuous Attribute
+
+### Data Quality
+
+- Examples of data Quality problems
+    - Measurement and data collection errors
+    - Noise and artifacts
+    - Precision bias and accuracy
+    - Outliers
+    - Missing Values
+    - Duplicate data

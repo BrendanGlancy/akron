@@ -4,7 +4,7 @@ import os
 import openai
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="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")
 
 
 def clipboard_listener():

@@ -23,14 +23,43 @@ normalized
 
 z_score <- (20 - mean(stock_prices)) / sd(stock_prices)
 z_score
-outlier_z_score <- stock_prices[abs(z_score) > 3]
+# Assuming previous definitions are available
 
+# 7
+# Calculate the Z-score for 75
+z_score_75 <- (75 - mean(stock_prices)) / sd(stock_prices)
+
+# Check if Z-score is greater than 3 or less than -3 (common criteria for outliers)
+is_outlier_z_score <- abs(z_score_75) > 3
+print(is_outlier_z_score)
+
+# Calculate the Interquartile Range (IQR)
 IQR_value <- IQR(stock_prices)
 Q1 <- quantile(stock_prices, 0.25)
 Q3 <- quantile(stock_prices, 0.75)
+
+# Determine the lower and upper bounds for outliers
 lower_bound <- Q1 - 1.5 * IQR_value
 upper_bound <- Q3 + 1.5 * IQR_value
+
+# Check if 75 is outside the bounds
+is_outlier_iqr <- 75 < lower_bound | 75 > upper_bound
+print(is_outlier_iqr)
+
+# 8
+# Calculate Z-scores for all stock prices
+z_scores <- (stock_prices - mean(stock_prices)) / sd(stock_prices)
+
+# Identify outliers based on Z-scores
+outlier_z_scores <- stock_prices[abs(z_scores) > 3]
+
+# Print identified outliers based on Z-scores
+print(outlier_z_scores)
+# we already Calculated the upper and lower bound as well as Q1 and Q3
 outliers_iqr <- stock_prices[stock_prices < lower_bound | stock_prices > upper_bound]
+
+# Display the outliers_iqr in the term for screenshot / lab purposes
+print(outliers_iqr)
 
 stock_prices_no_outlier <- stock_prices[stock_prices != 75]
 
@@ -39,3 +68,8 @@ mean_with <- mean(stock_prices)
 median_with <- median(stock_prices)
 mean_without <- mean(stock_prices_no_outlier)
 median_without <- median(stock_prices_no_outlier)
+print(mean_with)
+print(median_with)
+print(mean_without)
+print(median_without)
+

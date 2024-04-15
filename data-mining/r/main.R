@@ -1,75 +1,25 @@
-stock_prices <- c(10, 7, 20, 12, 75, 15, 9, 18, 4, 12, 8, 14)
+# Load the necessary library
+library(class)
 
-# Mean
-mean(stock_prices)
+# Assuming the dataset and relevant features are loaded correctly
+# You may need to adjust the names and indexing based on your specific dataset structure
 
-# median
-median(stock_prices)
+# Load the data (replace with correct path and filename as necessary)
+data <- read.csv("data/CARSEATSPAM.csv")
 
-# Mode
-getmode <- function(v) {
-  uniqv <- unique(v)
-  uniqv[which.max(tabulate(match(v, uniqv)))]
-}
+# Prepare the data for kNN
+# Assuming the first and second attributes are named `Attribute1` and `Attribute2`
+attributes <- data[, c("Attribute1", "Attribute2")]
 
-mode <- getmode(stock_prices)
-mode
+# Normalize the data
+maxs <- apply(attributes, 2, max)
+mins <- apply(attributes, 2, min)
+scaled_attributes <- scale(attributes, center = mins, scale = maxs - mins)
 
-sd(stock_prices)
+# Define the test instance
+test_instance <- c((9.1 - mins[1]) / (maxs[1] - mins[1]), (11.0 - mins[2]) / (maxs[2] - mins[2]))
 
-# min-max
-normalized <- (20 - min(stock_prices)) / (max(stock_prices) - min(stock_prices))
-normalized
-
-z_score <- (20 - mean(stock_prices)) / sd(stock_prices)
-z_score
-# Assuming previous definitions are available
-
-# 7
-# Calculate the Z-score for 75
-z_score_75 <- (75 - mean(stock_prices)) / sd(stock_prices)
-
-# Check if Z-score is greater than 3 or less than -3 (common criteria for outliers)
-is_outlier_z_score <- abs(z_score_75) > 3
-print(is_outlier_z_score)
-
-# Calculate the Interquartile Range (IQR)
-IQR_value <- IQR(stock_prices)
-Q1 <- quantile(stock_prices, 0.25)
-Q3 <- quantile(stock_prices, 0.75)
-
-# Determine the lower and upper bounds for outliers
-lower_bound <- Q1 - 1.5 * IQR_value
-upper_bound <- Q3 + 1.5 * IQR_value
-
-# Check if 75 is outside the bounds
-is_outlier_iqr <- 75 < lower_bound | 75 > upper_bound
-print(is_outlier_iqr)
-
-# 8
-# Calculate Z-scores for all stock prices
-z_scores <- (stock_prices - mean(stock_prices)) / sd(stock_prices)
-
-# Identify outliers based on Z-scores
-outlier_z_scores <- stock_prices[abs(z_scores) > 3]
-
-# Print identified outliers based on Z-scores
-print(outlier_z_scores)
-# we already Calculated the upper and lower bound as well as Q1 and Q3
-outliers_iqr <- stock_prices[stock_prices < lower_bound | stock_prices > upper_bound]
-
-# Display the outliers_iqr in the term for screenshot / lab purposes
-print(outliers_iqr)
-
-stock_prices_no_outlier <- stock_prices[stock_prices != 75]
-
-# Mean and Median with and without the outlier
-mean_with <- mean(stock_prices)
-median_with <- median(stock_prices)
-mean_without <- mean(stock_prices_no_outlier)
-median_without <- median(stock_prices_no_outlier)
-print(mean_with)
-print(median_with)
-print(mean_without)
-print(median_without)
-
+# Compute the k-nearest neighbors
+neighbors <- knn(train = scaled_attributes, test = matrix(test_instance, nrow = 1), cl = data$Class, k = 5)
+print("5-nearest neighbors:")
+print(neighbors)
